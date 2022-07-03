@@ -1,0 +1,231 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
+body {
+  background-color: #ffffff;
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  font-size: 3em;
+  text-align: center;
+}
+
+html {
+  overflow: scroll;
+  overflow-x: hidden;
+  -ms-scroll-snap-type: y mandatory;
+      scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+  /* make scrollbar transparent */
+}
+
+.main .section {
+  scroll-snap-align: start;
+  height: 100vh;
+}
+
+.main #about-me {
+  background-color: #71aaf4;
+}
+
+.main #skills {
+  background-color: #f0f08b;
+}
+
+.main #projects {
+  background-color: #ef79e5;
+}
+
+.title {
+  margin: auto;
+  width: 100%;
+  padding: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.photo-container {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin: auto;
+}
+
+.photo-box {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.photo-box:before {
+  content: '';
+  position: absolute;
+  inset: 0px 100px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background: linear-gradient(315deg, #00ccff, #d45c00);
+  -webkit-animation: animate 4s linear infinite;
+          animation: animate 4s linear infinite;
+}
+
+.photo-box:hover:before {
+  inset: -20px 0px;
+}
+
+@-webkit-keyframes animate {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes animate {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+.photo-box:after {
+  content: '';
+  position: absolute;
+  inset: 6px;
+  background: #0e1538;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.content {
+  position: absolute;
+  inset: 5px;
+  background: #0e1538;
+  border: 5px solid #070a1c;
+  background-size: cover;
+  z-index: 3;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow: hidden;
+}
+
+.content a {
+  position: relative;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background: #fff;
+  color: #070a1c;
+  border-radius: 25px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.content a:hover {
+  letter-spacing: 0.2em;
+}
+
+.content img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  z-index: 3;
+  pointer-events: none;
+}
+
+.photo-box:hover .content img {
+  opacity: 0;
+}
+
+h2 {
+  position: relative;
+  z-index: 2;
+  font-size: 1.25em;
+  text-align: center;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  line-height: 1.25em;
+  text-transform: uppercase;
+}
+
+h2 span {
+  font-weight: 300;
+  font-size: 0.75em;
+}
+
+.nav {
+  z-index: 111;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  height: 0px;
+}
+
+.nav ul {
+  position: absolute;
+  left: 2%;
+  top: 32vh;
+}
+
+.nav li {
+  display: block;
+  width: 50px;
+  height: 50px;
+  padding: 50px 0;
+}
+
+.active {
+  background-color: #00ff0d;
+}
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,277 @@
+
+
+// .gg
+// {
+    
+//     opacity: 0;
+//     transition: all  ease-in-out 1.5s;
+//     height:400px;
+//     background:rgb(205, 187, 50);
+//     box-sizing:border-box;
+//     border:4px solid;
+//     margin-top:25px;
+//     line-height:400px;
+//     font-size:40px;
+//     text-align:center;
+//     font-weight:bold;
+//     margin: auto;
+//     width: 60%;
+// }
+
+
+//  .op{
+//     opacity: 1;
+//  }
+
+
+// .hover-wobble{
+//     &:hover{
+//         animation: wobble;
+//         animation-duration: 1s;}
+// }
+// .hover-rubberBand{
+//     &:hover{
+//         animation: rubberBand;
+//         animation-duration: 1s;}
+// }
+// .hover-tada{
+//     &:hover{
+//         animation: tada;
+//         animation-duration: 1s;}
+// }
+
+
+// .box{
+ 
+    
+//     height:400px;
+//     background:rgb(205, 187, 50);
+//     box-sizing:border-box;
+//     border:4px solid;
+//     margin-top:25px;
+//     line-height:400px;
+//     font-size:40px;
+//     text-align:center;
+//     font-weight:bold;
+//     margin:  30px auto;
+//     width: 60%;
+// }
+
+
+body {
+    // background-color: #ececec;
+    background-color: #ffffff;
+    padding: 0;
+    margin: 0;
+   
+    
+  }
+
+
+h1 {
+ 
+    font-size: 3em;
+    
+    
+   text-align: center;
+
+   
+}
+
+ html {
+    overflow: scroll;
+    overflow-x: hidden;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+    
+  }
+  ::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
+}
+
+.main{
+
+    .section{
+        scroll-snap-align: start;
+        height: 100vh;
+        }
+        #about-me{
+            background-color: #71aaf4;
+        }
+        #skills{
+            background-color: #f0f08b;
+        }
+        #projects{
+            background-color: #ef79e5;
+        }
+ }  
+ 
+ 
+ 
+.title{
+    margin: auto;
+    width: 100%;
+    
+    padding: 10px;
+}
+
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900');
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+.photo-container 
+{
+	position: relative;
+	width: 300px;
+	height: 300px;
+	margin: auto;
+}
+.photo-box
+{
+    
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.5);
+	overflow: hidden;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.photo-box:before
+{
+	content: '';
+	position: absolute;
+	inset: 0px 100px;
+	transition: 0.5s;
+	background: linear-gradient(315deg,#00ccff,#d45c00);
+	animation: animate 4s linear infinite
+}
+.photo-box:hover:before
+{
+	inset: -20px 0px;
+}
+@keyframes animate 
+{
+	0%
+	{
+		transform: rotate(0deg);
+	}
+	100%
+	{
+		transform: rotate(360deg);
+	}
+}
+.photo-box:after
+{
+	content: '';
+	position: absolute;
+	inset : 6px;
+	background: #0e1538;
+	border-radius: 50%;
+	z-index: 1;
+}
+.content 
+{
+	position: absolute;
+	// inset: 30px;
+	inset: 5px;
+	background: #0e1538;
+	border: 5px solid #070a1c;
+	background-size: cover;
+	z-index: 3;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	overflow: hidden;
+
+	a 
+{
+	position: relative;
+	margin-top: 10px;
+	padding: 10px 20px;
+	background: #fff;
+	color: #070a1c;
+	border-radius: 25px;
+	font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	text-decoration: none;
+	transition: 0.5s;
+}
+a:hover 
+{
+	letter-spacing: 0.2em;
+}
+}
+.content img 
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: 0.5s;
+	z-index: 3;
+	pointer-events: none;
+}
+.photo-box:hover .content img 
+{
+	opacity: 0;
+}
+h2 
+{
+	position: relative;
+	z-index: 2;
+	font-size: 1.25em;
+	text-align: center;
+	color: #fff;
+	font-weight: 600;
+	letter-spacing: 0.05em;
+	line-height: 1.25em;
+	text-transform: uppercase;
+}
+h2 span 
+{
+	font-weight: 300;
+	font-size: 0.75em;
+}
+
+
+.nav{
+	z-index: 111;
+	position: sticky;
+	top: 0;
+	height: 0px;
+	ul{
+		position: absolute;
+		left: 2%;
+		top: 32vh;
+		
+	}
+	li{
+		display: block;
+		width: 50px;
+		height: 50px;
+		padding: 50px 0;
+	}
+}
+.active{
+	background-color: #00ff0d;
+}
