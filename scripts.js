@@ -21,32 +21,42 @@
 // }
 
 // ( contentPosition < screenPosition && (contentPosition+screenPosition) > screenPosition )
+
+
+
+
+
+// [start] for adding animation effects on scroll
+
 backInLeft = document.querySelectorAll(".backInLeft");
 backInRight = document.querySelectorAll(".backInRight");
 rubberBand = document.querySelectorAll(".rubberBand");
-listOfEffects = ['backInLeft','backInRight','rubberBand']
-list = [backInLeft,backInRight,rubberBand];
+fadeInUp = document.querySelectorAll(".fadeInUp");
+
+listOfEffects = ['backInLeft','backInRight','rubberBand','fadeInUp']
+list = [backInLeft,backInRight,rubberBand,fadeInUp];
+
+
+
+const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
+
 
 items = document.querySelectorAll(".container");
 
-
-
-
 window.addEventListener("scroll", () => {
-    for ( i = 0 ; i < list.length ; i = i + 1 ) {
-    let contentPosition1 = list[i].getBoundingClientRect().top;
-    let screenPosition1 = window.innerHeight ;
-
-    }
+  
 
     for ( j = 0 ; j < list.length ; j = j + 1 ) {
     for ( i = 0 ; i < list[j].length ; i = i + 1 ) {
    
     
-    let contentPosition = list[j][i].getBoundingClientRect().top;
+    let contentPosition = list[j][i].getBoundingClientRect().bottom;
     let screenPosition = window.innerHeight ;
+    console.log('vh',vh,j,i)
+    console.log('contentPosition',contentPosition)
+    console.log('screenPosition',screenPosition)
 
-    if ( contentPosition < screenPosition ) {
+    if ( contentPosition < screenPosition && (contentPosition + vh) > screenPosition ) { 
         list[j][i].classList.add("op");
         list[j][i].classList.add("animate__animated");
         list[j][i].classList.add(`animate__${listOfEffects[j]}`);
@@ -60,10 +70,10 @@ window.addEventListener("scroll", () => {
     }//end of 'j' for loop
     }//end of arrow function 
     )//end of window.addEventListener
+// [end]for adding animation effects on scroll
 
 
-
-
+// [start] for active navigation 
 const li=document.querySelectorAll(".links");
 const sec=document.querySelectorAll("section");
 
@@ -73,5 +83,7 @@ let len=sec.length;
  li.forEach(ltx => ltx.classList.remove("active"));
   li[len].classList.add("active");
 }
+
 activeMenu();
 window.addEventListener("scroll", activeMenu); 
+// [end] for active navigation 
