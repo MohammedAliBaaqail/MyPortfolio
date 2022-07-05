@@ -52,9 +52,9 @@ window.addEventListener("scroll", () => {
     
     let contentPosition = list[j][i].getBoundingClientRect().bottom;
     let screenPosition = window.innerHeight ;
-    console.log('vh',vh,j,i)
-    console.log('contentPosition',contentPosition)
-    console.log('screenPosition',screenPosition)
+    // console.log('vh',vh,j,i)
+    // console.log('contentPosition',contentPosition)
+    // console.log('screenPosition',screenPosition)
 
     if ( contentPosition < screenPosition && (contentPosition + vh) > screenPosition ) { 
         list[j][i].classList.add("op");
@@ -63,7 +63,7 @@ window.addEventListener("scroll", () => {
     }
     else   {
         list[j][i].classList.remove("op");
-        
+        list[j][i].classList.add("animate__animated");
         list[j][i].classList.remove(`animate__${listOfEffects[j]}`);
             }
     }//end of 'i' for loop
@@ -87,3 +87,53 @@ let len=sec.length;
 activeMenu();
 window.addEventListener("scroll", activeMenu); 
 // [end] for active navigation 
+
+
+
+document.addEventListener('keydown', function(e) {
+    switch (e.keyCode) {
+        case 37:
+            
+            console.log('leftbtn');
+            console.log(e.keyCode);
+            break;
+        case 38:
+         
+            console.log('upbtn');
+            console.log(e.keyCode);
+            break;
+        case 39:
+          
+            console.log('rightbtn');
+            console.log(e.keyCode);
+            break;
+        case 40:
+          
+            console.log('downbtn');
+            console.log(e.keyCode);
+            break;
+    }
+});
+
+
+
+
+
+var lastScrollTop = 0;
+$(window).scroll(function(event){
+   var st = $(this).scrollTop();
+   if (st > lastScrollTop){
+    // console.log("down");
+
+
+  
+
+
+   
+
+   } else {
+    // console.log("up");
+   }
+   lastScrollTop = st;
+});
+

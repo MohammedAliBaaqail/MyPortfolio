@@ -19,6 +19,8 @@ body {
 
 h1 {
   font-size: 3em;
+  color: white;
+  text-shadow: 2px 2px 7px rgba(0, 0, 0, 0.893);
   text-align: center;
 }
 
@@ -34,15 +36,15 @@ h1 {
 }
 
 .main #about-me {
-  background-color: #71aaf4;
+  background-image: url(./assets/bg-blue.jpg);
 }
 
 .main #skills {
-  background-color: #f0f08b;
+  background-image: url(./assets/bg-orange.jpg);
 }
 
 .main #projects {
-  background-color: #ef79e5;
+  background-image: url(./assets/bg-green.jpg);
 }
 
 .title {
@@ -65,8 +67,8 @@ h1 {
 
 .photo-container {
   position: relative;
-  width: 300px;
-  height: 300px;
+  width: 200px;
+  height: 200px;
   margin: auto;
 }
 
@@ -93,10 +95,10 @@ h1 {
 .photo-box:before {
   content: '';
   position: absolute;
-  inset: 0px 100px;
+  inset: 0px 80px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  background: linear-gradient(315deg, #00ccff, #d45c00);
+  background: linear-gradient(315deg, #317fbd, #bfd8ec);
   -webkit-animation: animate 4s linear infinite;
           animation: animate 4s linear infinite;
 }
@@ -131,7 +133,7 @@ h1 {
   content: '';
   position: absolute;
   inset: 6px;
-  background: #0e1538;
+  background: #07316d;
   border-radius: 50%;
   z-index: 1;
 }
@@ -139,7 +141,7 @@ h1 {
 .content {
   position: absolute;
   inset: 5px;
-  background: #0e1538;
+  background: #07316d;
   border: 5px solid #070a1c;
   background-size: cover;
   z-index: 3;
@@ -163,23 +165,20 @@ h1 {
 .content a {
   position: relative;
   margin-top: 10px;
-  padding: 10px 20px;
-  background: #fff;
-  color: #070a1c;
-  border-radius: 25px;
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  text-decoration: none;
+  padding: 5px 5px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+}
+
+.content a .wa {
+  width: 40px;
 }
 
 .content a:hover {
   letter-spacing: 0.2em;
 }
 
-.content img {
+.content .personal {
   position: absolute;
   top: 0;
   left: 0;
@@ -193,7 +192,7 @@ h1 {
   pointer-events: none;
 }
 
-.photo-box:hover .content img {
+.photo-box:hover .content .personal {
   opacity: 0;
 }
 
@@ -229,6 +228,7 @@ h2 span {
 }
 
 .nav li {
+  position: relative;
   display: block;
   width: 50px;
   height: 50px;
@@ -242,9 +242,27 @@ h2 span {
 .active img {
   -webkit-transition: ease-in-out 0.3s;
   transition: ease-in-out 0.3s;
-  -webkit-transform: scale(2);
-          transform: scale(2);
-  -webkit-filter: drop-shadow(3px 3px 8px rgba(0, 0, 0, 0.47));
-          filter: drop-shadow(3px 3px 8px rgba(0, 0, 0, 0.47));
+  -webkit-transform: scale(2.5);
+          transform: scale(2.5);
+  background-color: #00000016;
+  border-radius: 20%;
+  padding: 5px;
+}
+
+.tooltip-content {
+  display: none;
+  position: absolute;
+  bottom: 19%;
+  left: 120%;
+  background-color: rgba(0, 0, 0, 0.099);
+  padding: 0.5em 0.1em;
+  font-size: 0.8em;
+  width: 150%;
+  text-align: center;
+  border-radius: 10%;
+}
+
+li:hover .tooltip-content {
+  display: block;
 }
 /*# sourceMappingURL=styles.css.map */

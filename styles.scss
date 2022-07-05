@@ -77,8 +77,8 @@ body {
 h1 {
  
     font-size: 3em;
-    
-    
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 7px rgba(0, 0, 0, 0.893);
    text-align: center;
 
    
@@ -93,17 +93,32 @@ h1 {
 .main{
 
     .section{
+		
         scroll-snap-align: start;
         height: 100vh;
         }
         #about-me{
-            background-color: #71aaf4;
+			background-image: url(./assets/bg-blue.jpg);
+			// background: rgb(0,176,255);
+			// background: linear-gradient(0deg, rgba(0,159,255,1) 0%, rgba(0,47,199,1) 100%);
+
         }
         #skills{
-            background-color: #f0f08b;
+			background-image: url(./assets/bg-orange.jpg);
+			// background: #007991;  /* fallback for old browsers */
+			// background: linear-gradient(180deg, rgba(0,47,199,1) 0%, rgba(0,209,203,1) 100%);
+			
+
+
         }
         #projects{
-            background-color: #ef79e5;
+			background-image: url(./assets/bg-green.jpg);
+			// background: #11998e;  /* fallback for old browsers */
+			// background: -webkit-linear-gradient(to right, #38ef7d, #11998e);  /* Chrome 10-25, Safari 5.1-6 */
+			// background: linear-gradient(to right, #38ef7d, #11998e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+			
+
         }
  }  
  
@@ -137,8 +152,8 @@ h1 {
 .photo-container 
 {
 	position: relative;
-	width: 300px;
-	height: 300px;
+	width: 200px;
+	height: 200px;
 	margin: auto;
 	
 	
@@ -162,9 +177,9 @@ h1 {
 {
 	content: '';
 	position: absolute;
-	inset: 0px 100px;
+	inset: 0px 80px;
 	transition: 0.5s;
-	background: linear-gradient(315deg,#00ccff,#d45c00);
+	background: linear-gradient(315deg,#317fbd,#bfd8ec);
 	animation: animate 4s linear infinite
 }
 .photo-box:hover:before
@@ -187,7 +202,7 @@ h1 {
 	content: '';
 	position: absolute;
 	inset : 6px;
-	background: #0e1538;
+	background: #07316d;
 	border-radius: 50%;
 	z-index: 1;
 }
@@ -196,7 +211,7 @@ h1 {
 	position: absolute;
 	// inset: 30px;
 	inset: 5px;
-	background: #0e1538;
+	background: #07316d;
 	border: 5px solid #070a1c;
 	background-size: cover;
 	z-index: 3;
@@ -209,36 +224,42 @@ h1 {
 
 	a 
 {
+	
 	position: relative;
 	margin-top: 10px;
-	padding: 10px 20px;
-	background: #fff;
-	color: #070a1c;
-	border-radius: 25px;
-	font-weight: 500;
-	text-transform: uppercase;
-	letter-spacing: 0.05em;
-	text-decoration: none;
+	padding: 5px 5px;
+	// background: #fff;
+	// color: #070a1c;
+	// border-radius: 25px;
+	// font-weight: 500;
+	// text-transform: uppercase;
+	// letter-spacing: 0.05em;
+	// text-decoration: none;
 	transition: 0.5s;
+	.wa{
+		width: 40px;
+	}
+	// z-index: 1;
 }
 a:hover 
 {
 	letter-spacing: 0.2em;
 }
 }
-.content img 
+.content  
 {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-	transition: 0.5s;
-	z-index: 3;
-	pointer-events: none;
+	.personal{position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		transition: 0.5s;
+		z-index: 3;
+		pointer-events: none;}
+	
 }
-.photo-box:hover .content img 
+.photo-box:hover .content .personal
 {
 	opacity: 0;
 }
@@ -273,6 +294,7 @@ h2 span
 		
 	}
 	li{
+		position: relative;
 		display: block;
 		width: 50px;
 		height: 50px;
@@ -287,10 +309,33 @@ h2 span
 .active{
 	img{
 		transition: ease-in-out 0.3s;
-		transform: scale(2);
+		transform: scale(2.5);
 		
-		filter: drop-shadow( 3px 3px 8px rgba(0, 0, 0, 0.47));
+		// filter: drop-shadow( 3px 3px 8px rgba(0, 0, 0, 0.47));
+background-color: #00000016;
+border-radius: 20%;
+padding: 5px;
+//  -webkit-filter: blur(8px);
 	
 	
 	}
 }
+
+
+.tooltip-content {
+	display: none;
+    position: absolute;
+    bottom: 19%;
+    left: 120%;
+    background-color: rgba(0, 0, 0, 0.099);
+    padding: 0.5em 0.1em;
+    font-size: 0.8em;
+    width: 150%;
+    text-align: center;
+	border-radius: 10%;
+  }
+
+  li:hover .tooltip-content {
+	display: block;
+	
+  }
