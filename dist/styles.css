@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Koulen&family=Open+Sans&family=Oswald&family=Roboto+Flex:opsz@8..144&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
 .op {
   opacity: 1;
@@ -18,8 +19,6 @@ body {
 
 h1 {
   font-size: 3em;
-  color: white;
-  text-shadow: 2px 2px 7px rgba(0, 0, 0, 0.893);
   text-align: center;
 }
 
@@ -33,14 +32,22 @@ h1 {
   scroll-snap-align: start;
   height: 100vh;
 }
-.main #about-me {
-  background-image: url(./assets/bg-blue.jpg);
+.main .section h1 {
+  letter-spacing: 1px;
+  color: var(--clr);
+  text-shadow: 0 0 30px var(--clr);
 }
-.main #skills {
-  background-image: url(./assets/bg-orange.jpg);
+
+#about-me {
+  background-image: url(./assets/bg-dark-1.jpg);
 }
-.main #projects {
-  background-image: url(./assets/bg-green.jpg);
+
+#skills {
+  background-image: url(./assets/bg-dark-1.jpg);
+}
+
+#work {
+  background-image: url(./assets/bg-dark-1.jpg);
 }
 
 .title {
@@ -56,7 +63,7 @@ h1 {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 .photo-container {
@@ -84,7 +91,7 @@ h1 {
   position: absolute;
   inset: 0px 80px;
   transition: 0.5s;
-  background: linear-gradient(315deg, #317fbd, #bfd8ec);
+  background: linear-gradient(315deg, #00bcd4, #ffffff);
   animation: animate 4s linear infinite;
 }
 
@@ -159,7 +166,7 @@ h2 span {
 .nav {
   z-index: 111;
   position: sticky;
-  top: 30%;
+  top: 35%;
   margin-left: 20px;
   height: 0px;
   display: flex;
@@ -187,22 +194,22 @@ h2 span {
 }
 .nav ul li a .links {
   position: absolute;
-  width: 110%;
+  width: 105%;
   height: 105%;
   border: rgba(255, 255, 255, 0.108) solid 3px;
 }
 .nav ul li a .active {
   z-index: -1;
   position: absolute;
-  width: 110%;
+  width: 105%;
   height: 105%;
   box-shadow: 8px 7px 8px -2px rgba(0, 0, 0, 0.37);
   background: white;
-  background: linear-gradient(94deg, rgba(255, 255, 255, 0.2130602241) 0%, rgba(255, 255, 255, 0.0898109244) 100%);
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.367) 0%, rgba(255, 255, 255, 0.164) 100%);
   border: rgba(255, 255, 255, 0.108) solid 1px;
   border-radius: 5%;
   padding: 4px;
-  backdrop-filter: blur(3px);
+  backdrop-filter: blur(2px);
 }
 .nav ul li a::before {
   z-index: 9999;
@@ -219,7 +226,8 @@ h2 span {
   content: attr(data-text);
   width: 100%;
   -webkit-text-stroke: 1px var(--clr);
-  filter: drop-shadow(0px 0px 45px --clr);
+  filter: drop-shadow(0px 0px 15px var(--clr));
+  text-shadow: 0 0 20px var(--clr);
 }
 .nav img {
   width: 40px;
