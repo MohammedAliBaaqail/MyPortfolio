@@ -164,6 +164,10 @@ h1 {
   width: 40px;
 }
 
+.content a:hover {
+  letter-spacing: 0.2em;
+}
+
 .content .personal {
   position: absolute;
   top: 0;
@@ -203,92 +207,63 @@ h2 span {
   z-index: 111;
   position: -webkit-sticky;
   position: sticky;
-  top: 30%;
-  margin-left: 20px;
+  top: 0;
   height: 0px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
 }
 
 .nav ul {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 70px;
-}
-
-.nav ul li {
-  position: relative;
-  list-style: none;
-}
-
-.nav ul li a {
-  text-transform: uppercase;
-  z-index: 9999;
-  position: relative;
-  color: white;
-  text-decoration: none;
-  letter-spacing: 2px;
-  font-size: 1.7em;
-}
-
-.nav ul li a .links {
   position: absolute;
-  width: 110%;
-  height: 105%;
-  border: rgba(255, 255, 255, 0.108) solid 3px;
+  left: 3%;
+  top: 25vh;
 }
 
-.nav ul li a .active {
-  z-index: -1;
-  position: absolute;
-  width: 110%;
-  height: 105%;
-  -webkit-box-shadow: 8px 7px 8px -2px rgba(0, 0, 0, 0.37);
-          box-shadow: 8px 7px 8px -2px rgba(0, 0, 0, 0.37);
-  background: white;
-  background: linear-gradient(94deg, rgba(255, 255, 255, 0.21306) 0%, rgba(255, 255, 255, 0.0898109) 100%);
-  border: rgba(255, 255, 255, 0.108) solid 1px;
-  border-radius: 5%;
-  padding: 4px;
-  -webkit-backdrop-filter: blur(3px);
-          backdrop-filter: blur(3px);
-}
-
-.nav ul li a::before {
-  z-index: 9999;
-  content: attr(data-text);
-  position: absolute;
-  color: var(--clr);
-  width: 0%;
-  overflow: hidden;
-  -webkit-transition: 0.6s;
-  transition: 0.6s;
-  border-right: 8px solid var(--clr);
-  -webkit-text-stroke: 1px var(--clr);
-}
-
-.nav ul li a:hover::before {
-  content: attr(data-text);
-  width: 100%;
-  -webkit-text-stroke: 1px var(--clr);
-  -webkit-filter: drop-shadow(0px 0px 45px --clr);
-          filter: drop-shadow(0px 0px 45px --clr);
+.nav li {
+  position: relative;
+  display: block;
+  width: 50px;
+  height: 50px;
+  margin: 80px 0;
+  color: transparent;
 }
 
 .nav img {
   width: 40px;
 }
-/*# sourceMappingURL=styles.css.map */
+
+.active img {
+  -webkit-transition: ease-in-out 0.3s;
+  transition: ease-in-out 0.3s;
+  -webkit-transform: scale(2);
+          transform: scale(2);
+  background-color: #ffffff16;
+  border: rgba(255, 255, 255, 0.215) solid 1px;
+  border-radius: 10%;
+  padding: 4px;
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+}
+
+.tooltip-content {
+  display: none;
+  position: absolute;
+  bottom: 25%;
+  left: 140%;
+  background-color: rgba(255, 255, 255, 0.099);
+  padding: 0.5em 0.1em;
+  font-size: 0.8em;
+  width: 150%;
+  text-align: center;
+  border: rgba(255, 255, 255, 0.215) solid 1px;
+  border-radius: 10%;
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+}
+
+li:hover .tooltip-content {
+  display: block;
+  -webkit-animation: fadeInRight;
+          animation: fadeInRight;
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
+}
+/*# sourceMappingURL=styles copy.css.map */
