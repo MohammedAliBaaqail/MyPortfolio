@@ -41,15 +41,110 @@ h1 {
 }
 
 #about-me {
-  background-image: url(./assets/bg-dark-1.jpg);
+  background-image: url(./assets/bg-dark-10.jpg);
+  background-color: #202124;
+  background-size: cover;
+}
+
+#about-me h2 {
+  color: var(--clr);
 }
 
 #skills {
-  background-image: url(./assets/bg-dark-1.jpg);
+  background-image: url(./assets/bg-dark-10.jpg);
+  background-size: cover;
+  background-color: #202124;
+}
+
+#skills .skills {
+  width: 100%;
+  max-width: 60%;
+  padding: 0 20px;
+  margin: 0 auto;
+  margin-top: 40px;
+  background: -webkit-gradient(linear, right top, left top, color-stop(10%, rgba(224, 224, 224, 0.141)), color-stop(50%, rgba(255, 255, 255, 0.042)));
+  background: linear-gradient(270deg, rgba(224, 224, 224, 0.141) 10%, rgba(255, 255, 255, 0.042) 50%);
+  border: rgba(255, 255, 255, 0.108) solid 1px;
+  padding: 44px;
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
+  -webkit-box-shadow: 7px 7px 10px -1px #ff9f21b3;
+          box-shadow: 7px 7px 10px -1px #ff9f21b3;
+}
+
+#skills .skill-name {
+  font-size: 18px;
+  font-weight: 700;
+  color: #f1f1f1;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+
+#skills .skill-bar {
+  height: 14px;
+  background: #282828;
+  border-radius: 3px;
+}
+
+#skills .skill-per {
+  height: 14px;
+  background: #ffa021;
+  border-radius: 3px;
+  position: relative;
+  -webkit-animation: fillBars 2.5s 1;
+          animation: fillBars 2.5s 1;
+  -webkit-box-shadow: 0px 0px 8px 3px #ffa021;
+          box-shadow: 0px 0px 8px 3px #ffa021;
+}
+
+#skills .skill-per::before {
+  content: attr(per);
+  position: absolute;
+  padding: 4px 6px;
+  background: #f1f1f1;
+  border-radius: 4px;
+  font-size: 12px;
+  top: -35px;
+  right: 0;
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
+}
+
+#skills .skill-per::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: #f1f1f1;
+  top: -17px;
+  right: 0;
+  -webkit-transform: translateX(50%) rotate(45deg);
+          transform: translateX(50%) rotate(45deg);
+  border-radius: 2px;
+}
+
+@-webkit-keyframes fillBars {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes fillBars {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
 }
 
 #work {
-  background-image: url(./assets/bg-dark-1.jpg);
+  background-image: url(./assets/bg-dark-10.jpg);
+  background-size: cover;
+  background-color: #202124;
 }
 
 .title {
@@ -192,7 +287,7 @@ h2 {
   z-index: 2;
   font-size: 1.25em;
   text-align: center;
-  color: #fff;
+  color: #141414;
   font-weight: 600;
   letter-spacing: 0.05em;
   line-height: 1.25em;
@@ -253,24 +348,27 @@ h2 span {
   position: absolute;
   width: 105%;
   height: 105%;
-  border: rgba(255, 255, 255, 0.108) solid 3px;
+  border: var(--clr) solid 1px;
 }
 
 .nav ul li a .active {
+  -webkit-animation: fadeInLeft;
+          animation: fadeInLeft;
+  -webkit-animation-duration: 0.6s;
+          animation-duration: 0.6s;
   z-index: -1;
   position: absolute;
   width: 105%;
   height: 105%;
-  -webkit-box-shadow: 8px 7px 8px -2px rgba(0, 0, 0, 0.37);
-          box-shadow: 8px 7px 8px -2px rgba(0, 0, 0, 0.37);
+  -webkit-box-shadow: 8px 7px 8px -2px var(--clr);
+          box-shadow: 8px 7px 8px -2px var(--clr);
   background: white;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.367)), to(rgba(255, 255, 255, 0.164)));
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.367) 0%, rgba(255, 255, 255, 0.164) 100%);
+  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.274)), to(rgba(255, 255, 255, 0.11)));
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.274) 0%, rgba(255, 255, 255, 0.11) 100%);
   border: rgba(255, 255, 255, 0.108) solid 1px;
-  border-radius: 5%;
   padding: 4px;
-  -webkit-backdrop-filter: blur(2px);
-          backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
 }
 
 .nav ul li a::before {
@@ -297,5 +395,21 @@ h2 span {
 
 .nav img {
   width: 40px;
+}
+
+.nav ul li .hovered::before {
+  content: attr(data-text);
+  z-index: 9999;
+  position: absolute;
+  color: var(--clr);
+  width: 100% !important;
+  overflow: hidden;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  border-right: 8px solid var(--clr);
+  -webkit-text-stroke: 1px var(--clr);
+  -webkit-filter: drop-shadow(0px 0px 15px var(--clr));
+          filter: drop-shadow(0px 0px 15px var(--clr));
+  text-shadow: 0 0 20px var(--clr);
 }
 /*# sourceMappingURL=styles.css.map */
