@@ -1,8 +1,50 @@
 @import url('https://fonts.googleapis.com/css2?family=Koulen&family=Open+Sans&family=Oswald&family=Roboto+Flex:opsz@8..144&display=swap');
 
-$page1-crl:'#8cc0dd';
-$page2-crl:#ffa021;
-$page3-crl:'#a5db9f';
+	$about-me-clr: #00bcd4;
+	$skills-clr: #ffa021ff;
+	$projects-clr: #a5db9fff;
+
+
+
+  @mixin nav-style ()
+{
+   ul{
+    list-style-type:none;
+    li{
+      color:red;
+    }
+  }
+}
+ 
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900');
+*
+{
+	
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif;
+	text-decoration: none;
+	
+
+}
+a{
+	color: white;
+	text-shadow:   0 0 35px white !important ;
+	&:hover{
+		text-decoration: underline;
+		
+	}
+}
+
+::selection {
+	color: rgb(0, 0, 0);
+	background: rgb(255, 255, 255);
+  }
+// $page1-crl:#8cc0ddff;
+// $page2-crl:#ffa021ff;
+// $page3-crl:#a5db9fff;
 
 // .gg
 // {
@@ -74,7 +116,7 @@ body {
 	// background-repeat: no-repeat;
 	// background-attachment: fixed;
     // background-color: #ececec;
-    background-color: #ffffff;
+    background-color: #000000;
     padding: 0;
     margin: 0;
    
@@ -84,10 +126,24 @@ body {
 
 h1 {
  
-    font-size: 3em;
+    font-size: 3.5em;
     // color: rgb(255, 255, 255);
     // text-shadow: 2px 2px 7px rgba(0, 0, 0, 0.893);
    	text-align: center;
+
+   
+}
+h2 {
+ 
+    font-size: 2.3em;
+    
+
+   
+}
+h3 {
+ 
+    font-size: 1.3em;
+    
 
    
 }
@@ -117,44 +173,112 @@ h1 {
         }
         #about-me{
 			h2{
-				color: var(--clr);
+				text-align: center;
 			}
+			text-shadow:   0 0 35px $about-me-clr ;
+			.me{
+				h3 {
+ 
+					color: $about-me-clr;
+					
+					text-align: center;
+				}
+			}
+			h2{
+				color:$about-me-clr;
+				// padding: 50px ;
+
+			}
+			.about-me-container{
+				display: flex;
+				justify-content: space-evenly;
+			.edu{
+				width: 35%;
+				padding: 30px;
+				
+				h2{
+					color:$about-me-clr;
+					padding-bottom: 5px;
+
+				}
+				h3{
+					color:$about-me-clr;
+					// text-align: center;
+	
+				}
+			}
+
+			.info{
+				width: 35%;
+				padding: 25px;
+				h2{
+					color:$about-me-clr;
+					padding-bottom: 5px;
+
+				}
+				h3{
+					color:$about-me-clr;
+					// text-align: center;
+	
+				}
+			}
+		}
 		
 			background-image:  url(./assets/bg-dark-10.jpg);
-			background-color: #202124;
+			// background-color: #272727;
+			// background-image: radial-gradient(circle at center center, transparent,rgb(0,0,0)),repeating-linear-gradient(135deg, rgb(0,0,0) 0px, rgb(0,0,0) 2px,transparent 2px, transparent 10px,rgb(0,0,0) 10px, rgb(0,0,0) 11px,transparent 11px, transparent 21px),repeating-linear-gradient(45deg, rgba(0,188,212, 0.5) 0px, rgba(0,188,212, 0.5) 4px,transparent 4px, transparent 8px),linear-gradient(90deg, rgb(0,0,0),rgb(0,0,0));
+			// background-image: linear-gradient(90deg, rgb(33,33,33) 0%,transparent 59%),repeating-linear-gradient(45deg, rgba(0,188,212, 0.32) 0px, rgba(0,188,212, 0.32) 1px,transparent 1px, transparent 13px),repeating-linear-gradient(135deg, rgba(0,188,212, 0.32) 0px, rgba(0,188,212, 0.32) 1px,transparent 1px, transparent 13px),linear-gradient(90deg, rgb(33,33,33),rgb(33,33,33));
+			
+			// background-color: #202124;
 			background-size: cover;
 			// background-image:  url(./assets/bg-blue.jpg);
 			// background: rgb(0,176,255);
 			// background: linear-gradient(0deg, rgba(0,159,255,1) 0%, rgba(0,47,199,1) 100%);
-
+			.about-me-card{
+							opacity: 0;
+							background: linear-gradient(270deg, rgba(224, 224, 224, 0.141) 10%, rgba(255, 255, 255, 0.042) 50%);
+    						border: rgba(255, 255, 255, 0.108) solid 1px;
+    						margin: 50px;
+    						backdrop-filter: blur(8px);
+							box-shadow: 7px 7px 10px -1px $about-me-clr;
+			}
 
         }
         #skills{
 			background-image:  url(./assets/bg-dark-10.jpg);
+			
 			background-size: cover;
 			background-color: #202124;
+			position: relative;
 			// background-image: url(./assets/bg-orange.jpg);
 			// background: #007991;  /* fallback for old browsers */
 			// background: linear-gradient(180deg, rgba(0,47,199,1) 0%, rgba(0,209,203,1) 100%);
 			
-				
+					
 						.skills{
 							width: 100%;
 							max-width: 60%;
 							padding: 0 20px;
 							margin: 0 auto;
-							margin-top: 40px;
+							margin-top: 95px;
 							background: linear-gradient(270deg, rgba(224, 224, 224, 0.141) 10%, rgba(255, 255, 255, 0.042) 50%);
     						border: rgba(255, 255, 255, 0.108) solid 1px;
     						padding: 44px;
     						backdrop-filter: blur(8px);
-							box-shadow: 7px 7px 10px -1px #ff9f21b3;
+							box-shadow: 7px 7px 10px -1px $skills-clr;
+							opacity: 0;
+							position: absolute;
+							left: 50%;
+							top: 50%;
+							transform: translate(-50%, -60%);
+							
 						}
 						
 						.skill-name{
 							font-size: 18px;
 							font-weight: 700;
 							color: #f1f1f1;
+							text-shadow:   0 0 25px white  ;
 							text-transform: uppercase;
 							margin: 20px 0;
 						}
@@ -168,11 +292,11 @@ h1 {
 						
 						.skill-per{
 							height: 14px;
-							background: $page2-crl;
+							background: $skills-clr;
 							border-radius: 3px;
 							position: relative;
 							animation: fillBars 2.5s 1;
-							box-shadow: 0px 0px 8px 3px $page2-crl;
+							box-shadow: 0px 0px 8px 3px $skills-clr;
 						}
 						
 						.skill-per::before{
@@ -228,7 +352,8 @@ h1 {
 .title{
     margin: auto;
     width: 100%;
-    padding: 10px;
+    padding: 85px 0 0 0;
+
 	h1{
 		opacity: 0;
 	}
@@ -240,15 +365,7 @@ h1 {
 
 
 
-@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900');
-*
-{
-	
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	font-family: 'Open Sans', sans-serif;
-}
+
 
 .photo-container 
 {
@@ -265,6 +382,7 @@ h1 {
 	position: relative;
 	width: 100%;
 	height: 100%;
+	
 	background: rgba(0,0,0,0.5);
 	overflow: hidden;
 	border-radius: 50%;
@@ -349,7 +467,27 @@ h1 {
 }
 .content  
 {
-	.personal{position: absolute;
+	h2 
+{
+
+	position: relative;
+	z-index: 2;
+	font-size: 1.2em;
+	text-align: center;
+	color: rgb(20, 20, 20) !important;
+	font-weight: 600;
+	letter-spacing: 0.05em;
+	line-height: 1.25em;
+	text-transform: uppercase;
+}
+h2 span 
+{
+	font-weight: 300;
+	font-size: 0.75em;
+}
+	.personal{
+		
+		position: absolute;
 		top: 0;
 		left: 0;
 		width: 100%;
@@ -364,39 +502,51 @@ h1 {
 {
 	opacity: 0;
 }
-h2 
-{
-	position: relative;
-	z-index: 2;
-	font-size: 1.25em;
-	text-align: center;
-	color: rgb(20, 20, 20);
-	font-weight: 600;
-	letter-spacing: 0.05em;
-	line-height: 1.25em;
-	text-transform: uppercase;
-}
-h2 span 
-{
-	font-weight: 300;
-	font-size: 0.75em;
-}
 
 
-.nav{
+.color-picker{
 	z-index: 111;
 	position: sticky;
-	top: 35%;
+	top: 15%;
 	margin-left: 20px;
 	height: 0px;
-	display: flex;
-	justify-content: flex-start;
-	align-items: flex-start;
+}
+
+
+.nav-clr{
+	box-shadow: var(--clr) 0px 5px 10px;
+	background: linear-gradient(270deg, rgba(224, 224, 224, 0.180) 10%, rgba(255, 255, 255, 0.150) 50%);
+	border-bottom: var(--clr) solid 2px;
+	position: sticky;
+	height: 72px;
+	top:0%;
+	z-index: 2;
+	backdrop-filter: blur(8px);
+}
+.nav{
+	// z-index: 111;
+	// position: sticky;
+	// top: 35%;
+	// margin-left: 20px;
+	// height: 0px;
+	// display: flex;
+	// justify-content: flex-start;
+	// align-items: flex-start;
+
+	z-index: 111;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 1.5%;
+    
+    height: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
 	
 	ul{
 		position: relative;
 		display: flex;
-		flex-direction: column;
+		flex-direction: row;
 		gap: 70px;
 		// left: 3%;
 		// top: 25vh;
@@ -412,7 +562,7 @@ h2 span
 		
 			a{	
 				text-transform: uppercase;
-				z-index: 9999;
+				z-index: 500;
 				position: relative;
 				color: white;
 				text-decoration: none;
@@ -423,7 +573,7 @@ h2 span
 				.links{
 					position: absolute;
 					width: 105%;
-						height: 105%;
+					height: 105%;
 					border:var(--clr) solid 1px;
 					
 				}
@@ -447,7 +597,7 @@ h2 span
 						
 				}
 				&::before{
-					z-index: 9999;
+					z-index: 600;
 					content:attr(data-text);
 					position: absolute;
 					color: var(--clr);
@@ -490,7 +640,7 @@ h2 span
 
 .nav ul li .hovered::before {
 	content:attr(data-text);
-	z-index: 9999;
+	z-index: 700;
 	position: absolute;
 	color: var(--clr);
 	width: 100% !important;
@@ -556,3 +706,6 @@ h2 span
 // }
 
 
+.di{
+	height: 85px;
+}

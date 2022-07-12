@@ -20,10 +20,13 @@ backInLeft = document.querySelectorAll(".backInLeft");
 backInRight = document.querySelectorAll(".backInRight");
 rubberBand = document.querySelectorAll(".rubberBand");
 fadeInUp = document.querySelectorAll(".fadeInUp");
+fadeInRight = document.querySelectorAll(".fadeInRight");
+fadeInLeft = document.querySelectorAll(".fadeInLeft");
+fadeIn = document.querySelectorAll(".fadeIn");
 skillsList = document.querySelectorAll(".skill-per");
 skillsList1 = document.querySelectorAll(".skills");
-listOfEffects = ['backInLeft', 'backInRight', 'rubberBand', 'fadeInUp'];
-list = [backInLeft, backInRight, rubberBand, fadeInUp];
+listOfEffects = ['backInLeft', 'backInRight', 'rubberBand', 'fadeInUp', 'fadeInRight', 'fadeInLeft', 'fadeIn'];
+list = [backInLeft, backInRight, rubberBand, fadeInUp, fadeInRight, fadeInLeft, fadeIn];
 var vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
 items = document.querySelectorAll(".container");
 window.addEventListener("scroll", function () {
@@ -72,9 +75,11 @@ window.addEventListener("scroll", function () {
 var li = document.querySelectorAll(".links");
 var hove = document.querySelectorAll("a");
 var sec = document.querySelectorAll("section");
+var navBg = document.querySelectorAll(".nav-bg");
 
 function activeMenu() {
   var len = sec.length;
+  var navLen = navBg.length;
 
   while (--len && window.scrollY + 97 < sec[len].offsetTop) {}
 
@@ -86,6 +91,10 @@ function activeMenu() {
     return i.classList.remove("hovered");
   });
   hove[len].classList.add("hovered");
+  navBg.forEach(function (i) {
+    return i.classList.remove("nav-clr");
+  });
+  navBg[len].classList.add("nav-clr");
 }
 
 activeMenu();

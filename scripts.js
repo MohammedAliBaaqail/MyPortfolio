@@ -32,12 +32,15 @@ backInLeft = document.querySelectorAll(".backInLeft");
 backInRight = document.querySelectorAll(".backInRight");
 rubberBand = document.querySelectorAll(".rubberBand");
 fadeInUp = document.querySelectorAll(".fadeInUp");
+fadeInRight = document.querySelectorAll(".fadeInRight");
+fadeInLeft = document.querySelectorAll(".fadeInLeft");
+fadeIn = document.querySelectorAll(".fadeIn");
 
 skillsList = document.querySelectorAll(".skill-per");
 skillsList1 = document.querySelectorAll(".skills");
 
-listOfEffects = ['backInLeft','backInRight','rubberBand','fadeInUp']
-list = [backInLeft,backInRight,rubberBand,fadeInUp];
+listOfEffects = ['backInLeft','backInRight','rubberBand','fadeInUp','fadeInRight','fadeInLeft','fadeIn']
+list = [backInLeft,backInRight,rubberBand,fadeInUp,fadeInRight,fadeInLeft,fadeIn];
 
 
 
@@ -108,14 +111,21 @@ window.addEventListener("scroll", () => {
         const li=document.querySelectorAll(".links");
         const hove=document.querySelectorAll("a");
         const sec=document.querySelectorAll("section");
+        const navBg=document.querySelectorAll(".nav-bg");
+
 
         function activeMenu(){
             let len=sec.length;
+            let navLen=navBg.length
             while(--len && window.scrollY + 97 < sec[len].offsetTop){} 
             li.forEach(ltx => ltx.classList.remove("active" ));
             li[len].classList.add("active" );
             hove.forEach(i => i.classList.remove( "hovered"));
             hove[len].classList.add("hovered" );
+            navBg.forEach(i => i.classList.remove("nav-clr"));
+            navBg[len].classList.add("nav-clr" );
+            
+            
                              }
 
         activeMenu();
@@ -210,3 +220,4 @@ window.addEventListener("scroll", () => {
       }
     })
   }
+
