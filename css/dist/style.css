@@ -207,9 +207,11 @@ h3 {
   justify-content: center;
 }
 #work .slide-container {
+  opacity: 0;
   max-width: 90%;
   width: 100%;
   padding: 40px 0;
+  backdrop-filter: blur(10px);
 }
 #work .slide-content {
   margin: 40px;

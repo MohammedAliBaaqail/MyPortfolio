@@ -266,9 +266,12 @@ h3 {
 }
 
 #work .slide-container {
+  opacity: 0;
   max-width: 90%;
   width: 100%;
   padding: 40px 0;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
 }
 
 #work .slide-content {
