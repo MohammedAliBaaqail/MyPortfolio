@@ -746,7 +746,7 @@ h3 {
     font-size: 1.2em;
   }
   h3 {
-    font-size: 0.8em;
+    font-size: 0.7em;
   }
   .about-me-card, #about-me .me, .photo-container, #skills .skills, #work .slide-container {
     opacity: 1 !important;
@@ -792,7 +792,7 @@ h3 {
     margin: 20px auto;
   }
   #about-me .about-me-container .edu {
-    padding: 10px;
+    padding: 8px;
   }
   #about-me .about-me-container {
     -webkit-box-orient: vertical;
@@ -801,16 +801,16 @@ h3 {
             flex-direction: column;
   }
   #about-me .about-me-container .info {
-    padding: 10px;
-    margin: 10px;
+    padding: 8px;
+    margin: 15px;
     width: 85%;
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
   }
   #about-me .about-me-container .edu {
-    padding: 10px;
-    margin: 10px;
+    padding: 8px;
+    margin: 15px;
     width: 85%;
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
