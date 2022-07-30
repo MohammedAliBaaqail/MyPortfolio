@@ -464,6 +464,7 @@ h3 {
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 1;
 }
 .photo-box:before {
   content: "";
@@ -761,4 +762,106 @@ h3 {
 .medium-zoom-image{
       
   z-index: 999;
+}
+
+
+
+
+@media only screen and (max-width: 1000px) {
+  html {
+    overflow: auto;
+    overflow-x: auto;
+    scroll-snap-type: none;
+    scroll-behavior: smooth;
+  }
+  .nav-clr{
+    height: 50px;
+  }
+  h1{
+    font-size: 1.5em;
+  }
+  h2{
+    font-size: 1.2em;
+  }
+  h3{
+    font-size:0.8em;
+  }
+  .about-me-card,#about-me .me,.photo-container,#skills .skills,#work .slide-container{
+    opacity: 1 !important;
+  }
+  body{
+     background-image: url(../assets/bg-dark-10.jpg); 
+     background-size: cover;
+  }
+  #skills,#work,#about-me{
+    background-image: none !important; 
+     
+    background-color: #ffffff00 !important;
+   
+  }
+  
+   
+  .animate__fadeInUp{
+    animation: none !important;
+
+  }
+  .animate__fadeIn{
+    animation: none !important;
+
+  }
+  #work .card-image .zoom{
+    height: 75%;
+  }
+  #work .button{
+    margin: 0px;
+    padding: 0px;
+  }
+  .nav{
+     ul{
+      gap: 20px;
+     }
+    a{
+      font-size: 1em !important;
+     }
+  }
+
+  #about-me{
+    .me{
+      width: 85%;
+    
+    margin: 20px auto;
+    }
+     .about-me-container .edu{
+      padding: 10px;
+     }
+     .about-me-container{
+      flex-direction: column;
+      .info{
+        padding: 10px;
+        width: 85%;
+        align-self: center;
+       }
+       .edu{
+        padding: 10px;
+        width: 85%;
+        align-self: center;
+       }
+     } 
+    
+     
+    
+  }
+  #skills{
+    .skills{
+      max-width: 85%;
+    }
+  }
+  #work{
+   
+    .name{
+      font-size: 1em;
+    }
+  }
+  
+   
 }

@@ -473,6 +473,7 @@ h3 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  z-index: 1;
 }
 
 .photo-box:before {
@@ -725,5 +726,92 @@ h3 {
 
 .medium-zoom-image {
   z-index: 999;
+}
+
+@media only screen and (max-width: 1000px) {
+  html {
+    overflow: auto;
+    overflow-x: auto;
+    -ms-scroll-snap-type: none;
+        scroll-snap-type: none;
+    scroll-behavior: smooth;
+  }
+  .nav-clr {
+    height: 50px;
+  }
+  h1 {
+    font-size: 1.5em;
+  }
+  h2 {
+    font-size: 1.2em;
+  }
+  h3 {
+    font-size: 0.8em;
+  }
+  .about-me-card, #about-me .me, .photo-container, #skills .skills, #work .slide-container {
+    opacity: 1 !important;
+  }
+  body {
+    background-image: url(../assets/bg-dark-10.jpg);
+    background-size: cover;
+  }
+  #skills, #work, #about-me {
+    background-image: none !important;
+    background-color: #ffffff00 !important;
+  }
+  .animate__fadeInUp {
+    -webkit-animation: none !important;
+            animation: none !important;
+  }
+  .animate__fadeIn {
+    -webkit-animation: none !important;
+            animation: none !important;
+  }
+  #work .card-image .zoom {
+    height: 75%;
+  }
+  #work .button {
+    margin: 0px;
+    padding: 0px;
+  }
+  .nav ul {
+    gap: 20px;
+  }
+  .nav a {
+    font-size: 1em !important;
+  }
+  #about-me .me {
+    width: 85%;
+    margin: 20px auto;
+  }
+  #about-me .about-me-container .edu {
+    padding: 10px;
+  }
+  #about-me .about-me-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #about-me .about-me-container .info {
+    padding: 10px;
+    width: 85%;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  #about-me .about-me-container .edu {
+    padding: 10px;
+    width: 85%;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  #skills .skills {
+    max-width: 85%;
+  }
+  #work .name {
+    font-size: 1em;
+  }
 }
 /*# sourceMappingURL=style.css.map */
