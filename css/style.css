@@ -780,6 +780,13 @@ h3 {
   .nav a {
     font-size: 1em !important;
   }
+  #about-me .photo-container {
+    width: 150px;
+    height: 150px;
+  }
+  #about-me .photo-box:before {
+    inset: 0px 45px !important;
+  }
   #about-me .me {
     width: 85%;
     margin: 20px auto;
@@ -811,6 +818,7 @@ h3 {
   }
   #skills .skills {
     max-width: 85%;
+    padding: 0px 20px 20px;
   }
   #skills .skill-per-mb {
     -webkit-animation: none !important;
@@ -829,6 +837,9 @@ h3 {
   }
   #work .card-content .card-links {
     padding: 3px;
+  }
+  #work .swiper-wrapper {
+    height: 71vh;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -826,6 +826,18 @@ h3 {
   }
 
   #about-me{
+    .photo-container{
+      width: 150px;
+      height: 150px;
+      
+    }
+    .photo-box{
+      &:before{
+        inset: 0px 45px !important;
+      }
+        
+      }
+    
     .me{
       width: 85%;
     
@@ -849,13 +861,15 @@ h3 {
         align-self: center;
        }
      } 
+    }
     
      
     
-  }
+  
   #skills{
     .skills{
       max-width: 85%;
+      padding: 0px 20px 20px;
     }
     .skill-per-mb{
       animation: none !important;
@@ -899,6 +913,9 @@ h3 {
     }
     .card-content .card-links{
       padding: 3px;
+    }
+    .swiper-wrapper{
+      height: 71vh;
     }
   }
   
