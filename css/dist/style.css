@@ -625,11 +625,13 @@ h3 {
   }
   #about-me .about-me-container .info {
     padding: 10px;
+    margin: 10px;
     width: 85%;
     align-self: center;
   }
   #about-me .about-me-container .edu {
     padding: 10px;
+    margin: 10px;
     width: 85%;
     align-self: center;
   }
@@ -637,8 +639,14 @@ h3 {
   #skills .skills {
     max-width: 85%;
   }
+  #skills .skill-per-mb {
+    animation: none !important;
+  }
 
   #work .name {
     font-size: 1em;
+  }
+  #work .card-content .card-links {
+    padding: 3px;
   }
 }

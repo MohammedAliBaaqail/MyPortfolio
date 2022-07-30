@@ -838,11 +838,13 @@ h3 {
       flex-direction: column;
       .info{
         padding: 10px;
+        margin: 10px;
         width: 85%;
         align-self: center;
        }
        .edu{
         padding: 10px;
+        margin: 10px;
         width: 85%;
         align-self: center;
        }
@@ -855,11 +857,17 @@ h3 {
     .skills{
       max-width: 85%;
     }
+    .skill-per-mb{
+      animation: none !important;
+    }
   }
   #work{
    
     .name{
       font-size: 1em;
+    }
+    .card-content .card-links{
+      padding: 3px;
     }
   }
   
