@@ -815,6 +815,14 @@ h3 {
   #skills .skill-per-mb {
     -webkit-animation: none !important;
             animation: none !important;
+    height: 14px;
+    background: #ff5349;
+    border-radius: 3px;
+    position: relative;
+    -webkit-animation: fillBars 2.5s 1;
+    animation: fillBars 2.5s 1;
+    -webkit-box-shadow: 0px 0px 8px 3px #ff5349;
+    box-shadow: 0px 0px 8px 3px #ff5349;
   }
   #work .name {
     font-size: 1em;
