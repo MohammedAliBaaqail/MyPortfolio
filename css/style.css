@@ -6,7 +6,7 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: 'Saira Semi Condensed', sans-serif;
+  font-family: "Saira Semi Condensed", sans-serif;
   text-decoration: none;
 }
 
@@ -141,12 +141,10 @@ h3 {
 
 #about-me .about-me-card {
   opacity: 0;
-  background: -webkit-gradient(linear, right top, left top, color-stop(10%, rgba(224, 224, 224, 0.141)), color-stop(50%, rgba(255, 255, 255, 0.042)));
-  background: linear-gradient(270deg, rgba(224, 224, 224, 0.141) 10%, rgba(255, 255, 255, 0.042) 50%);
   border: rgba(8, 130, 108, 0.751) solid 2px;
   margin: 50px;
-  -webkit-backdrop-filter: blur(8px);
-          backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(6px);
+          backdrop-filter: blur(6px);
   -webkit-box-shadow: 7px 7px 10px -1px #0fe7bf;
           box-shadow: 7px 7px 10px -1px #0fe7bf;
 }
@@ -164,14 +162,12 @@ h3 {
   padding: 0 20px;
   margin: 0 auto;
   margin-top: 95px;
-  background: -webkit-gradient(linear, right top, left top, color-stop(10%, rgba(224, 224, 224, 0.141)), color-stop(50%, rgba(255, 255, 255, 0.042)));
-  background: linear-gradient(270deg, rgba(224, 224, 224, 0.141) 10%, rgba(255, 255, 255, 0.042) 50%);
   border: #ff52499d solid 2px;
   padding: 44px;
-  -webkit-backdrop-filter: blur(8px);
-          backdrop-filter: blur(8px);
-  -webkit-box-shadow: 7px 7px 10px -1px #FF5349;
-          box-shadow: 7px 7px 10px -1px #FF5349;
+  -webkit-backdrop-filter: blur(6px);
+          backdrop-filter: blur(6px);
+  -webkit-box-shadow: 7px 7px 10px -1px #ff5349;
+          box-shadow: 7px 7px 10px -1px #ff5349;
   opacity: 0;
   position: absolute;
   left: 50%;
@@ -197,13 +193,13 @@ h3 {
 
 #skills .skill-per {
   height: 14px;
-  background: #FF5349;
+  background: #ff5349;
   border-radius: 3px;
   position: relative;
   -webkit-animation: fillBars 2.5s 1;
           animation: fillBars 2.5s 1;
-  -webkit-box-shadow: 0px 0px 8px 3px #FF5349;
-          box-shadow: 0px 0px 8px 3px #FF5349;
+  -webkit-box-shadow: 0px 0px 8px 3px #ff5349;
+          box-shadow: 0px 0px 8px 3px #ff5349;
 }
 
 #skills .skill-per::before {
@@ -265,6 +261,19 @@ h3 {
           justify-content: center;
 }
 
+#work .card.swiper-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 #work .slide-container {
   opacity: 0;
   max-width: 90%;
@@ -281,13 +290,11 @@ h3 {
 }
 
 #work .card {
-  background: -webkit-gradient(linear, right top, left top, color-stop(10%, rgba(224, 224, 224, 0.141)), color-stop(50%, rgba(255, 255, 255, 0.042)));
-  background: linear-gradient(270deg, rgba(224, 224, 224, 0.141) 10%, rgba(255, 255, 255, 0.042) 50%);
   border: #99cd329d solid 2px;
-  -webkit-backdrop-filter: blur(8px);
-          backdrop-filter: blur(8px);
-  -webkit-box-shadow: 7px 7px 10px -1px #9ACD32;
-          box-shadow: 7px 7px 10px -1px #9ACD32;
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+  -webkit-box-shadow: 7px 7px 10px -1px #9acd32;
+          box-shadow: 7px 7px 10px -1px #9acd32;
 }
 
 #work .image-content,
@@ -305,27 +312,35 @@ h3 {
   padding: 10px 14px;
 }
 
+#work .image-content h2,
+#work .card-content h2 {
+  color: #9acd32;
+}
+
+#work .image-content .card-links,
+#work .card-content .card-links {
+  padding: 20px;
+}
+
 #work .image-content {
   position: relative;
   row-gap: 5px;
   padding: 25px 0;
 }
 
-#work .overlay {
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  background-image: url(../assets/bg-dark-4.jpg);
-}
-
 #work .card-image {
+  z-index: 999;
   position: relative;
-  height: 200px;
+  height: 250px;
   width: 95%;
   background-image: url(../assets/bg-dark-5.jpg);
   padding: 3px;
+}
+
+#work .card-image .zoom {
+  width: 100%;
+  height: 250px;
+  z-index: 999;
 }
 
 #work .card-image .card-img {
@@ -333,7 +348,6 @@ h3 {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  border: 4px solid #4070F4;
 }
 
 #work .name {
@@ -349,30 +363,40 @@ h3 {
 }
 
 #work .button {
+  position: relative;
   border: none;
   font-size: 16px;
-  color: #FFF;
+  color: white;
   padding: 8px 16px;
-  background-color: #4070F4;
-  border-radius: 6px;
+  background-color: #9acd32;
+  border-radius: 2px;
+  border: solid 2px #00000000;
   margin: 14px;
   cursor: pointer;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 #work .button:hover {
-  background: #265DF2;
+  background: none;
+  color: #9acd32;
+  -webkit-box-shadow: 3px 3px 10px -1px #9acd32;
+          box-shadow: 3px 3px 10px -1px #9acd32;
+  border: solid 2px #9acd32;
 }
 
 #work .swiper-navBtn {
-  color: #6E93f7;
+  color: #9acd32;
   -webkit-transition: color 0.3s ease;
   transition: color 0.3s ease;
 }
 
 #work .swiper-navBtn:hover {
-  color: #4070F4;
+  color: #ffffff;
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 
 #work .swiper-navBtn::before,
@@ -389,15 +413,16 @@ h3 {
 }
 
 #work .swiper-pagination-bullet {
-  background-color: #6E93f7;
-  opacity: 1;
+  background-color: #ffffff;
+  opacity: 0;
 }
 
 #work .swiper-pagination-bullet-active {
-  background-color: #4070F4;
+  background-color: #9acd32;
 }
 
-#work .swiper-android .swiper-slide, #work .swiper-wrapper {
+#work .swiper-android .swiper-slide,
+#work .swiper-wrapper {
   -webkit-transform: translate3d(0px, 0, 0);
           transform: translate3d(0px, 0, 0);
   height: 65vh;
@@ -451,7 +476,7 @@ h3 {
 }
 
 .photo-box:before {
-  content: '';
+  content: "";
   position: absolute;
   inset: 0px 80px;
   -webkit-transition: 0.5s;
@@ -585,7 +610,7 @@ h3 {
   z-index: 111;
   position: -webkit-sticky;
   position: sticky;
-  top: 1.5%;
+  top: 1.2%;
   height: 0px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -696,5 +721,9 @@ h3 {
 
 .di {
   height: 85px;
+}
+
+.medium-zoom-image {
+  z-index: 999;
 }
 /*# sourceMappingURL=style.css.map */

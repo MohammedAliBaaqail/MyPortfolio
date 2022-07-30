@@ -2,6 +2,7 @@
   "dependencies": {
     "animate.css": "^4.1.1",
     "jsdom": "^20.0.0",
+    "medium-zoom": "^1.0.6",
     "particlesjs": "^2.2.3"
   }
 }
