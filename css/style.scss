@@ -6,14 +6,7 @@ $about-me-clr: #0fe7bf;
 $skills-clr: #ff5349;
 $work-clr: #9acd32;
 
-@mixin nav-style() {
-  ul {
-    list-style-type: none;
-    li {
-      color: red;
-    }
-  }
-}
+
 
 * {
   margin: 0;
@@ -46,11 +39,9 @@ html {
 }
 
 body {
-  // background-image:  url(./assets/bg-dark-1.jpg);
-  // background-size: cover;
-  // background-repeat: no-repeat;
+ 
+  background-image: url(../assets/bg-dark-10.jpg); 
   // background-attachment: fixed;
-  // background-color: #ececec;
   background-color: #000000;
   padding: 0;
   margin: 0;
@@ -115,7 +106,7 @@ h3 {
     display: flex;
     justify-content: space-evenly;
     .edu {
-      width: 35%;
+      // width: 35%;
       padding: 30px;
 
       h2 {
@@ -129,7 +120,7 @@ h3 {
     }
 
     .info {
-      width: 35%;
+      // width: 35%;
       padding: 25px;
       h2 {
         color: $about-me-clr;
@@ -431,7 +422,7 @@ h3 {
       margin: 0 10px;
     }
     .swiper-navBtn {
-      display: none;
+      // display: none;
     }
   }
 }
@@ -791,7 +782,7 @@ h3 {
   }
   body{
      background-image: url(../assets/bg-dark-10.jpg); 
-     background-size: cover;
+     background-attachment: fixed;
   }
   #skills,#work,#about-me{
     background-image: none !important; 

@@ -32,6 +32,7 @@ html {
 }
 
 body {
+  background-image: url(../assets/bg-dark-10.jpg);
   background-color: #000000;
   padding: 0;
   margin: 0;
@@ -93,7 +94,6 @@ h3 {
   justify-content: space-evenly;
 }
 #about-me .about-me-container .edu {
-  width: 35%;
   padding: 30px;
 }
 #about-me .about-me-container .edu h2 {
@@ -104,7 +104,6 @@ h3 {
   color: #0fe7bf;
 }
 #about-me .about-me-container .info {
-  width: 35%;
   padding: 25px;
 }
 #about-me .about-me-container .info h2 {
@@ -327,9 +326,6 @@ h3 {
 @media screen and (max-width: 768px) {
   #work .slide-content {
     margin: 0 10px;
-  }
-  #work .swiper-navBtn {
-    display: none;
   }
 }
 
@@ -581,7 +577,7 @@ h3 {
 
   body {
     background-image: url(../assets/bg-dark-10.jpg);
-    background-size: cover;
+    background-attachment: fixed;
   }
 
   #skills, #work, #about-me {
