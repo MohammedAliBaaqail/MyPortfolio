@@ -20,14 +20,8 @@ a {
   background: white;
 }
 
-.fadeIn {
-  transform: translate(0) scale(0.5);
-}
-
 .scroll-effect {
   opacity: 1 !important;
-  transform: translate(0) scale(1);
-  transition-duration: 0.6s;
 }
 
 html {
@@ -64,7 +58,8 @@ h3 {
 }
 
 .animate__animated {
-  animation-duration: 1.7s !important;
+  animation-duration: 0.7s !important;
+  transition: ease-in-out;
 }
 
 .main .section {
@@ -571,7 +566,7 @@ h3 {
 }
 
 .di {
-  height: 85px;
+  height: 140px;
 }
 
 .medium-zoom-image {

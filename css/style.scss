@@ -24,14 +24,13 @@ a {
   color: rgb(0, 0, 0);
   background: rgb(255, 255, 255);
 }
-.fadeIn{
-  transform: translate(0) scale(0.5);
-}
+
 .scroll-effect {
   opacity: 1 !important;
-  transform: translate(0) scale(1);
-  transition-duration: .6s;
+ 
+ 
 }
+
 
 html {
   overflow: scroll;
@@ -66,7 +65,8 @@ h3 {
   background: transparent; /* make scrollbar transparent */
 }
 .animate__animated {
-  animation-duration: 1.7s !important;
+  animation-duration: .7s !important;
+  transition: ease-in-out;
 }
 
 .main {
@@ -767,7 +767,7 @@ h3 {
 // }
 
 .di {
-  height: 85px;
+  height: 140px;
 }
 
 .medium-zoom-image {

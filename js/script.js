@@ -61,9 +61,12 @@ var swiper = new Swiper(".slide-content", {
 // backInRight = document.querySelectorAll(".backInRight");
 // rubberBand = document.querySelectorAll(".rubberBand");
 // fadeInUp = document.querySelectorAll(".fadeInUp");
+// fadeInDown = document.querySelectorAll(".fadeInDown");
 // fadeInRight = document.querySelectorAll(".fadeInRight");
 // fadeInLeft = document.querySelectorAll(".fadeInLeft");
-fadeIn = document.querySelectorAll(".fadeIn");
+// fadeIn = document.querySelectorAll(".fadeIn");
+// bounceIn = document.querySelectorAll(".bounceIn");
+zoomIn = document.querySelectorAll(".zoomIn");
 
 skillsList = document.querySelectorAll(".skill-per");
 skillsList1 = document.querySelectorAll(".skills");
@@ -73,18 +76,25 @@ listOfEffects = [
   // "backInRight",
   // "rubberBand",
   // "fadeInUp",
+  // "fadeInDown",
   // "fadeInRight",
   // "fadeInLeft",
-  "fadeIn",
+  // "fadeIn",
+  // "bounceIn",
+  "zoomIn"
+  
 ];
 list = [
   // backInLeft,
   // backInRight,
   // rubberBand,
   // fadeInUp,
+  // fadeInDown,
   // fadeInRight,
   // fadeInLeft,
-  fadeIn,
+  // fadeIn,
+  // bounceIn,
+  zoomIn
 ];
 
 const vh = Math.max(
@@ -132,12 +142,12 @@ window.addEventListener(
           contentPosition < screenPosition &&
           contentPosition + vh > screenPosition
         ) {
-          // list[j][i].classList.add("animate__animated");
-          // list[j][i].classList.add(`animate__${listOfEffects[j]}`);
+          list[j][i].classList.add("animate__animated");
+          list[j][i].classList.add(`animate__${listOfEffects[j]}`);
           list[j][i].classList.add("scroll-effect");
         } else {
-          // list[j][i].classList.add("animate__animated");
-          // list[j][i].classList.remove(`animate__${listOfEffects[j]}`);
+          list[j][i].classList.add("animate__animated");
+          list[j][i].classList.remove(`animate__${listOfEffects[j]}`);
           list[j][i].classList.remove("scroll-effect");
         }
       } //end of 'i' for loop

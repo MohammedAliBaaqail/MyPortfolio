@@ -26,17 +26,8 @@ a {
   background: white;
 }
 
-.fadeIn {
-  -webkit-transform: translate(0) scale(0.5);
-          transform: translate(0) scale(0.5);
-}
-
 .scroll-effect {
   opacity: 1 !important;
-  -webkit-transform: translate(0) scale(1);
-          transform: translate(0) scale(1);
-  -webkit-transition-duration: .6s;
-          transition-duration: .6s;
 }
 
 html {
@@ -74,8 +65,10 @@ h3 {
 }
 
 .animate__animated {
-  -webkit-animation-duration: 1.7s !important;
-          animation-duration: 1.7s !important;
+  -webkit-animation-duration: .7s !important;
+          animation-duration: .7s !important;
+  -webkit-transition: ease-in-out;
+  transition: ease-in-out;
 }
 
 .main .section {
@@ -737,7 +730,7 @@ h3 {
 }
 
 .di {
-  height: 85px;
+  height: 140px;
 }
 
 .medium-zoom-image {
