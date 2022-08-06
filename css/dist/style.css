@@ -20,8 +20,14 @@ a {
   background: white;
 }
 
-.op {
-  opacity: 1;
+.fadeIn {
+  transform: translate(0) scale(0.5);
+}
+
+.scroll-effect {
+  opacity: 1 !important;
+  transform: translate(0) scale(1);
+  transition-duration: 0.6s;
 }
 
 html {
@@ -55,6 +61,10 @@ h3 {
   width: 0px;
   background: transparent;
   /* make scrollbar transparent */
+}
+
+.animate__animated {
+  animation-duration: 1.7s !important;
 }
 
 .main .section {
@@ -127,6 +137,11 @@ h3 {
   background-color: #202124;
   position: relative;
 }
+#skills .skills-container {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+}
 #skills .skills {
   width: 100%;
   max-width: 60%;
@@ -135,13 +150,14 @@ h3 {
   margin-top: 95px;
   border: #ff52499d solid 2px;
   padding: 44px;
+  -webkit-backdrop-filter: blur(6px);
   backdrop-filter: blur(6px);
+  -webkit-box-shadow: 7px 7px 10px -1px #ff5349;
   box-shadow: 7px 7px 10px -1px #ff5349;
   opacity: 0;
   position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -60%);
+  left: 20%;
+  top: 15%;
 }
 #skills .skill-name {
   font-size: 18px;
@@ -213,39 +229,42 @@ h3 {
   max-width: 90%;
   width: 100%;
   padding: 40px 0;
-  backdrop-filter: blur(10px);
 }
 #work .slide-content {
   margin: 40px;
-  padding: 10px;
+  padding: 14px;
   overflow: hidden;
 }
-#work .card {
+
+.card {
   border: #99cd329d solid 2px;
   backdrop-filter: blur(4px);
   box-shadow: 7px 7px 10px -1px #9acd32;
 }
-#work .image-content,
-#work .card-content {
+
+.image-content,
+.card-content {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 10px 14px;
 }
-#work .image-content h2,
-#work .card-content h2 {
+.image-content h2,
+.card-content h2 {
   color: #9acd32;
 }
-#work .image-content .card-links,
-#work .card-content .card-links {
+.image-content .card-links,
+.card-content .card-links {
   padding: 20px;
 }
-#work .image-content {
+
+.image-content {
   position: relative;
   row-gap: 5px;
   padding: 25px 0;
 }
-#work .card-image {
+
+.card-image {
   z-index: 999;
   position: relative;
   height: 250px;
@@ -253,27 +272,31 @@ h3 {
   background-image: url(../assets/bg-dark-5.jpg);
   padding: 3px;
 }
-#work .card-image .zoom {
+.card-image .zoom {
   width: 100%;
   height: 250px;
   z-index: 999;
 }
-#work .card-image .card-img {
+
+.card-image .card-img {
   height: 100%;
   width: 100%;
   object-fit: cover;
 }
-#work .name {
+
+.name {
   font-size: 18px;
   font-weight: 500;
   color: #333;
 }
-#work .description {
+
+.description {
   font-size: 14px;
   color: #707070;
   text-align: center;
 }
-#work .button {
+
+.button {
   position: relative;
   border: none;
   font-size: 16px;
@@ -286,49 +309,57 @@ h3 {
   cursor: pointer;
   transition: all 0.2s ease;
 }
-#work .button:hover {
+.button:hover {
   background: none;
   color: #9acd32;
   box-shadow: 3px 3px 10px -1px #9acd32;
   border: solid 2px #9acd32;
 }
-#work .swiper-navBtn {
+
+.swiper-navBtn {
   color: #9acd32;
   transition: color 0.3s ease;
 }
-#work .swiper-navBtn:hover {
+
+.swiper-navBtn:hover {
   color: #ffffff;
   transform: scale(1.5);
   transition: 0.2s ease-in-out;
 }
-#work .swiper-navBtn::before,
-#work .swiper-navBtn::after {
+
+.swiper-navBtn::before,
+.swiper-navBtn::after {
   font-size: 35px;
 }
-#work .swiper-button-next {
+
+.swiper-button-next {
   right: 0;
 }
-#work .swiper-button-prev {
+
+.swiper-button-prev {
   left: 0;
 }
-#work .swiper-pagination-bullet {
+
+.swiper-pagination-bullet {
   background-color: #ffffff;
   opacity: 0;
 }
-#work .swiper-pagination-bullet-active {
+
+.swiper-pagination-bullet-active {
   background-color: #9acd32;
 }
-#work .swiper-android .swiper-slide,
-#work .swiper-wrapper {
+
+.swiper-android .swiper-slide,
+.swiper-wrapper {
   transform: translate3d(0px, 0, 0);
   height: 65vh;
 }
+
 @media screen and (max-width: 768px) {
-  #work .slide-content {
-    margin: 0 10px;
+  .slide-content {
+    margin: 0;
   }
 }
-
 .title {
   margin: auto;
   width: 100%;
@@ -571,7 +602,11 @@ h3 {
     font-size: 0.7em;
   }
 
-  .about-me-card, #about-me .me, .photo-container, #skills .skills, #work .slide-container {
+  .about-me-card,
+#about-me .me,
+.photo-container,
+#skills .skills,
+#work .slide-container {
     opacity: 1 !important;
   }
 
@@ -580,7 +615,9 @@ h3 {
     background-attachment: fixed;
   }
 
-  #skills, #work, #about-me {
+  #skills,
+#work,
+#about-me {
     background-image: none !important;
     background-color: #ffffff00 !important;
   }
@@ -663,5 +700,9 @@ h3 {
   }
   #work .swiper-wrapper {
     height: 71vh;
+  }
+  #work .slide-content {
+    padding: 0 14px 14px 0;
+    margin: 3px;
   }
 }

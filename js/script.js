@@ -57,33 +57,33 @@ var swiper = new Swiper(".slide-content", {
 
 // [start] for adding animation effects on scroll-----------------------------------------
 
-backInLeft = document.querySelectorAll(".backInLeft");
-backInRight = document.querySelectorAll(".backInRight");
-rubberBand = document.querySelectorAll(".rubberBand");
-fadeInUp = document.querySelectorAll(".fadeInUp");
-fadeInRight = document.querySelectorAll(".fadeInRight");
-fadeInLeft = document.querySelectorAll(".fadeInLeft");
+// backInLeft = document.querySelectorAll(".backInLeft");
+// backInRight = document.querySelectorAll(".backInRight");
+// rubberBand = document.querySelectorAll(".rubberBand");
+// fadeInUp = document.querySelectorAll(".fadeInUp");
+// fadeInRight = document.querySelectorAll(".fadeInRight");
+// fadeInLeft = document.querySelectorAll(".fadeInLeft");
 fadeIn = document.querySelectorAll(".fadeIn");
 
 skillsList = document.querySelectorAll(".skill-per");
 skillsList1 = document.querySelectorAll(".skills");
 
 listOfEffects = [
-  "backInLeft",
-  "backInRight",
-  "rubberBand",
-  "fadeInUp",
-  "fadeInRight",
-  "fadeInLeft",
+  // "backInLeft",
+  // "backInRight",
+  // "rubberBand",
+  // "fadeInUp",
+  // "fadeInRight",
+  // "fadeInLeft",
   "fadeIn",
 ];
 list = [
-  backInLeft,
-  backInRight,
-  rubberBand,
-  fadeInUp,
-  fadeInRight,
-  fadeInLeft,
+  // backInLeft,
+  // backInRight,
+  // rubberBand,
+  // fadeInUp,
+  // fadeInRight,
+  // fadeInLeft,
   fadeIn,
 ];
 
@@ -112,11 +112,11 @@ window.addEventListener(
       ) {
         skillsList[i].classList.add("skill-per");
 
-        skillsList[i].classList.add("op");
+        skillsList[i].classList.add("scroll-effect");
       } else {
         skillsList[i].classList.remove("skill-per");
 
-        skillsList[i].classList.remove("op");
+        skillsList[i].classList.remove("scroll-effect");
       }
     }
 
@@ -132,13 +132,13 @@ window.addEventListener(
           contentPosition < screenPosition &&
           contentPosition + vh > screenPosition
         ) {
-          list[j][i].classList.add("animate__animated");
-          list[j][i].classList.add(`animate__${listOfEffects[j]}`);
-          list[j][i].classList.add("op");
+          // list[j][i].classList.add("animate__animated");
+          // list[j][i].classList.add(`animate__${listOfEffects[j]}`);
+          list[j][i].classList.add("scroll-effect");
         } else {
-          list[j][i].classList.add("animate__animated");
-          list[j][i].classList.remove(`animate__${listOfEffects[j]}`);
-          list[j][i].classList.remove("op");
+          // list[j][i].classList.add("animate__animated");
+          // list[j][i].classList.remove(`animate__${listOfEffects[j]}`);
+          list[j][i].classList.remove("scroll-effect");
         }
       } //end of 'i' for loop
     } //end of 'j' for loop

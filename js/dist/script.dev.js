@@ -43,18 +43,30 @@ var swiper = new Swiper(".slide-content", {
 // }
 // ( contentPosition < screenPosition && (contentPosition+screenPosition) > screenPosition )
 // [start] for adding animation effects on scroll-----------------------------------------
+// backInLeft = document.querySelectorAll(".backInLeft");
+// backInRight = document.querySelectorAll(".backInRight");
+// rubberBand = document.querySelectorAll(".rubberBand");
+// fadeInUp = document.querySelectorAll(".fadeInUp");
+// fadeInRight = document.querySelectorAll(".fadeInRight");
+// fadeInLeft = document.querySelectorAll(".fadeInLeft");
 
-backInLeft = document.querySelectorAll(".backInLeft");
-backInRight = document.querySelectorAll(".backInRight");
-rubberBand = document.querySelectorAll(".rubberBand");
-fadeInUp = document.querySelectorAll(".fadeInUp");
-fadeInRight = document.querySelectorAll(".fadeInRight");
-fadeInLeft = document.querySelectorAll(".fadeInLeft");
 fadeIn = document.querySelectorAll(".fadeIn");
 skillsList = document.querySelectorAll(".skill-per");
 skillsList1 = document.querySelectorAll(".skills");
-listOfEffects = ["backInLeft", "backInRight", "rubberBand", "fadeInUp", "fadeInRight", "fadeInLeft", "fadeIn"];
-list = [backInLeft, backInRight, rubberBand, fadeInUp, fadeInRight, fadeInLeft, fadeIn];
+listOfEffects = [// "backInLeft",
+// "backInRight",
+// "rubberBand",
+// "fadeInUp",
+// "fadeInRight",
+// "fadeInLeft",
+"fadeIn"];
+list = [// backInLeft,
+// backInRight,
+// rubberBand,
+// fadeInUp,
+// fadeInRight,
+// fadeInLeft,
+fadeIn];
 var vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
 items = document.querySelectorAll(".container");
 window.addEventListener("scroll", function () {
@@ -68,10 +80,10 @@ window.addEventListener("scroll", function () {
 
     if (contentPositionTop < screenPosition && contentPositionTop + vh > screenPosition) {
       skillsList[i].classList.add("skill-per");
-      skillsList[i].classList.add("op");
+      skillsList[i].classList.add("scroll-effect");
     } else {
       skillsList[i].classList.remove("skill-per");
-      skillsList[i].classList.remove("op");
+      skillsList[i].classList.remove("scroll-effect");
     }
   }
 
@@ -83,13 +95,13 @@ window.addEventListener("scroll", function () {
       // console.log('screenPosition',screenPosition)
 
       if (_contentPosition < _screenPosition && _contentPosition + vh > _screenPosition) {
-        list[j][i].classList.add("animate__animated");
-        list[j][i].classList.add("animate__".concat(listOfEffects[j]));
-        list[j][i].classList.add("op");
+        // list[j][i].classList.add("animate__animated");
+        // list[j][i].classList.add(`animate__${listOfEffects[j]}`);
+        list[j][i].classList.add("scroll-effect");
       } else {
-        list[j][i].classList.add("animate__animated");
-        list[j][i].classList.remove("animate__".concat(listOfEffects[j]));
-        list[j][i].classList.remove("op");
+        // list[j][i].classList.add("animate__animated");
+        // list[j][i].classList.remove(`animate__${listOfEffects[j]}`);
+        list[j][i].classList.remove("scroll-effect");
       }
     } //end of 'i' for loop
 
