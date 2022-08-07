@@ -76,6 +76,19 @@ h3 {
   height: 100vh;
 }
 
+.main .section .links-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main .section .links-container a {
+  padding: 5px 5px 0;
+}
+
 .main .section h1 {
   letter-spacing: 1px;
   color: var(--clr);
@@ -86,6 +99,10 @@ h3 {
   text-shadow: 0 0 35px #0fe7bf;
   background-image: url(../assets/bg-dark-10.jpg);
   background-size: cover;
+}
+
+#about-me .logo-link {
+  width: 40px;
 }
 
 #about-me a:hover {
@@ -551,10 +568,6 @@ h3 {
   padding: 5px 5px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-}
-
-.content a .wa {
-  width: 40px;
 }
 
 .content h2 {

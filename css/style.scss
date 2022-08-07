@@ -71,6 +71,14 @@ h3 {
 
 .main {
   .section {
+    .links-container{
+      a{
+        padding: 5px 5px 0;
+      }
+      
+      display: flex;
+      justify-content: center;
+    }
     scroll-snap-align: start;
     height: 100vh;
     h1 {
@@ -84,6 +92,9 @@ h3 {
   }
 }
 #about-me {
+  .logo-link {
+    width: 40px;
+  }
   a {
     &:hover {
       text-decoration: underline;
@@ -532,9 +543,7 @@ h3 {
     // letter-spacing: 0.05em;
     // text-decoration: none;
     transition: 0.5s;
-    .wa {
-      width: 40px;
-    }
+   
     // z-index: 1;
   }
   // a:hover
@@ -835,11 +844,14 @@ h3 {
   }
 
   #about-me {
+    
     .photo-container {
       width: 150px;
       height: 150px;
+      
     }
     .photo-box {
+      
       &:before {
         inset: 0px 45px !important;
       }
