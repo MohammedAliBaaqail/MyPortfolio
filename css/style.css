@@ -795,6 +795,10 @@ h3 {
     -webkit-animation: none !important;
             animation: none !important;
   }
+  .animate__zoomIn {
+    -webkit-animation: none !important;
+            animation: none !important;
+  }
   .animate__fadeIn {
     -webkit-animation: none !important;
             animation: none !important;

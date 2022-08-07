@@ -626,6 +626,10 @@ h3 {
     animation: none !important;
   }
 
+  .animate__zoomIn {
+    animation: none !important;
+  }
+
   .animate__fadeIn {
     animation: none !important;
   }
