@@ -31,7 +31,7 @@ a {
 }
 
 html {
-  overflow: scroll;
+  overflow: hidden;
   overflow-x: hidden;
   -ms-scroll-snap-type: y mandatory;
       scroll-snap-type: y mandatory;
@@ -756,7 +756,7 @@ h3 {
 
 @media only screen and (max-width: 1000px) {
   html {
-    overflow: auto;
+    overflow: auto !important;
     overflow-x: auto;
     -ms-scroll-snap-type: none;
         scroll-snap-type: none;
