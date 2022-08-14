@@ -28,7 +28,6 @@ html {
   overflow: hidden;
   overflow-x: hidden;
   scroll-snap-type: y mandatory;
-  scroll-behavior: smooth;
 }
 
 body {
@@ -60,6 +59,7 @@ h3 {
 .animate__animated {
   animation-duration: 0.7s !important;
   transition: ease-in-out;
+  animation-fill-mode: none !important;
 }
 
 .main .section {
@@ -84,6 +84,13 @@ h3 {
   background-image: url(../assets/bg-dark-10.jpg);
   background-size: cover;
 }
+#about-me .main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  justify-content: center;
+}
 #about-me .logo-link {
   width: 40px;
 }
@@ -95,7 +102,7 @@ h3 {
   text-align: center;
 }
 #about-me .me {
-  opacity: 0;
+  opacity: 1;
 }
 #about-me .me h3 {
   color: #0fe7bf;
@@ -129,7 +136,7 @@ h3 {
   color: #0fe7bf;
 }
 #about-me .about-me-card {
-  opacity: 0;
+  opacity: 1;
   border: rgba(8, 130, 108, 0.751) solid 2px;
   margin: 50px;
   backdrop-filter: blur(6px);
@@ -160,7 +167,7 @@ h3 {
   backdrop-filter: blur(6px);
   -webkit-box-shadow: 7px 7px 10px -1px #ff5349;
   box-shadow: 7px 7px 10px -1px #ff5349;
-  opacity: 0;
+  opacity: 1;
 }
 #skills .skill-name {
   font-size: 18px;
@@ -228,7 +235,7 @@ h3 {
   justify-content: space-between;
 }
 #work .slide-container {
-  opacity: 0;
+  opacity: 1;
   max-width: 90%;
   width: 100%;
   padding: 40px 0;
@@ -345,7 +352,7 @@ h3 {
 
 .swiper-pagination-bullet {
   background-color: #ffffff;
-  opacity: 0;
+  opacity: 1;
 }
 
 .swiper-pagination-bullet-active {
@@ -377,7 +384,7 @@ h3 {
   width: 200px;
   height: 200px;
   margin: auto;
-  opacity: 0;
+  opacity: 1;
 }
 
 .photo-box {

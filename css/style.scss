@@ -36,7 +36,7 @@ html {
   overflow: hidden;
   overflow-x: hidden;
   scroll-snap-type: y mandatory;
-  scroll-behavior: smooth;
+  // scroll-behavior: smooth;
 }
 
 body {
@@ -67,6 +67,7 @@ h3 {
 .animate__animated {
   animation-duration: .7s !important;
   transition: ease-in-out;
+  animation-fill-mode: none !important;
 }
 
 .main {
@@ -92,6 +93,13 @@ h3 {
   }
 }
 #about-me {
+  .main-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+  }
   .logo-link {
     width: 40px;
   }
@@ -106,7 +114,7 @@ h3 {
   }
   text-shadow: 0 0 35px $about-me-clr;
   .me {
-    opacity: 0;
+    opacity: 1;
     h3 {
       color: $about-me-clr;
 
@@ -159,7 +167,7 @@ h3 {
   // background: rgb(0,176,255);
   // background: linear-gradient(0deg, rgba(0,159,255,1) 0%, rgba(0,47,199,1) 100%);
   .about-me-card {
-    opacity: 0;
+    opacity: 1;
     // background: linear-gradient(
     //   270deg,
     //   rgba(224, 224, 224, 0.141) 10%,
@@ -222,7 +230,7 @@ h3 {
     backdrop-filter: blur(6px);
     -webkit-box-shadow: 7px 7px 10px -1px #ff5349;
     box-shadow: 7px 7px 10px -1px #ff5349;
-    opacity: 0;
+    opacity: 1;
     // position: absolute;
     // left: 20%;
     // top: 15%;
@@ -303,7 +311,7 @@ h3 {
     justify-content: space-between;
   }
   .slide-container {
-    opacity: 0;
+    opacity: 1;
     max-width: 90%;
     width: 100%;
     padding: 40px 0;
@@ -444,7 +452,7 @@ h3 {
 }
 .swiper-pagination-bullet {
   background-color: #ffffff;
-  opacity: 0;
+  opacity: 1;
 }
 .swiper-pagination-bullet-active {
   background-color: $work-clr;
@@ -478,7 +486,7 @@ h3 {
   width: 200px;
   height: 200px;
   margin: auto;
-  opacity: 0;
+  opacity: 1
 }
 .photo-box {
   position: relative;
@@ -948,5 +956,6 @@ h3 {
     }
   }
 }
+
 
 

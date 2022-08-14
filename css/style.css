@@ -35,7 +35,6 @@ html {
   overflow-x: hidden;
   -ms-scroll-snap-type: y mandatory;
       scroll-snap-type: y mandatory;
-  scroll-behavior: smooth;
 }
 
 body {
@@ -69,6 +68,8 @@ h3 {
           animation-duration: .7s !important;
   -webkit-transition: ease-in-out;
   transition: ease-in-out;
+  -webkit-animation-fill-mode: none !important;
+          animation-fill-mode: none !important;
 }
 
 .main .section {
@@ -101,6 +102,23 @@ h3 {
   background-size: cover;
 }
 
+#about-me .main-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 #about-me .logo-link {
   width: 40px;
 }
@@ -115,7 +133,7 @@ h3 {
 }
 
 #about-me .me {
-  opacity: 0;
+  opacity: 1;
 }
 
 #about-me .me h3 {
@@ -163,7 +181,7 @@ h3 {
 }
 
 #about-me .about-me-card {
-  opacity: 0;
+  opacity: 1;
   border: rgba(8, 130, 108, 0.751) solid 2px;
   margin: 50px;
   -webkit-backdrop-filter: blur(6px);
@@ -208,7 +226,7 @@ h3 {
   backdrop-filter: blur(6px);
   -webkit-box-shadow: 7px 7px 10px -1px #ff5349;
   box-shadow: 7px 7px 10px -1px #ff5349;
-  opacity: 0;
+  opacity: 1;
 }
 
 #skills .skill-name {
@@ -310,7 +328,7 @@ h3 {
 }
 
 #work .slide-container {
-  opacity: 0;
+  opacity: 1;
   max-width: 90%;
   width: 100%;
   padding: 40px 0;
@@ -447,7 +465,7 @@ h3 {
 
 .swiper-pagination-bullet {
   background-color: #ffffff;
-  opacity: 0;
+  opacity: 1;
 }
 
 .swiper-pagination-bullet-active {
@@ -482,7 +500,7 @@ h3 {
   width: 200px;
   height: 200px;
   margin: auto;
-  opacity: 0;
+  opacity: 1;
 }
 
 .photo-box {

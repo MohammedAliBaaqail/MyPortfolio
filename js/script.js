@@ -118,7 +118,7 @@ window.addEventListener(
 
       if (
         contentPositionTop < screenPosition &&
-        contentPositionTop + vh > screenPosition
+        contentPositionTop + vh > screenPosition 
       ) {
         skillsList[i].classList.add("skill-per");
 
@@ -140,7 +140,7 @@ window.addEventListener(
 
         if (
           contentPosition < screenPosition &&
-          contentPosition + vh > screenPosition
+          contentPosition + vh >  screenPosition
         ) {
           list[j][i].classList.add("animate__animated");
           list[j][i].classList.add(`animate__${listOfEffects[j]}`);
