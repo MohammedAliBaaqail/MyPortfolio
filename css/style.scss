@@ -198,39 +198,26 @@ h3 {
     // height: 100vh;
     // align-items: center;
     justify-content: center;
+    .skill{
+      width: 45%;
+      margin: 20px 0 0 0;
+    }
   }
   .skills {
-    // width: 100%;
-    // max-width: 60%;
-    // padding: 0 20px;
-    // margin: 0 auto;
-    // margin-top: 95px;
-    // // background: linear-gradient(
-    // //   270deg,
-    // //   rgba(224, 224, 224, 0.141) 10%,
-    // //   rgba(255, 255, 255, 0.042) 50%
-    // // );
-    // border: #ff52499d solid 2px;
-    // padding: 44px;
-    // backdrop-filter: blur(6px);
-    // box-shadow: 7px 7px 10px -1px $skills-clr;
-    // opacity: 0;
-    // position: absolute;
-    // left: 50%;
-    // top: 50%;
-    // transform: translate(-50%, -60%);
+    display: flex;
+    flex-wrap: wrap;
     width: 100%;
-    max-width: 60%;
-    padding: 0 20px;
+    max-width: 80%;
     margin: 0 auto;
     // margin-top: 95px;
     border: #ff52499d solid 2px;
-    padding: 44px;
+    padding: 0 40px 50px;
     -webkit-backdrop-filter: blur(6px);
     backdrop-filter: blur(6px);
     -webkit-box-shadow: 7px 7px 10px -1px #ff5349;
     box-shadow: 7px 7px 10px -1px #ff5349;
     opacity: 1;
+    justify-content: space-evenly;
     // position: absolute;
     // left: 20%;
     // top: 15%;
@@ -265,12 +252,14 @@ h3 {
     content: attr(per);
     position: absolute;
     padding: 4px 6px;
-    background: #f1f1f1;
+    background-color: #f1f1f1;
     border-radius: 4px;
     font-size: 12px;
-    top: -35px;
-    right: 0;
+    top: -7px;
+    right: -27px;
+    -webkit-transform: translateX(50%);
     transform: translateX(50%);
+    z-index: 2;
   }
 
   .skill-per::after {
@@ -279,8 +268,9 @@ h3 {
     width: 10px;
     height: 10px;
     background: #f1f1f1;
-    top: -15px;
-    right: 0;
+    top: 1px;
+    right: -11px;
+    -webkit-transform: translateX(50%) rotate(45deg);
     transform: translateX(50%) rotate(45deg);
     border-radius: 2px;
   }
@@ -900,6 +890,15 @@ h3 {
   }
 
   #skills {
+     .skills-container{
+      .skill-name{
+        margin: 5px 0;
+      }
+      .skill {
+        width: 100%;
+        // margin: 5px 10px;
+    }
+     } 
     .skills {
       max-width: 85%;
       padding: 0px 20px 20px;
