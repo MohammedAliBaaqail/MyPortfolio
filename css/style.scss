@@ -40,10 +40,10 @@ html {
 }
 
 body {
-  // background-image: url(../assets/bg-dark-10.jpg);
-  background-image:  url(../assets/bg-dark-4.jpg) !important;
+
+  background-image:  url(../assets/bg-dark-4.jpg)!important;
   background-size: cover !important;
-  
+  background-color: black !important;
   background-attachment: fixed;
   background-repeat: no-repeat;
  
@@ -321,7 +321,7 @@ h3 {
     // backdrop-filter: blur(10px);
   }
   .slide-content {
-    margin: 40px;
+    margin: 0 40px;
     padding: 14px;
     overflow: hidden;
     // border-radius: 25px;
@@ -346,7 +346,7 @@ h3 {
     color: $work-clr;
   }
   .card-links {
-    padding: 20px;
+    padding: 10px;
   }
   display: flex;
   flex-direction: column;
@@ -385,14 +385,15 @@ h3 {
   z-index: 999;
   .zoom {
     width: 100%;
-    height: 250px;
+    // height: 250px;
+    height: 100%;
     z-index: 999;
   }
   position: relative;
   height: 250px;
   width: 95%;
 
-  background-image: url(../assets/bg-dark-5.jpg);
+ 
   padding: 3px;
 }
 .card-image .card-img {
@@ -417,11 +418,11 @@ h3 {
   border: none;
   font-size: 16px;
   color: white;
-  padding: 8px 16px;
+  padding: 6px 8px;
   background-color: $work-clr;
   border-radius: 2px;
   border: solid 2px #00000000;
-  margin: 14px;
+  margin: 8px;
   cursor: pointer;
   transition: all 0.2s ease;
   &:hover {
@@ -463,7 +464,8 @@ h3 {
 .swiper-android .swiper-slide,
 .swiper-wrapper {
   transform: translate3d(0px, 0, 0);
-  height: 65vh;
+  // height: 65vh;
+  height: 670px;
 }
 @media screen and (max-width: 768px) {
   .slide-content {
@@ -830,7 +832,7 @@ h3 {
     // background-image: url(../assets/bg-dark-10.jpg);
     background-image:  url(../assets/bg-dark-4.jpg) !important;
     background-size: cover !important;
-    
+    background-color: black !important;
     background-attachment: fixed;
     background-repeat: no-repeat;
    

@@ -40,6 +40,7 @@ html {
 body {
   background-image: url(../assets/bg-dark-4.jpg) !important;
   background-size: cover !important;
+  background-color: black !important;
   background-attachment: fixed;
   background-repeat: no-repeat;
 }
@@ -346,7 +347,7 @@ h3 {
 }
 
 #work .slide-content {
-  margin: 40px;
+  margin: 0 40px;
   padding: 14px;
   overflow: hidden;
 }
@@ -381,7 +382,7 @@ h3 {
 
 .image-content .card-links,
 .card-content .card-links {
-  padding: 20px;
+  padding: 10px;
 }
 
 .image-content {
@@ -395,13 +396,12 @@ h3 {
   position: relative;
   height: 250px;
   width: 95%;
-  background-image: url(../assets/bg-dark-5.jpg);
   padding: 3px;
 }
 
 .card-image .zoom {
   width: 100%;
-  height: 250px;
+  height: 100%;
   z-index: 999;
 }
 
@@ -429,11 +429,11 @@ h3 {
   border: none;
   font-size: 16px;
   color: white;
-  padding: 8px 16px;
+  padding: 6px 8px;
   background-color: #9acd32;
   border-radius: 2px;
   border: solid 2px #00000000;
-  margin: 14px;
+  margin: 8px;
   cursor: pointer;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
@@ -487,7 +487,7 @@ h3 {
 .swiper-wrapper {
   -webkit-transform: translate3d(0px, 0, 0);
           transform: translate3d(0px, 0, 0);
-  height: 65vh;
+  height: 670px;
 }
 
 @media screen and (max-width: 768px) {
@@ -813,6 +813,7 @@ h3 {
   body {
     background-image: url(../assets/bg-dark-4.jpg) !important;
     background-size: cover !important;
+    background-color: black !important;
     background-attachment: fixed;
     background-repeat: no-repeat;
     padding: 0;
