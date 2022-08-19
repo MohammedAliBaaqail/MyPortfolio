@@ -39,13 +39,6 @@ html {
   // scroll-behavior: smooth;
 }
 
-body {
-  background-image: url(../assets/bg-dark-10.jpg);
-  // background-attachment: fixed;
-  background-color: #000000;
-  padding: 0;
-  margin: 0;
-}
 
 h1 {
   font-size: 3.5em;
@@ -69,7 +62,13 @@ h3 {
   transition: ease-in-out;
   animation-fill-mode: none !important;
 }
-
+#skills,
+#work,
+#about-me {
+  background-image:  url(../assets/bg-dark-4.jpg) !important;
+  background-size: cover !important;
+  background-color: #232323 !important;
+}
 .main {
   .section {
     .links-container{
@@ -93,6 +92,16 @@ h3 {
   }
 }
 #about-me {
+  // background-image: url(../assets/bg-dark-4.jpg);
+  // background-color: #272727;
+  // background-image: radial-gradient(circle at center center, transparent,rgb(0,0,0)),repeating-linear-gradient(135deg, rgb(0,0,0) 0px, rgb(0,0,0) 2px,transparent 2px, transparent 10px,rgb(0,0,0) 10px, rgb(0,0,0) 11px,transparent 11px, transparent 21px),repeating-linear-gradient(45deg, rgba(0,188,212, 0.5) 0px, rgba(0,188,212, 0.5) 4px,transparent 4px, transparent 8px),linear-gradient(90deg, rgb(0,0,0),rgb(0,0,0));
+  // background-image: linear-gradient(90deg, rgb(33,33,33) 0%,transparent 59%),repeating-linear-gradient(45deg, rgba(0,188,212, 0.32) 0px, rgba(0,188,212, 0.32) 1px,transparent 1px, transparent 13px),repeating-linear-gradient(135deg, rgba(0,188,212, 0.32) 0px, rgba(0,188,212, 0.32) 1px,transparent 1px, transparent 13px),linear-gradient(90deg, rgb(33,33,33),rgb(33,33,33));
+
+  // background-color: #202124;
+  // background-size: cover;
+  // background-image:  url(./assets/bg-blue.jpg);
+  // background: rgb(0,176,255);
+  // background: linear-gradient(0deg, rgba(0,159,255,1) 0%, rgba(0,47,199,1) 100%);
   .main-container{
     display: flex;
     flex-direction: column;
@@ -156,16 +165,7 @@ h3 {
     }
   }
 
-  background-image: url(../assets/bg-dark-10.jpg);
-  // background-color: #272727;
-  // background-image: radial-gradient(circle at center center, transparent,rgb(0,0,0)),repeating-linear-gradient(135deg, rgb(0,0,0) 0px, rgb(0,0,0) 2px,transparent 2px, transparent 10px,rgb(0,0,0) 10px, rgb(0,0,0) 11px,transparent 11px, transparent 21px),repeating-linear-gradient(45deg, rgba(0,188,212, 0.5) 0px, rgba(0,188,212, 0.5) 4px,transparent 4px, transparent 8px),linear-gradient(90deg, rgb(0,0,0),rgb(0,0,0));
-  // background-image: linear-gradient(90deg, rgb(33,33,33) 0%,transparent 59%),repeating-linear-gradient(45deg, rgba(0,188,212, 0.32) 0px, rgba(0,188,212, 0.32) 1px,transparent 1px, transparent 13px),repeating-linear-gradient(135deg, rgba(0,188,212, 0.32) 0px, rgba(0,188,212, 0.32) 1px,transparent 1px, transparent 13px),linear-gradient(90deg, rgb(33,33,33),rgb(33,33,33));
 
-  // background-color: #202124;
-  background-size: cover;
-  // background-image:  url(./assets/bg-blue.jpg);
-  // background: rgb(0,176,255);
-  // background: linear-gradient(0deg, rgba(0,159,255,1) 0%, rgba(0,47,199,1) 100%);
   .about-me-card {
     opacity: 1;
     // background: linear-gradient(
@@ -184,10 +184,10 @@ h3 {
   justify-content: center;
   align-content: center;
   flex-direction: column;
-  background-image: url(../assets/bg-dark-10.jpg);
+  // background-image: url(../assets/bg-dark-10.jpg);
 
-  background-size: cover;
-  background-color: #202124;
+  // background-size: cover;
+  // background-color: #202124;
   position: relative;
   // background-image: url(./assets/bg-orange.jpg);
   // background: #007991;  /* fallback for old browsers */
@@ -285,9 +285,9 @@ h3 {
   }
 }
 #work {
-  background-image: url(../assets/bg-dark-10.jpg);
-  background-size: cover;
-  background-color: #202124;
+  // background-image: url(../assets/bg-dark-10.jpg);
+  // background-size: cover;
+  // background-color: #202124;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -814,16 +814,19 @@ h3 {
     opacity: 1 !important;
   }
   body {
-    background-image: url(../assets/bg-dark-10.jpg);
+    // background-image: url(../assets/bg-dark-10.jpg);
     background-attachment: fixed;
+    background-color: #000000;
+    padding: 0;
+    margin: 0;
   }
-  #skills,
-  #work,
-  #about-me {
-    background-image: none !important;
+  // #skills,
+  // #work,
+  // #about-me {
+  //   background-image: url(../assets/bg-dark-10.jpg) !important;
 
-    background-color: #ffffff00 !important;
-  }
+  //   background-color: #2b2b2b !important;
+  // }
 
   .animate__fadeInUp {
     animation: none !important;
