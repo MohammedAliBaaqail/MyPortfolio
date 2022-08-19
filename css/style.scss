@@ -39,7 +39,16 @@ html {
   // scroll-behavior: smooth;
 }
 
-
+body {
+  // background-image: url(../assets/bg-dark-10.jpg);
+  background-image:  url(../assets/bg-dark-4.jpg) !important;
+  background-size: cover !important;
+  
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+ 
+  
+}
 h1 {
   font-size: 3.5em;
   // color: rgb(255, 255, 255);
@@ -65,9 +74,9 @@ h3 {
 #skills,
 #work,
 #about-me {
-  background-image:  url(../assets/bg-dark-4.jpg) !important;
-  background-size: cover !important;
-  background-color: #232323 !important;
+  // background-image:  url(../assets/bg-dark-4.jpg) !important;
+  // background-size: cover !important;
+  // background-color: #232323 !important;
 }
 .main {
   .section {
@@ -111,6 +120,9 @@ h3 {
   }
   .logo-link {
     width: 40px;
+    &:hover{
+     transform: scale(1.1);
+    }
   }
   a {
     &:hover {
@@ -167,6 +179,7 @@ h3 {
 
 
   .about-me-card {
+    width: 600px;
     opacity: 1;
     // background: linear-gradient(
     //   270deg,
@@ -815,8 +828,12 @@ h3 {
   }
   body {
     // background-image: url(../assets/bg-dark-10.jpg);
+    background-image:  url(../assets/bg-dark-4.jpg) !important;
+    background-size: cover !important;
+    
     background-attachment: fixed;
-    background-color: #000000;
+    background-repeat: no-repeat;
+   
     padding: 0;
     margin: 0;
   }
@@ -880,13 +897,13 @@ h3 {
       .info {
         padding: 8px;
         margin: 15px;
-        width: 85%;
+        width: 95%;
         align-self: center;
       }
       .edu {
         padding: 8px;
         margin: 15px;
-        width: 85%;
+        width: 95%;
         align-self: center;
       }
     }
