@@ -284,13 +284,13 @@ h3 {
   z-index: 999;
   position: relative;
   height: 100%;
-  width: 95%;
   padding: 3px;
 }
 .card-image .zoom {
   width: 100%;
   height: 25vh;
   z-index: 999;
+  padding: 5px;
 }
 
 .card-image .card-img {
