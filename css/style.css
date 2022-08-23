@@ -17,7 +17,7 @@ a {
 }
 
 a:hover {
-  text-decoration: underline;
+  text-decoration: underline !important;
   text-shadow: 0 0 35px, 0 0 10px rgba(255, 255, 255, 0.622) !important;
 }
 
