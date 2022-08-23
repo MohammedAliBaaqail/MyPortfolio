@@ -16,6 +16,11 @@ a {
   text-shadow: 0 0 35px white !important;
 }
 
+a:hover {
+  text-decoration: underline;
+  text-shadow: 0 0 35px, 0 0 10px rgba(255, 255, 255, 0.622) !important;
+}
+
 ::-moz-selection {
   color: black;
   background: white;
@@ -125,11 +130,6 @@ h3 {
 #about-me .logo-link:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
-}
-
-#about-me a:hover {
-  text-decoration: underline;
-  text-shadow: 0 0 35px, 0 0 10px rgba(255, 255, 255, 0.622) !important;
 }
 
 #about-me h2 {
