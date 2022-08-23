@@ -525,6 +525,7 @@ h3 {
   text-decoration: none;
   letter-spacing: 2px;
   font-size: 1.7em;
+  font-weight: 600;
 }
 .nav ul li a .links {
   position: absolute;
