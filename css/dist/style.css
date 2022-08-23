@@ -9,13 +9,13 @@
   text-decoration: none;
 }
 
-a {
+.link {
   color: white;
   font-weight: bolder;
   text-shadow: 0 0 35px white !important;
 }
-a:hover {
-  text-decoration: underline !important;
+.link:hover {
+  text-decoration: underline;
   text-shadow: 0 0 35px, 0 0 10px rgba(255, 255, 255, 0.622) !important;
 }
 

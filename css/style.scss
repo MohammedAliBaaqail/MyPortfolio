@@ -14,12 +14,12 @@ $work-clr: #9acd32;
   font-family: "Saira Semi Condensed", sans-serif;
   text-decoration: none;
 }
-a {
+.link {
   color: white;
   font-weight: bolder;
   text-shadow: 0 0 35px white !important ;
   &:hover {
-    text-decoration: underline !important;
+    text-decoration: underline ;
     text-shadow: 0 0 35px, 0 0 10px rgba(255, 255, 255, 0.622) !important ;
   }
 }
@@ -87,6 +87,7 @@ h3 {
     .links-container{
       a{
         padding: 5px 5px 0;
+
       }
       
       display: flex;
@@ -725,6 +726,7 @@ h3 {
           -webkit-text-stroke: 1px var(--clr);
           filter: drop-shadow(0px 0px 15px var(--clr));
           text-shadow: 0 0 20px var(--clr);
+          
         }
       }
     }
