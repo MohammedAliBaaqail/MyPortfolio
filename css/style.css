@@ -704,6 +704,7 @@ h3 {
   text-decoration: none;
   letter-spacing: 2px;
   font-size: 1.7em;
+  font-weight: 600;
 }
 
 .nav ul li a .links {
@@ -904,9 +905,6 @@ h3 {
   }
   #work .card-content .card-links {
     padding: 3px;
-  }
-  #work .swiper-wrapper {
-    height: 71vh;
   }
   #work .slide-content {
     padding: 0 14px 14px 0;
