@@ -715,6 +715,9 @@ h3 {
   #work .card-content .card-links {
     padding: 3px;
   }
+  #work .swiper-wrapper {
+    height: 600px;
+  }
   #work .slide-content {
     padding: 0 14px 14px 0;
     margin: 3px;
