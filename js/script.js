@@ -122,11 +122,11 @@ window.addEventListener(
       ) {
         skillsList[i].classList.add("skill-per");
 
-        skillsList[i].classList.add("scroll-effect");
+        // skillsList[i].classList.add("scroll-effect");
       } else {
         skillsList[i].classList.remove("skill-per");
 
-        skillsList[i].classList.remove("scroll-effect");
+        // skillsList[i].classList.remove("scroll-effect");
       }
     }
 

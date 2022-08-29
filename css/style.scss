@@ -812,6 +812,7 @@ h3 {
     overflow-x: auto;
     scroll-snap-type: none;
     scroll-behavior: smooth;
+    
   }
 
   .nav-clr {
@@ -843,6 +844,7 @@ h3 {
    
     padding: 0;
     margin: 0;
+   
   }
   // #skills,
   // #work,
@@ -901,6 +903,7 @@ h3 {
     }
     .about-me-container {
       flex-direction: column;
+      width: 90%;
       .info {
         padding: 8px;
         margin: 15px;
@@ -940,6 +943,31 @@ h3 {
       animation: fillBars 2.5s 1;
       -webkit-box-shadow: 0px 0px 8px 3px #ff5349;
       box-shadow: 0px 0px 8px 3px #ff5349;
+        &::before {
+          content: attr(per);
+          position: absolute;
+          padding: 4px 6px;
+          background-color: #f1f1f1;
+          border-radius: 4px;
+          font-size: 12px;
+          top: -7px;
+          right: -27px;
+          -webkit-transform: translateX(50%);
+          transform: translateX(50%);
+          z-index: 2;
+      }
+        &::after {
+          content: "";
+          position: absolute;
+          width: 10px;
+          height: 10px;
+          background: #f1f1f1;
+          top: 1px;
+          right: -11px;
+          -webkit-transform: translateX(50%) rotate(45deg);
+          transform: translateX(50%) rotate(45deg);
+          border-radius: 2px;
+      }
     }
     // &::before{
     //   content: attr(per);
@@ -982,6 +1010,7 @@ h3 {
       
     }
   }
+
 }
 
 

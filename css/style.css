@@ -861,6 +861,7 @@ h3 {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    width: 90%;
   }
   #about-me .about-me-container .info {
     padding: 8px;
@@ -899,6 +900,31 @@ h3 {
     animation: fillBars 2.5s 1;
     -webkit-box-shadow: 0px 0px 8px 3px #ff5349;
     box-shadow: 0px 0px 8px 3px #ff5349;
+  }
+  #skills .skill-per-mb::before {
+    content: attr(per);
+    position: absolute;
+    padding: 4px 6px;
+    background-color: #f1f1f1;
+    border-radius: 4px;
+    font-size: 12px;
+    top: -7px;
+    right: -27px;
+    -webkit-transform: translateX(50%);
+    transform: translateX(50%);
+    z-index: 2;
+  }
+  #skills .skill-per-mb::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: #f1f1f1;
+    top: 1px;
+    right: -11px;
+    -webkit-transform: translateX(50%) rotate(45deg);
+    transform: translateX(50%) rotate(45deg);
+    border-radius: 2px;
   }
   #work .name {
     font-size: 1em;
