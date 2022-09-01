@@ -238,7 +238,7 @@ window.addEventListener("scroll", activeMenu); // [end] for active navigation --
 //   background:'#ffffff00'
 // }));
 
-mediumZoom('.zoom', {
+mediumZoom(".zoom", {
   margin: 50,
-  background: '#000000'
+  background: "#000000"
 });

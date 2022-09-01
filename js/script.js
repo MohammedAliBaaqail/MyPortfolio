@@ -1,6 +1,3 @@
-
-
-
 var swiper = new Swiper(".slide-content", {
   slidesPerView: 3,
   spaceBetween: 25,
@@ -81,8 +78,7 @@ listOfEffects = [
   // "fadeInLeft",
   // "fadeIn",
   // "bounceIn",
-  "zoomIn"
-  
+  "zoomIn",
 ];
 list = [
   // backInLeft,
@@ -94,7 +90,7 @@ list = [
   // fadeInLeft,
   // fadeIn,
   // bounceIn,
-  zoomIn
+  zoomIn,
 ];
 
 const vh = Math.max(
@@ -118,7 +114,7 @@ window.addEventListener(
 
       if (
         contentPositionTop < screenPosition &&
-        contentPositionTop + vh > screenPosition 
+        contentPositionTop + vh > screenPosition
       ) {
         skillsList[i].classList.add("skill-per");
 
@@ -140,7 +136,7 @@ window.addEventListener(
 
         if (
           contentPosition < screenPosition &&
-          contentPosition + vh >  screenPosition
+          contentPosition + vh > screenPosition
         ) {
           list[j][i].classList.add("animate__animated");
           list[j][i].classList.add(`animate__${listOfEffects[j]}`);
@@ -277,9 +273,7 @@ window.addEventListener("scroll", activeMenu);
 //   },
 // });
 
-
 // const next_btn = document.getElementsByClassName("swiper-button-next");
-
 
 // next_btn.addEventListener("click", mediumZoom('.zoom',{
 //   margin:50,
@@ -287,9 +281,7 @@ window.addEventListener("scroll", activeMenu);
 
 // }));
 
-mediumZoom('.zoom',{
-  margin:50,
-  background:'#000000'
-  
-
-})
+mediumZoom(".zoom", {
+  margin: 50,
+  background: "#000000",
+});
