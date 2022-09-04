@@ -20,5 +20,6 @@
         "commandCenter.border": "#15202b99"
     },
     "peacock.color": "#f3d807",
-    "compile-hero.disable-compile-files-on-did-save-code": false
+    "compile-hero.disable-compile-files-on-did-save-code": false,
+    "liveServer.settings.port": 5501
 }
