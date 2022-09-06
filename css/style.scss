@@ -2,13 +2,12 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Saira+Semi+Condensed:wght@300&display=swap");
 
-// $about-me-clr: #e7dc0f;
-// $skills-clr: #ff49bf;
-// $work-clr: #4e32cd;
-$about-me-clr: #e7c30f;
-$skills-clr: #e42525;
-$work-clr: #32bbcd;
 
+:root {   
+  --about-me-clr: #ffbf00; 
+  --skills-clr: #ff0000; 
+  --work-clr: #009dff; 
+}
 * {
   margin: 0;
   padding: 0;
@@ -16,6 +15,67 @@ $work-clr: #32bbcd;
   // font-family: 'Open Sans', sans-serif;
   font-family: "Saira Semi Condensed", sans-serif;
   text-decoration: none;
+}
+.reset-button{
+  width: 29px;
+  height: 29px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+  transform: translateY(-1px);
+}
+.color-button{
+  background-image: url(../assets/arrow.png);
+  background-size: contain;
+  background-color: #00000000;
+  border: none;
+  width: 45px;
+  height: 45px;
+  padding: 0;
+  position: fixed;
+  cursor: pointer;
+  z-index: 110;
+  top: 12px;
+  left: 20px;
+  transition:  ease-in-out 0.5s;
+
+  &.open{
+  
+    transform: translateX(150px) rotateY(180deg);
+
+
+    // transition:ease-in-out 0.5s;
+  }
+}
+.color-pickers{
+  font-size: 55px;
+  background-color: #070a1c;
+  border-right:2px solid #fffffe; ;
+  padding: 20px;
+  z-index: 100;
+  width: 150px;
+  height: 70px;
+  left:-150px;
+  position: fixed;
+  transition:ease-in-out 0.5s;
+  display: flex;
+  justify-content: space-between;
+  #about-me-clr{
+    width: 35px;
+    background-color: var(--about-me-clr);
+  }
+  #skills-clr{
+    width: 35px;
+    background-color: var(--skills-clr);
+  }
+  #work-clr{
+    width: 35px;
+    background-color: var(--work-clr);
+  }
+ 
+  &.open{
+    transform: translateX(150px);
+    transition:ease-in-out 0.5s;
+  }
 }
 .link {
   color: white;
@@ -91,20 +151,20 @@ h3 {
       z-index: 600;
     content: attr(data-text);
     position: absolute;
-    color: $about-me-clr;
+    color: var(--about-me-clr);
     width: 0%;
     overflow: hidden;
     transition: 0.6s;
     
-    border-right: 8px solid $about-me-clr;
-    -webkit-text-stroke: 1px $about-me-clr;
+    border-right: 8px solid var(--about-me-clr);
+    -webkit-text-stroke: 1px var(--about-me-clr);
     }
     &:hover::before {
       content: attr(data-text);
       width: 100%;
-      -webkit-text-stroke: 1px $about-me-clr;
-      filter: drop-shadow(0px 0px 15px $about-me-clr);
-      text-shadow: 0 0 20px $about-me-clr;
+      -webkit-text-stroke: 1px var(--about-me-clr);
+      filter: drop-shadow(0px 0px 15px var(--about-me-clr));
+      text-shadow: 0 0 20px var(--about-me-clr);
       
     }
   }
@@ -115,20 +175,20 @@ h3 {
       z-index: 600;
     content: attr(data-text);
     position: absolute;
-    color: $skills-clr;
+    color: var(--skills-clr);
     width: 0%;
     overflow: hidden;
     transition: 0.6s;
     
-    border-right: 8px solid $skills-clr;
-    -webkit-text-stroke: 1px $skills-clr;
+    border-right: 8px solid var(--skills-clr);
+    -webkit-text-stroke: 1px var(--skills-clr);
     }
     &:hover::before {
       content: attr(data-text);
       width: 100%;
-      -webkit-text-stroke: 1px $skills-clr;
-      filter: drop-shadow(0px 0px 15px $skills-clr);
-      text-shadow: 0 0 20px $skills-clr;
+      -webkit-text-stroke: 1px var(--skills-clr);
+      filter: drop-shadow(0px 0px 15px var(--skills-clr));
+      text-shadow: 0 0 20px var(--skills-clr);
       
     }
   }
@@ -139,20 +199,20 @@ h3 {
       z-index: 600;
     content: attr(data-text);
     position: absolute;
-    color: $work-clr;
+    color: var(--work-clr);
     width: 0%;
     overflow: hidden;
     transition: 0.6s;
     
-    border-right: 8px solid $work-clr;
-    -webkit-text-stroke: 1px $work-clr;
+    border-right: 8px solid var(--work-clr);
+    -webkit-text-stroke: 1px var(--work-clr);
     }
     &:hover::before {
       content: attr(data-text);
       width: 100%;
-      -webkit-text-stroke: 1px $work-clr;
-      filter: drop-shadow(0px 0px 15px $work-clr);
-      text-shadow: 0 0 20px $work-clr;
+      -webkit-text-stroke: 1px var(--work-clr);
+      filter: drop-shadow(0px 0px 15px var(--work-clr));
+      text-shadow: 0 0 20px var(--work-clr);
       
     }
   }
@@ -208,17 +268,17 @@ h3 {
   h2 {
     text-align: center;
   }
-  text-shadow: 0 0 35px $about-me-clr;
+  text-shadow: 0 0 35px var(--about-me-clr);
   .me {
     opacity: 1;
     h3 {
-      color: $about-me-clr;
+      color: var(--about-me-clr);
 
       text-align: center;
     }
   }
   h2 {
-    color: $about-me-clr;
+    color: var(--about-me-clr);
     // padding: 50px ;
   }
   .about-me-container {
@@ -229,11 +289,11 @@ h3 {
       padding: 30px;
 
       h2 {
-        color: $about-me-clr;
+        color: var(--about-me-clr);
         padding-bottom: 5px;
       }
       h3 {
-        color: $about-me-clr;
+        color: var(--about-me-clr);
         // text-align: center;
       }
     }
@@ -242,11 +302,11 @@ h3 {
       // width: 35%;
       padding: 25px;
       h2 {
-        color: $about-me-clr;
+        color: var(--about-me-clr);
         padding-bottom: 5px;
       }
       h3 {
-        color: $about-me-clr;
+        color: var(--about-me-clr);
         // text-align: center;;
       }
     }
@@ -261,10 +321,10 @@ h3 {
     //   rgba(224, 224, 224, 0.141) 10%,
     //   rgba(255, 255, 255, 0.042) 50%
     // );
-    border: $about-me-clr solid 2px;
+    border: var(--about-me-clr) solid 2px;
     margin: 50px;
     backdrop-filter: blur(6px);
-    box-shadow: 7px 7px 10px -1px $about-me-clr;
+    box-shadow: 7px 7px 10px -1px var(--about-me-clr);
   }
 }
 #skills {
@@ -299,12 +359,12 @@ h3 {
     max-width: 80%;
     margin: 0 auto;
     // margin-top: 95px;
-    border: $skills-clr solid 2px;
+    border: var(--skills-clr) solid 2px;
     padding: 0 40px 50px;
     -webkit-backdrop-filter: blur(6px);
     backdrop-filter: blur(6px);
-    -webkit-box-shadow: 7px 7px 10px -1px $skills-clr;
-    box-shadow: 7px 7px 10px -1px $skills-clr;
+    -webkit-box-shadow: 7px 7px 10px -1px var(--skills-clr);
+    box-shadow: 7px 7px 10px -1px var(--skills-clr);
     opacity: 1;
     // position: absolute;
     // left: 20%;
@@ -329,11 +389,11 @@ h3 {
 
   .skill-per {
     height: 14px;
-    background: $skills-clr;
+    background: var(--skills-clr);
     border-radius: 3px;
     position: relative;
     animation: fillBars 2.5s 1;
-    box-shadow: 0px 0px 8px 3px $skills-clr;
+    box-shadow: 0px 0px 8px 3px var(--skills-clr);
   }
 
   .skill-per::before {
@@ -411,14 +471,14 @@ h3 {
   //   rgba(224, 224, 224, 0.141) 10%,
   //   rgba(255, 255, 255, 0.042) 50%
   // );
-  border: $work-clr solid 2px;
+  border: var(--work-clr) solid 2px;
   backdrop-filter: blur(4px);
-  box-shadow: 7px 7px 10px -1px $work-clr;
+  box-shadow: 7px 7px 10px -1px var(--work-clr);
 }
 .image-content,
 .card-content {
   h2 {
-    color: $work-clr;
+    color: var(--work-clr);
   }
   .card-links {
     padding: 10px;
@@ -497,7 +557,7 @@ h3 {
   font-size: 16px;
   color: white;
   padding: 6px 8px;
-  background-color: $work-clr;
+  background-color: var(--work-clr);
   border-radius: 2px;
   border: solid 2px #00000000;
   margin: 8px;
@@ -505,15 +565,15 @@ h3 {
   transition: all 0.2s ease;
   &:hover {
     background: none;
-    color: $work-clr;
-    box-shadow: 3px 3px 10px -1px $work-clr;
-    border: solid 2px $work-clr;
+    color: var(--work-clr);
+    box-shadow: 3px 3px 10px -1px var(--work-clr);
+    border: solid 2px var(--work-clr);
   }
 }
 
 .swiper-navBtn {
-  color: $work-clr;
-  // box-shadow: 7px 7px 10px -1px $work-clr;
+  color: var(--work-clr);
+  // box-shadow: 7px 7px 10px -1px var(--work-clr);
 
   transition: color 0.3s ease;
 }
@@ -537,7 +597,7 @@ h3 {
   opacity: 1;
 }
 .swiper-pagination-bullet-active {
-  background-color: $work-clr;
+  background-color: var(--work-clr);
 }
 .swiper-android .swiper-slide,
 .swiper-wrapper {
@@ -575,7 +635,7 @@ h3 {
   position: relative;
   width: 100%;
   height: 100%;
-  box-shadow: 0px 0px 15px 0px $about-me-clr;
+  box-shadow: 0px 0px 15px 0px var(--about-me-clr);
   background: rgba(0, 0, 0, 0.5);
   overflow: hidden;
   border-radius: 50%;
@@ -589,7 +649,7 @@ h3 {
   position: absolute;
   inset: 0px 80px;
   transition: 0.5s;
-  background: linear-gradient(315deg, $about-me-clr, #ffffff);
+  background: linear-gradient(315deg, var(--about-me-clr), #ffffff);
   animation: animate 3s linear infinite;
 }
 .photo-box:hover:before {
@@ -690,43 +750,43 @@ h3 {
 .nav-clr {
 &.about-me {
 
-  box-shadow: $about-me-clr 0px 5px 10px;
+  box-shadow: var(--about-me-clr) 0px 5px 10px;
   background: linear-gradient(
     270deg,
     rgba(224, 224, 224, 0.18) 10%,
     rgba(255, 255, 255, 0.15) 50%
   );
-  border-bottom: $about-me-clr solid 2px;
+  border-bottom: var(--about-me-clr) solid 2px;
   position: sticky;
-  height: 72px;
+  height: 71px;
   top: 0%;
   z-index: 2;
   backdrop-filter: blur(8px);
 }
 &.my-skills {
-  box-shadow: $skills-clr 0px 5px 10px;
+  box-shadow: var(--skills-clr) 0px 5px 10px;
   background: linear-gradient(
     270deg,
     rgba(224, 224, 224, 0.18) 10%,
     rgba(255, 255, 255, 0.15) 50%
   );
-  border-bottom: $skills-clr solid 2px;
+  border-bottom: var(--skills-clr) solid 2px;
   position: sticky;
-  height: 72px;
+  height: 71px;
   top: 0%;
   z-index: 2;
   backdrop-filter: blur(8px);
 }
 &.my-work {
-  box-shadow: $work-clr 0px 5px 10px;
+  box-shadow: var(--work-clr) 0px 5px 10px;
   background: linear-gradient(
     270deg,
     rgba(224, 224, 224, 0.18) 10%,
     rgba(255, 255, 255, 0.15) 50%
   );
-  border-bottom: $work-clr solid 2px;
+  border-bottom: var(--work-clr) solid 2px;
   position: sticky;
-  height: 72px;
+  height: 71px;
   top: 0%;
   z-index:2;
   backdrop-filter: blur(8px);
@@ -746,7 +806,7 @@ h3 {
   z-index: 111;
   position: -webkit-sticky;
   position: sticky;
-  top: 1.2%;
+  top: 1.0%;
 
   height: 0px;
   display: flex;
@@ -788,13 +848,13 @@ h3 {
           width: 105%;
           height: 105%;
           &.about-me {
-            border: $about-me-clr solid 1px;
+            border: var(--about-me-clr) solid 1px;
           }
           &.my-skills {
-            border: $skills-clr solid 1px;
+            border: var(--skills-clr) solid 1px;
           }
           &.my-work {
-            border: $work-clr solid 1px;
+            border: var(--work-clr) solid 1px;
           }
         }
         .active {
@@ -805,13 +865,13 @@ h3 {
           width: 105%;
           height: 105%;
           &.about-me {
-            box-shadow: 8px 7px 8px -2px $about-me-clr;
+            box-shadow: 8px 7px 8px -2px var(--about-me-clr);
           }
           &.my-skills {
-            box-shadow: 8px 7px 8px -2px $skills-clr;
+            box-shadow: 8px 7px 8px -2px var(--skills-clr);
           }
           &.my-work {
-            box-shadow: 8px 7px 8px -2px $work-clr;
+            box-shadow: 8px 7px 8px -2px var(--work-clr);
           }
           
           // filter: drop-shadow( 3px 3px 8px rgba(0, 0, 0, 0.47));
@@ -859,13 +919,13 @@ h3 {
 }
 .nav-bg{
   &.about-me{
-    color: $about-me-clr;
+    color: var(--about-me-clr);
   }
   &.my-skills{
-    color: $skills-clr;
+    color: var(--skills-clr);
   }
   &.my-work{
-    color: $work-clr;
+    color: var(--work-clr);
   }
 }
 .nav ul li{
@@ -875,40 +935,40 @@ h3 {
   content: attr(data-text);
   z-index: 700;
   position: absolute;
-  color: $about-me-clr;
+  color: var(--about-me-clr);
   width: 100% !important;
   overflow: hidden;
   transition: 0.6s;
-  border-right: 8px solid $about-me-clr;
-  -webkit-text-stroke: 1px $about-me-clr;
-  filter: drop-shadow(0px 0px 15px $about-me-clr);
-  text-shadow: 0 0 20px $about-me-clr;
+  border-right: 8px solid var(--about-me-clr);
+  -webkit-text-stroke: 1px var(--about-me-clr);
+  filter: drop-shadow(0px 0px 15px var(--about-me-clr));
+  text-shadow: 0 0 20px var(--about-me-clr);
 }
 .nav ul li.my-skills-nav .hovered::before {
   content: attr(data-text);
   z-index: 700;
   position: absolute;
-  color: $skills-clr;
+  color: var(--skills-clr);
   width: 100% !important;
   overflow: hidden;
   transition: 0.6s;
-  border-right: 8px solid $skills-clr;
-  -webkit-text-stroke: 1px $skills-clr;
-  filter: drop-shadow(0px 0px 15px $skills-clr);
-  text-shadow: 0 0 20px $work-clr;
+  border-right: 8px solid var(--skills-clr);
+  -webkit-text-stroke: 1px var(--skills-clr);
+  filter: drop-shadow(0px 0px 15px var(--skills-clr));
+  text-shadow: 0 0 20px var(--work-clr);
 }
 .nav ul li.my-work-nav .hovered::before {
   content: attr(data-text);
   z-index: 700;
   position: absolute;
-  color: $work-clr;
+  color: var(--work-clr);
   width: 100% !important;
   overflow: hidden;
   transition: 0.6s;
-  border-right: 8px solid $work-clr;
-  -webkit-text-stroke: 1px $work-clr;
-  filter: drop-shadow(0px 0px 15px $work-clr);
-  text-shadow: 0 0 20px $work-clr;
+  border-right: 8px solid var(--work-clr);
+  -webkit-text-stroke: 1px var(--work-clr);
+  filter: drop-shadow(0px 0px 15px var(--work-clr));
+  text-shadow: 0 0 20px var(--work-clr);
 }
 // .active{
 // 	img{
@@ -973,10 +1033,75 @@ h3 {
     scroll-behavior: smooth;
     
   }
+  .color-button{
+    // background-image: url(../assets/arrow.png);
+    background-repeat: no-repeat;
+    width: 6vw;
+    height: 28px;
+    padding: 0;
+    position: fixed;
+    cursor: pointer;
+    z-index: 910;
+    top: 1vh;
+    left: 1%;
+    transition:ease-in-out 0.5s;
+    &.open{
+  
+      transform: rotateY(180deg);
+      transition:ease-in-out 0.5s;
+    }
+  }
+  .color-pickers{
+    background-color: #070a1c;
+    border-right:2px solid #fffffe; ;
+    padding: 8px;
+    z-index: 888;
+    left:-100%;
+    position: fixed;
+    transition:ease-in-out 0.5s;
+    width: 100%;
+    justify-content: center;
+    column-gap: 5px;
 
+    height: 5vh;
+    #about-me-clr{
+      width: 25%;
+      background-color: var(--about-me-clr);
+    }
+    #skills-clr{
+      width: 25%;
+      background-color: var(--skills-clr);
+    }
+    #work-clr{
+      width: 25%;
+      background-color: var(--work-clr);
+    }
+   
+    &.open{
+      transform: translateX(100%);
+      transition:ease-in-out 0.5s;
+    }
+  }
   .nav-clr {
     height: 50px;
+    &.about-me {
+    
+
+      height: 45px;
+
+    }
+    &.my-skills {
+
+      height: 45px;
+
+    }
+    &.my-work {
+
+      height: 45px;
+
+    }
   }
+
   h1 {
     font-size: 1.5em;
   }
@@ -1095,13 +1220,13 @@ h3 {
     .skill-per-mb {
       animation: none !important;
       height: 14px;
-      background: $skills-clr;
+      background: var(--skills-clr);
       border-radius: 3px;
       position: relative;
       -webkit-animation: fillBars 2.5s 1;
       animation: fillBars 2.5s 1;
-      -webkit-box-shadow: 0px 0px 8px 3px $skills-clr;
-      box-shadow: 0px 0px 8px 3px $skills-clr;
+      -webkit-box-shadow: 0px 0px 8px 3px var(--skills-clr);
+      box-shadow: 0px 0px 8px 3px var(--skills-clr);
         &::before {
           content: attr(per);
           position: absolute;
@@ -1171,6 +1296,15 @@ h3 {
   }
 
 }
+
+
+
+
+
+
+
+
+
 
 
 

@@ -285,3 +285,74 @@ mediumZoom(".zoom", {
   margin: 50,
   background: "#000000",
 });
+
+
+
+
+// const tags = document.querySelectorAll(('h2').style.color)
+// colorInput.addEventListener('input', () =>{
+//     let colorInput = document.querySelector('#color');
+//     let color = colorInput.value;
+//     console.log(color);
+
+
+// // tags.forEach((tag) => {  console.log( document.querySelector('h2')[i]);})
+// // console.log( document.querySelector('h2').style.color);
+//     // document.body.style.backgroundColor = color;
+//     document.querySelector('h2').style.color = color;
+// });
+
+let aboutMecolorInput = document.querySelector('#about-me-clr');
+localStorage.getItem("color1") == null  ? aboutMecolorInput.value="#ffbf00" :aboutMecolorInput.value = localStorage.getItem("color1");
+document.documentElement.style.setProperty('--about-me-clr',aboutMecolorInput.value);
+
+let skillColorInput = document.querySelector('#skills-clr');
+// console.log(localStorage.getItem("color2"));
+localStorage.getItem("color2") == null   ? skillColorInput.value="#ff0000" :skillColorInput.value = localStorage.getItem("color2");
+document.documentElement.style.setProperty('--skills-clr',skillColorInput.value);
+
+let workColorInput = document.querySelector('#work-clr');
+// console.log(localStorage.getItem("color3"));
+localStorage.getItem("color3") == null  ? workColorInput.value="#009dff" :workColorInput.value = localStorage.getItem("color3");
+document.documentElement.style.setProperty('--work-clr',workColorInput.value);
+
+// workColorInput.value = '#009dff';
+// console.log(workColorInput.value);
+
+aboutMecolorInput.addEventListener('input', () =>{
+  let aboutMecolor = aboutMecolorInput.value;
+  localStorage.setItem('color1', aboutMecolor);
+  document.documentElement.style.setProperty('--about-me-clr',aboutMecolor);
+});
+skillColorInput.addEventListener('input', () =>{
+  let skillColor = skillColorInput.value;
+  localStorage.setItem('color2', skillColor);
+
+  document.documentElement.style.setProperty('--skills-clr',skillColor);
+});
+workColorInput.addEventListener('input', () =>{
+  let workColor = workColorInput.value;
+  localStorage.setItem('color3', workColor);
+
+  document.documentElement.style.setProperty('--work-clr',workColor);
+});
+
+
+let colorButton = document.querySelector('.color-button');
+let colorPickers = document.querySelector('.color-pickers');
+colorButton.addEventListener('click', () =>{
+  colorPickers.classList.toggle('open');
+  colorButton.classList.toggle('open');
+
+})
+let resetButton = document.querySelector('.reset-button');
+resetButton.addEventListener('click', () =>{
+  localStorage.removeItem('color1');
+  localStorage.removeItem('color2');
+  localStorage.removeItem('color3');
+  window.location.reload(false)
+})
+
+
+// let skillColor = skillColorInput.value;
+// let workolor = workolorInput.value;
