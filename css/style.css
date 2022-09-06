@@ -1028,7 +1028,7 @@ h3 {
   }
   .color-pickers {
     background-color: #070a1c;
-    border-right: 2px solid #fffffe;
+    border-right: none;
     padding: 8px;
     z-index: 888;
     left: -100%;
@@ -1041,7 +1041,7 @@ h3 {
             justify-content: center;
     -webkit-column-gap: 5px;
             column-gap: 5px;
-    height: 5vh;
+    height: 43px;
   }
   .color-pickers #about-me-clr {
     width: 25%;
