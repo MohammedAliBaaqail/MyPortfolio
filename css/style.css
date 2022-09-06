@@ -78,6 +78,72 @@ h3 {
           animation-fill-mode: none !important;
 }
 
+.about-me-nav a::before {
+  z-index: 600;
+  content: attr(data-text);
+  position: absolute;
+  color: #0fe7bf;
+  width: 0%;
+  overflow: hidden;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  border-right: 8px solid #0fe7bf;
+  -webkit-text-stroke: 1px #0fe7bf;
+}
+
+.about-me-nav a:hover::before {
+  content: attr(data-text);
+  width: 100%;
+  -webkit-text-stroke: 1px #0fe7bf;
+  -webkit-filter: drop-shadow(0px 0px 15px #0fe7bf);
+          filter: drop-shadow(0px 0px 15px #0fe7bf);
+  text-shadow: 0 0 20px #0fe7bf;
+}
+
+.my-skills-nav a::before {
+  z-index: 600;
+  content: attr(data-text);
+  position: absolute;
+  color: #ff5349;
+  width: 0%;
+  overflow: hidden;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  border-right: 8px solid #ff5349;
+  -webkit-text-stroke: 1px #ff5349;
+}
+
+.my-skills-nav a:hover::before {
+  content: attr(data-text);
+  width: 100%;
+  -webkit-text-stroke: 1px #ff5349;
+  -webkit-filter: drop-shadow(0px 0px 15px #ff5349);
+          filter: drop-shadow(0px 0px 15px #ff5349);
+  text-shadow: 0 0 20px #ff5349;
+}
+
+.my-work-nav a::before {
+  z-index: 600;
+  content: attr(data-text);
+  position: absolute;
+  color: #9acd32;
+  width: 0%;
+  overflow: hidden;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  border-right: 8px solid #9acd32;
+  -webkit-text-stroke: 1px #9acd32;
+}
+
+.my-work-nav a:hover::before {
+  content: attr(data-text);
+  width: 100%;
+  -webkit-text-stroke: 1px #9acd32;
+  -webkit-filter: drop-shadow(0px 0px 15px #9acd32);
+          filter: drop-shadow(0px 0px 15px #9acd32);
+  text-shadow: 0 0 20px #9acd32;
+}
+
 .main .section {
   scroll-snap-align: start;
   height: 100vh;
@@ -187,7 +253,7 @@ h3 {
 #about-me .about-me-card {
   width: 600px;
   opacity: 1;
-  border: rgba(8, 130, 108, 0.751) solid 2px;
+  border: #0fe7bf solid 2px;
   margin: 50px;
   -webkit-backdrop-filter: blur(6px);
           backdrop-filter: blur(6px);
@@ -228,7 +294,7 @@ h3 {
   width: 100%;
   max-width: 80%;
   margin: 0 auto;
-  border: #ff52499d solid 2px;
+  border: #ff5349 solid 2px;
   padding: 0 40px 50px;
   -webkit-backdrop-filter: blur(6px);
   backdrop-filter: blur(6px);
@@ -347,7 +413,7 @@ h3 {
 }
 
 .card {
-  border: #99cd329d solid 2px;
+  border: #9acd32 solid 2px;
   -webkit-backdrop-filter: blur(4px);
           backdrop-filter: blur(4px);
   -webkit-box-shadow: 7px 7px 10px -1px #9acd32;
@@ -641,12 +707,42 @@ h3 {
   height: 0px;
 }
 
-.nav-clr {
-  -webkit-box-shadow: var(--clr) 0px 5px 10px;
-          box-shadow: var(--clr) 0px 5px 10px;
+.nav-clr.about-me {
+  -webkit-box-shadow: #0fe7bf 0px 5px 10px;
+          box-shadow: #0fe7bf 0px 5px 10px;
   background: -webkit-gradient(linear, right top, left top, color-stop(10%, rgba(224, 224, 224, 0.18)), color-stop(50%, rgba(255, 255, 255, 0.15)));
   background: linear-gradient(270deg, rgba(224, 224, 224, 0.18) 10%, rgba(255, 255, 255, 0.15) 50%);
-  border-bottom: var(--clr) solid 2px;
+  border-bottom: #0fe7bf solid 2px;
+  position: -webkit-sticky;
+  position: sticky;
+  height: 72px;
+  top: 0%;
+  z-index: 2;
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
+}
+
+.nav-clr.my-skills {
+  -webkit-box-shadow: #ff5349 0px 5px 10px;
+          box-shadow: #ff5349 0px 5px 10px;
+  background: -webkit-gradient(linear, right top, left top, color-stop(10%, rgba(224, 224, 224, 0.18)), color-stop(50%, rgba(255, 255, 255, 0.15)));
+  background: linear-gradient(270deg, rgba(224, 224, 224, 0.18) 10%, rgba(255, 255, 255, 0.15) 50%);
+  border-bottom: #ff5349 solid 2px;
+  position: -webkit-sticky;
+  position: sticky;
+  height: 72px;
+  top: 0%;
+  z-index: 2;
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
+}
+
+.nav-clr.my-work {
+  -webkit-box-shadow: #9acd32 0px 5px 10px;
+          box-shadow: #9acd32 0px 5px 10px;
+  background: -webkit-gradient(linear, right top, left top, color-stop(10%, rgba(224, 224, 224, 0.18)), color-stop(50%, rgba(255, 255, 255, 0.15)));
+  background: linear-gradient(270deg, rgba(224, 224, 224, 0.18) 10%, rgba(255, 255, 255, 0.15) 50%);
+  border-bottom: #9acd32 solid 2px;
   position: -webkit-sticky;
   position: sticky;
   height: 72px;
@@ -705,7 +801,18 @@ h3 {
   position: absolute;
   width: 105%;
   height: 105%;
-  border: var(--clr) solid 1px;
+}
+
+.nav ul li a .links.about-me {
+  border: #0fe7bf solid 1px;
+}
+
+.nav ul li a .links.my-skills {
+  border: #ff5349 solid 1px;
+}
+
+.nav ul li a .links.my-work {
+  border: #9acd32 solid 1px;
 }
 
 .nav ul li a .active {
@@ -717,8 +824,6 @@ h3 {
   position: absolute;
   width: 105%;
   height: 105%;
-  -webkit-box-shadow: 8px 7px 8px -2px var(--clr);
-          box-shadow: 8px 7px 8px -2px var(--clr);
   background: white;
   background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.274)), to(rgba(255, 255, 255, 0.11)));
   background: linear-gradient(90deg, rgba(255, 255, 255, 0.274) 0%, rgba(255, 255, 255, 0.11) 100%);
@@ -728,46 +833,83 @@ h3 {
           backdrop-filter: blur(3px);
 }
 
-.nav ul li a::before {
-  z-index: 600;
-  content: attr(data-text);
-  position: absolute;
-  color: var(--clr);
-  width: 0%;
-  overflow: hidden;
-  -webkit-transition: 0.6s;
-  transition: 0.6s;
-  border-right: 8px solid var(--clr);
-  -webkit-text-stroke: 1px var(--clr);
+.nav ul li a .active.about-me {
+  -webkit-box-shadow: 8px 7px 8px -2px #0fe7bf;
+          box-shadow: 8px 7px 8px -2px #0fe7bf;
 }
 
-.nav ul li a:hover::before {
-  content: attr(data-text);
-  width: 100%;
-  -webkit-text-stroke: 1px var(--clr);
-  -webkit-filter: drop-shadow(0px 0px 15px var(--clr));
-          filter: drop-shadow(0px 0px 15px var(--clr));
-  text-shadow: 0 0 20px var(--clr);
+.nav ul li a .active.my-skills {
+  -webkit-box-shadow: 8px 7px 8px -2px #ff5349;
+          box-shadow: 8px 7px 8px -2px #ff5349;
+}
+
+.nav ul li a .active.my-work {
+  -webkit-box-shadow: 8px 7px 8px -2px #9acd32;
+          box-shadow: 8px 7px 8px -2px #9acd32;
 }
 
 .nav img {
   width: 40px;
 }
 
-.nav ul li .hovered::before {
+.nav-bg.about-me {
+  color: #0fe7bf;
+}
+
+.nav-bg.my-skills {
+  color: #ff5349;
+}
+
+.nav-bg.my-work {
+  color: #9acd32;
+}
+
+.nav ul li.about-me-nav .hovered::before {
   content: attr(data-text);
   z-index: 700;
   position: absolute;
-  color: var(--clr);
+  color: #0fe7bf;
   width: 100% !important;
   overflow: hidden;
   -webkit-transition: 0.6s;
   transition: 0.6s;
-  border-right: 8px solid var(--clr);
-  -webkit-text-stroke: 1px var(--clr);
-  -webkit-filter: drop-shadow(0px 0px 15px var(--clr));
-          filter: drop-shadow(0px 0px 15px var(--clr));
-  text-shadow: 0 0 20px var(--clr);
+  border-right: 8px solid #0fe7bf;
+  -webkit-text-stroke: 1px #0fe7bf;
+  -webkit-filter: drop-shadow(0px 0px 15px #0fe7bf);
+          filter: drop-shadow(0px 0px 15px #0fe7bf);
+  text-shadow: 0 0 20px #9acd32;
+}
+
+.nav ul li.my-skills-nav .hovered::before {
+  content: attr(data-text);
+  z-index: 700;
+  position: absolute;
+  color: #ff5349;
+  width: 100% !important;
+  overflow: hidden;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  border-right: 8px solid #ff5349;
+  -webkit-text-stroke: 1px #ff5349;
+  -webkit-filter: drop-shadow(0px 0px 15px #ff5349);
+          filter: drop-shadow(0px 0px 15px #ff5349);
+  text-shadow: 0 0 20px #9acd32;
+}
+
+.nav ul li.my-work-nav .hovered::before {
+  content: attr(data-text);
+  z-index: 700;
+  position: absolute;
+  color: #9acd32;
+  width: 100% !important;
+  overflow: hidden;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  border-right: 8px solid #9acd32;
+  -webkit-text-stroke: 1px #9acd32;
+  -webkit-filter: drop-shadow(0px 0px 15px #9acd32);
+          filter: drop-shadow(0px 0px 15px #9acd32);
+  text-shadow: 0 0 20px #9acd32;
 }
 
 .di {
