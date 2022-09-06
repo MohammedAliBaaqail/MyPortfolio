@@ -1089,8 +1089,9 @@ h3 {
     opacity: 1 !important;
   }
   html {
-    -ms-scroll-snap-type: unset;
-        scroll-snap-type: unset;
+    -ms-scroll-snap-type: none;
+        scroll-snap-type: none;
+    scroll-behavior: smooth !important;
   }
   body {
     background-image: url(../assets/bg-dark-4.jpg) !important;

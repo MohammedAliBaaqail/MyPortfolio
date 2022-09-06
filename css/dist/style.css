@@ -854,7 +854,8 @@ h3 {
   }
 
   html {
-    scroll-snap-type: unset;
+    scroll-snap-type: none;
+    scroll-behavior: smooth !important;
   }
 
   body {

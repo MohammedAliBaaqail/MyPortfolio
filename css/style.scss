@@ -1123,7 +1123,9 @@ h3 {
   #work .slide-container {
     opacity: 1 !important;
   }
-html{  scroll-snap-type:unset;}
+html{  scroll-snap-type:none;
+  scroll-behavior: smooth !important;
+}
   body {
     // background-image: url(../assets/bg-dark-10.jpg);
     background-image:  url(../assets/bg-dark-4.jpg) !important;
@@ -1131,7 +1133,7 @@ html{  scroll-snap-type:unset;}
     background-color: black !important;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    // overscroll-behavior: none;
+    
     padding: 0;
     margin: 0;
    
