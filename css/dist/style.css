@@ -853,6 +853,10 @@ h3 {
     opacity: 1 !important;
   }
 
+  html {
+    scroll-snap-type: none;
+  }
+
   body {
     background-image: url(../assets/bg-dark-4.jpg) !important;
     background-size: cover !important;

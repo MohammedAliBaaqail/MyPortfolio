@@ -1088,6 +1088,10 @@ h3 {
   #work .slide-container {
     opacity: 1 !important;
   }
+  html {
+    -ms-scroll-snap-type: none;
+        scroll-snap-type: none;
+  }
   body {
     background-image: url(../assets/bg-dark-4.jpg) !important;
     background-size: cover !important;
