@@ -5,9 +5,9 @@
 // $about-me-clr: #e7dc0f;
 // $skills-clr: #ff49bf;
 // $work-clr: #4e32cd;
-$about-me-clr: #0fe7bf;
-$skills-clr: #ff5349;
-$work-clr: #9acd32;
+$about-me-clr: #e7c30f;
+$skills-clr: #e42525;
+$work-clr: #32bbcd;
 
 * {
   margin: 0;
@@ -882,7 +882,7 @@ h3 {
   border-right: 8px solid $about-me-clr;
   -webkit-text-stroke: 1px $about-me-clr;
   filter: drop-shadow(0px 0px 15px $about-me-clr);
-  text-shadow: 0 0 20px $work-clr;
+  text-shadow: 0 0 20px $about-me-clr;
 }
 .nav ul li.my-skills-nav .hovered::before {
   content: attr(data-text);

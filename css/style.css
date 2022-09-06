@@ -82,66 +82,66 @@ h3 {
   z-index: 600;
   content: attr(data-text);
   position: absolute;
-  color: #0fe7bf;
+  color: #e7c30f;
   width: 0%;
   overflow: hidden;
   -webkit-transition: 0.6s;
   transition: 0.6s;
-  border-right: 8px solid #0fe7bf;
-  -webkit-text-stroke: 1px #0fe7bf;
+  border-right: 8px solid #e7c30f;
+  -webkit-text-stroke: 1px #e7c30f;
 }
 
 .about-me-nav a:hover::before {
   content: attr(data-text);
   width: 100%;
-  -webkit-text-stroke: 1px #0fe7bf;
-  -webkit-filter: drop-shadow(0px 0px 15px #0fe7bf);
-          filter: drop-shadow(0px 0px 15px #0fe7bf);
-  text-shadow: 0 0 20px #0fe7bf;
+  -webkit-text-stroke: 1px #e7c30f;
+  -webkit-filter: drop-shadow(0px 0px 15px #e7c30f);
+          filter: drop-shadow(0px 0px 15px #e7c30f);
+  text-shadow: 0 0 20px #e7c30f;
 }
 
 .my-skills-nav a::before {
   z-index: 600;
   content: attr(data-text);
   position: absolute;
-  color: #ff5349;
+  color: #e42525;
   width: 0%;
   overflow: hidden;
   -webkit-transition: 0.6s;
   transition: 0.6s;
-  border-right: 8px solid #ff5349;
-  -webkit-text-stroke: 1px #ff5349;
+  border-right: 8px solid #e42525;
+  -webkit-text-stroke: 1px #e42525;
 }
 
 .my-skills-nav a:hover::before {
   content: attr(data-text);
   width: 100%;
-  -webkit-text-stroke: 1px #ff5349;
-  -webkit-filter: drop-shadow(0px 0px 15px #ff5349);
-          filter: drop-shadow(0px 0px 15px #ff5349);
-  text-shadow: 0 0 20px #ff5349;
+  -webkit-text-stroke: 1px #e42525;
+  -webkit-filter: drop-shadow(0px 0px 15px #e42525);
+          filter: drop-shadow(0px 0px 15px #e42525);
+  text-shadow: 0 0 20px #e42525;
 }
 
 .my-work-nav a::before {
   z-index: 600;
   content: attr(data-text);
   position: absolute;
-  color: #9acd32;
+  color: #32bbcd;
   width: 0%;
   overflow: hidden;
   -webkit-transition: 0.6s;
   transition: 0.6s;
-  border-right: 8px solid #9acd32;
-  -webkit-text-stroke: 1px #9acd32;
+  border-right: 8px solid #32bbcd;
+  -webkit-text-stroke: 1px #32bbcd;
 }
 
 .my-work-nav a:hover::before {
   content: attr(data-text);
   width: 100%;
-  -webkit-text-stroke: 1px #9acd32;
-  -webkit-filter: drop-shadow(0px 0px 15px #9acd32);
-          filter: drop-shadow(0px 0px 15px #9acd32);
-  text-shadow: 0 0 20px #9acd32;
+  -webkit-text-stroke: 1px #32bbcd;
+  -webkit-filter: drop-shadow(0px 0px 15px #32bbcd);
+          filter: drop-shadow(0px 0px 15px #32bbcd);
+  text-shadow: 0 0 20px #32bbcd;
 }
 
 .main .section {
@@ -169,7 +169,7 @@ h3 {
 }
 
 #about-me {
-  text-shadow: 0 0 35px #0fe7bf;
+  text-shadow: 0 0 35px #e7c30f;
 }
 
 #about-me .main-container {
@@ -207,12 +207,12 @@ h3 {
 }
 
 #about-me .me h3 {
-  color: #0fe7bf;
+  color: #e7c30f;
   text-align: center;
 }
 
 #about-me h2 {
-  color: #0fe7bf;
+  color: #e7c30f;
 }
 
 #about-me .about-me-container {
@@ -229,12 +229,12 @@ h3 {
 }
 
 #about-me .about-me-container .edu h2 {
-  color: #0fe7bf;
+  color: #e7c30f;
   padding-bottom: 5px;
 }
 
 #about-me .about-me-container .edu h3 {
-  color: #0fe7bf;
+  color: #e7c30f;
 }
 
 #about-me .about-me-container .info {
@@ -242,23 +242,23 @@ h3 {
 }
 
 #about-me .about-me-container .info h2 {
-  color: #0fe7bf;
+  color: #e7c30f;
   padding-bottom: 5px;
 }
 
 #about-me .about-me-container .info h3 {
-  color: #0fe7bf;
+  color: #e7c30f;
 }
 
 #about-me .about-me-card {
   width: 600px;
   opacity: 1;
-  border: #0fe7bf solid 2px;
+  border: #e7c30f solid 2px;
   margin: 50px;
   -webkit-backdrop-filter: blur(6px);
           backdrop-filter: blur(6px);
-  -webkit-box-shadow: 7px 7px 10px -1px #0fe7bf;
-          box-shadow: 7px 7px 10px -1px #0fe7bf;
+  -webkit-box-shadow: 7px 7px 10px -1px #e7c30f;
+          box-shadow: 7px 7px 10px -1px #e7c30f;
 }
 
 #skills {
@@ -294,12 +294,12 @@ h3 {
   width: 100%;
   max-width: 80%;
   margin: 0 auto;
-  border: #ff5349 solid 2px;
+  border: #e42525 solid 2px;
   padding: 0 40px 50px;
   -webkit-backdrop-filter: blur(6px);
   backdrop-filter: blur(6px);
-  -webkit-box-shadow: 7px 7px 10px -1px #ff5349;
-  box-shadow: 7px 7px 10px -1px #ff5349;
+  -webkit-box-shadow: 7px 7px 10px -1px #e42525;
+  box-shadow: 7px 7px 10px -1px #e42525;
   opacity: 1;
 }
 
@@ -320,13 +320,13 @@ h3 {
 
 #skills .skill-per {
   height: 14px;
-  background: #ff5349;
+  background: #e42525;
   border-radius: 3px;
   position: relative;
   -webkit-animation: fillBars 2.5s 1;
           animation: fillBars 2.5s 1;
-  -webkit-box-shadow: 0px 0px 8px 3px #ff5349;
-          box-shadow: 0px 0px 8px 3px #ff5349;
+  -webkit-box-shadow: 0px 0px 8px 3px #e42525;
+          box-shadow: 0px 0px 8px 3px #e42525;
 }
 
 #skills .skill-per::before {
@@ -413,11 +413,11 @@ h3 {
 }
 
 .card {
-  border: #9acd32 solid 2px;
+  border: #32bbcd solid 2px;
   -webkit-backdrop-filter: blur(4px);
           backdrop-filter: blur(4px);
-  -webkit-box-shadow: 7px 7px 10px -1px #9acd32;
-          box-shadow: 7px 7px 10px -1px #9acd32;
+  -webkit-box-shadow: 7px 7px 10px -1px #32bbcd;
+          box-shadow: 7px 7px 10px -1px #32bbcd;
 }
 
 .image-content,
@@ -437,7 +437,7 @@ h3 {
 
 .image-content h2,
 .card-content h2 {
-  color: #9acd32;
+  color: #32bbcd;
 }
 
 .image-content .card-links,
@@ -490,7 +490,7 @@ h3 {
   font-size: 16px;
   color: white;
   padding: 6px 8px;
-  background-color: #9acd32;
+  background-color: #32bbcd;
   border-radius: 2px;
   border: solid 2px #00000000;
   margin: 8px;
@@ -501,14 +501,14 @@ h3 {
 
 .button:hover {
   background: none;
-  color: #9acd32;
-  -webkit-box-shadow: 3px 3px 10px -1px #9acd32;
-          box-shadow: 3px 3px 10px -1px #9acd32;
-  border: solid 2px #9acd32;
+  color: #32bbcd;
+  -webkit-box-shadow: 3px 3px 10px -1px #32bbcd;
+          box-shadow: 3px 3px 10px -1px #32bbcd;
+  border: solid 2px #32bbcd;
 }
 
 .swiper-navBtn {
-  color: #9acd32;
+  color: #32bbcd;
   -webkit-transition: color 0.3s ease;
   transition: color 0.3s ease;
 }
@@ -540,7 +540,7 @@ h3 {
 }
 
 .swiper-pagination-bullet-active {
-  background-color: #9acd32;
+  background-color: #32bbcd;
 }
 
 .swiper-android .swiper-slide,
@@ -578,8 +578,8 @@ h3 {
   position: relative;
   width: 100%;
   height: 100%;
-  -webkit-box-shadow: 0px 0px 15px 0px #0fe7bf;
-          box-shadow: 0px 0px 15px 0px #0fe7bf;
+  -webkit-box-shadow: 0px 0px 15px 0px #e7c30f;
+          box-shadow: 0px 0px 15px 0px #e7c30f;
   background: rgba(0, 0, 0, 0.5);
   overflow: hidden;
   border-radius: 50%;
@@ -601,7 +601,7 @@ h3 {
   inset: 0px 80px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  background: linear-gradient(315deg, #0fe7bf, #ffffff);
+  background: linear-gradient(315deg, #e7c30f, #ffffff);
   -webkit-animation: animate 3s linear infinite;
           animation: animate 3s linear infinite;
 }
@@ -708,11 +708,11 @@ h3 {
 }
 
 .nav-clr.about-me {
-  -webkit-box-shadow: #0fe7bf 0px 5px 10px;
-          box-shadow: #0fe7bf 0px 5px 10px;
+  -webkit-box-shadow: #e7c30f 0px 5px 10px;
+          box-shadow: #e7c30f 0px 5px 10px;
   background: -webkit-gradient(linear, right top, left top, color-stop(10%, rgba(224, 224, 224, 0.18)), color-stop(50%, rgba(255, 255, 255, 0.15)));
   background: linear-gradient(270deg, rgba(224, 224, 224, 0.18) 10%, rgba(255, 255, 255, 0.15) 50%);
-  border-bottom: #0fe7bf solid 2px;
+  border-bottom: #e7c30f solid 2px;
   position: -webkit-sticky;
   position: sticky;
   height: 72px;
@@ -723,11 +723,11 @@ h3 {
 }
 
 .nav-clr.my-skills {
-  -webkit-box-shadow: #ff5349 0px 5px 10px;
-          box-shadow: #ff5349 0px 5px 10px;
+  -webkit-box-shadow: #e42525 0px 5px 10px;
+          box-shadow: #e42525 0px 5px 10px;
   background: -webkit-gradient(linear, right top, left top, color-stop(10%, rgba(224, 224, 224, 0.18)), color-stop(50%, rgba(255, 255, 255, 0.15)));
   background: linear-gradient(270deg, rgba(224, 224, 224, 0.18) 10%, rgba(255, 255, 255, 0.15) 50%);
-  border-bottom: #ff5349 solid 2px;
+  border-bottom: #e42525 solid 2px;
   position: -webkit-sticky;
   position: sticky;
   height: 72px;
@@ -738,11 +738,11 @@ h3 {
 }
 
 .nav-clr.my-work {
-  -webkit-box-shadow: #9acd32 0px 5px 10px;
-          box-shadow: #9acd32 0px 5px 10px;
+  -webkit-box-shadow: #32bbcd 0px 5px 10px;
+          box-shadow: #32bbcd 0px 5px 10px;
   background: -webkit-gradient(linear, right top, left top, color-stop(10%, rgba(224, 224, 224, 0.18)), color-stop(50%, rgba(255, 255, 255, 0.15)));
   background: linear-gradient(270deg, rgba(224, 224, 224, 0.18) 10%, rgba(255, 255, 255, 0.15) 50%);
-  border-bottom: #9acd32 solid 2px;
+  border-bottom: #32bbcd solid 2px;
   position: -webkit-sticky;
   position: sticky;
   height: 72px;
@@ -804,15 +804,15 @@ h3 {
 }
 
 .nav ul li a .links.about-me {
-  border: #0fe7bf solid 1px;
+  border: #e7c30f solid 1px;
 }
 
 .nav ul li a .links.my-skills {
-  border: #ff5349 solid 1px;
+  border: #e42525 solid 1px;
 }
 
 .nav ul li a .links.my-work {
-  border: #9acd32 solid 1px;
+  border: #32bbcd solid 1px;
 }
 
 .nav ul li a .active {
@@ -834,18 +834,18 @@ h3 {
 }
 
 .nav ul li a .active.about-me {
-  -webkit-box-shadow: 8px 7px 8px -2px #0fe7bf;
-          box-shadow: 8px 7px 8px -2px #0fe7bf;
+  -webkit-box-shadow: 8px 7px 8px -2px #e7c30f;
+          box-shadow: 8px 7px 8px -2px #e7c30f;
 }
 
 .nav ul li a .active.my-skills {
-  -webkit-box-shadow: 8px 7px 8px -2px #ff5349;
-          box-shadow: 8px 7px 8px -2px #ff5349;
+  -webkit-box-shadow: 8px 7px 8px -2px #e42525;
+          box-shadow: 8px 7px 8px -2px #e42525;
 }
 
 .nav ul li a .active.my-work {
-  -webkit-box-shadow: 8px 7px 8px -2px #9acd32;
-          box-shadow: 8px 7px 8px -2px #9acd32;
+  -webkit-box-shadow: 8px 7px 8px -2px #32bbcd;
+          box-shadow: 8px 7px 8px -2px #32bbcd;
 }
 
 .nav img {
@@ -853,63 +853,63 @@ h3 {
 }
 
 .nav-bg.about-me {
-  color: #0fe7bf;
+  color: #e7c30f;
 }
 
 .nav-bg.my-skills {
-  color: #ff5349;
+  color: #e42525;
 }
 
 .nav-bg.my-work {
-  color: #9acd32;
+  color: #32bbcd;
 }
 
 .nav ul li.about-me-nav .hovered::before {
   content: attr(data-text);
   z-index: 700;
   position: absolute;
-  color: #0fe7bf;
+  color: #e7c30f;
   width: 100% !important;
   overflow: hidden;
   -webkit-transition: 0.6s;
   transition: 0.6s;
-  border-right: 8px solid #0fe7bf;
-  -webkit-text-stroke: 1px #0fe7bf;
-  -webkit-filter: drop-shadow(0px 0px 15px #0fe7bf);
-          filter: drop-shadow(0px 0px 15px #0fe7bf);
-  text-shadow: 0 0 20px #9acd32;
+  border-right: 8px solid #e7c30f;
+  -webkit-text-stroke: 1px #e7c30f;
+  -webkit-filter: drop-shadow(0px 0px 15px #e7c30f);
+          filter: drop-shadow(0px 0px 15px #e7c30f);
+  text-shadow: 0 0 20px #e7c30f;
 }
 
 .nav ul li.my-skills-nav .hovered::before {
   content: attr(data-text);
   z-index: 700;
   position: absolute;
-  color: #ff5349;
+  color: #e42525;
   width: 100% !important;
   overflow: hidden;
   -webkit-transition: 0.6s;
   transition: 0.6s;
-  border-right: 8px solid #ff5349;
-  -webkit-text-stroke: 1px #ff5349;
-  -webkit-filter: drop-shadow(0px 0px 15px #ff5349);
-          filter: drop-shadow(0px 0px 15px #ff5349);
-  text-shadow: 0 0 20px #9acd32;
+  border-right: 8px solid #e42525;
+  -webkit-text-stroke: 1px #e42525;
+  -webkit-filter: drop-shadow(0px 0px 15px #e42525);
+          filter: drop-shadow(0px 0px 15px #e42525);
+  text-shadow: 0 0 20px #32bbcd;
 }
 
 .nav ul li.my-work-nav .hovered::before {
   content: attr(data-text);
   z-index: 700;
   position: absolute;
-  color: #9acd32;
+  color: #32bbcd;
   width: 100% !important;
   overflow: hidden;
   -webkit-transition: 0.6s;
   transition: 0.6s;
-  border-right: 8px solid #9acd32;
-  -webkit-text-stroke: 1px #9acd32;
-  -webkit-filter: drop-shadow(0px 0px 15px #9acd32);
-          filter: drop-shadow(0px 0px 15px #9acd32);
-  text-shadow: 0 0 20px #9acd32;
+  border-right: 8px solid #32bbcd;
+  -webkit-text-stroke: 1px #32bbcd;
+  -webkit-filter: drop-shadow(0px 0px 15px #32bbcd);
+          filter: drop-shadow(0px 0px 15px #32bbcd);
+  text-shadow: 0 0 20px #32bbcd;
 }
 
 .di {
@@ -1029,13 +1029,13 @@ h3 {
     -webkit-animation: none !important;
             animation: none !important;
     height: 14px;
-    background: #ff5349;
+    background: #e42525;
     border-radius: 3px;
     position: relative;
     -webkit-animation: fillBars 2.5s 1;
     animation: fillBars 2.5s 1;
-    -webkit-box-shadow: 0px 0px 8px 3px #ff5349;
-    box-shadow: 0px 0px 8px 3px #ff5349;
+    -webkit-box-shadow: 0px 0px 8px 3px #e42525;
+    box-shadow: 0px 0px 8px 3px #e42525;
   }
   #skills .skill-per-mb::before {
     content: attr(per);
