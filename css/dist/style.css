@@ -854,7 +854,7 @@ h3 {
   }
 
   html {
-    scroll-snap-type: none;
+    scroll-snap-type: unset;
   }
 
   body {
@@ -886,6 +886,8 @@ h3 {
 
   .nav ul {
     gap: 20px;
+    position: fixed;
+    top: 8px;
   }
   .nav a {
     font-size: 1em !important;

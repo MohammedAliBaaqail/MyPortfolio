@@ -1089,8 +1089,8 @@ h3 {
     opacity: 1 !important;
   }
   html {
-    -ms-scroll-snap-type: none;
-        scroll-snap-type: none;
+    -ms-scroll-snap-type: unset;
+        scroll-snap-type: unset;
   }
   body {
     background-image: url(../assets/bg-dark-4.jpg) !important;
@@ -1119,6 +1119,8 @@ h3 {
   }
   .nav ul {
     gap: 20px;
+    position: fixed;
+    top: 8px;
   }
   .nav a {
     font-size: 1em !important;

@@ -1123,7 +1123,7 @@ h3 {
   #work .slide-container {
     opacity: 1 !important;
   }
-html{  scroll-snap-type: none;}
+html{  scroll-snap-type:unset;}
   body {
     // background-image: url(../assets/bg-dark-10.jpg);
     background-image:  url(../assets/bg-dark-4.jpg) !important;
@@ -1163,6 +1163,9 @@ html{  scroll-snap-type: none;}
   .nav {
     ul {
       gap: 20px;
+      position: fixed;
+      top: 8px;
+      // top: 15px;
     }
     a {
       font-size: 1em !important;
