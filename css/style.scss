@@ -399,7 +399,7 @@ h3 {
     border-radius: 3px;
     position: relative;
     animation: fillBars 2.5s 1;
-    box-shadow: 0px 0px 10px 0px var(--skills-clr);
+    box-shadow: 0px 0px 12px 3px var(--skills-clr);
   }
 
   .skill-per::before {
@@ -1239,8 +1239,8 @@ html{  scroll-snap-type:none;
       position: relative;
       -webkit-animation: fillBars 2.5s 1;
       animation: fillBars 2.5s 1;
-      -webkit-box-shadow: 0px 0px 8px 3px var(--skills-clr);
-      box-shadow: 0px 0px 8px 3px var(--skills-clr);
+      -webkit-box-shadow: 0px 0px 15px 5px var(--skills-clr);
+      box-shadow: 0px 0px 15px 5px var(--skills-clr);
         &::before {
           content: attr(per);
           position: absolute;
