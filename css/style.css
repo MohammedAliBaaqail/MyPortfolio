@@ -93,12 +93,12 @@
 .link {
   color: white;
   font-weight: bolder;
-  text-shadow: 0 0 35px white !important;
+  text-shadow: 0 0 25px white !important;
 }
 
 .link:hover {
   text-decoration: underline;
-  text-shadow: 0 0 35px, 0 0 10px rgba(255, 255, 255, 0.622) !important;
+  text-shadow: 0 0 25px, 0 0 10px rgba(255, 255, 255, 0.622) !important;
 }
 
 ::-moz-selection {
@@ -246,11 +246,7 @@ h3 {
 .main .section h1 {
   letter-spacing: 1px;
   color: var(--clr);
-  text-shadow: 0 0 30px var(--clr);
-}
-
-#about-me {
-  text-shadow: 0 0 35px var(--about-me-clr);
+  text-shadow: 0 0 25px var(--clr);
 }
 
 #about-me .main-container {
@@ -281,6 +277,7 @@ h3 {
 
 #about-me h2 {
   text-align: center;
+  text-shadow: 0 0 25px var(--about-me-clr);
 }
 
 #about-me .me {
@@ -289,6 +286,7 @@ h3 {
 
 #about-me .me h3 {
   color: var(--about-me-clr);
+  text-shadow: 0 0 25px var(--about-me-clr);
   text-align: center;
 }
 
@@ -324,11 +322,13 @@ h3 {
 
 #about-me .about-me-container .info h2 {
   color: var(--about-me-clr);
+  text-shadow: 0 0 25px var(--about-me-clr);
   padding-bottom: 5px;
 }
 
 #about-me .about-me-container .info h3 {
   color: var(--about-me-clr);
+  text-shadow: 0 0 25px var(--about-me-clr);
 }
 
 #about-me .about-me-card {
@@ -519,6 +519,7 @@ h3 {
 .image-content h2,
 .card-content h2 {
   color: var(--work-clr);
+  text-shadow: 0 0 25px var(--work-clr);
 }
 
 .image-content .card-links,

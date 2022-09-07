@@ -81,10 +81,10 @@
 .link {
   color: white;
   font-weight: bolder;
-  text-shadow: 0 0 35px white !important ;
+  text-shadow: 0 0 25px white !important ;
   &:hover {
     text-decoration: underline ;
-    text-shadow: 0 0 35px, 0 0 10px rgba(255, 255, 255, 0.622) !important ;
+    text-shadow: 0 0 25px, 0 0 10px rgba(255, 255, 255, 0.622) !important ;
   }
 }
 
@@ -240,7 +240,7 @@ h3 {
       // filter: drop-shadow(0px 0px 20px var(--clr));
       color: var(--clr);
 
-      text-shadow: 0 0 30px var(--clr);
+      text-shadow: 0 0 25px var(--clr);
     }
   }
 }
@@ -271,13 +271,13 @@ h3 {
   
   h2 {
     text-align: center;
+    text-shadow: 0 0 25px var(--about-me-clr);
   }
-  text-shadow: 0 0 35px var(--about-me-clr);
   .me {
     opacity: 1;
     h3 {
       color: var(--about-me-clr);
-
+      text-shadow: 0 0 25px var(--about-me-clr);
       text-align: center;
     }
   }
@@ -307,10 +307,12 @@ h3 {
       padding: 25px;
       h2 {
         color: var(--about-me-clr);
+        text-shadow: 0 0 25px var(--about-me-clr);
         padding-bottom: 5px;
       }
       h3 {
         color: var(--about-me-clr);
+        text-shadow: 0 0 25px var(--about-me-clr);
         // text-align: center;;
       }
     }
@@ -483,6 +485,7 @@ h3 {
 .card-content {
   h2 {
     color: var(--work-clr);
+    text-shadow: 0 0 25px var(--work-clr);
   }
   .card-links {
     padding: 10px;
