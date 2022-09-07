@@ -330,7 +330,7 @@ h3 {
     border: var(--about-me-clr) solid 2px;
     margin: 50px;
     backdrop-filter: blur(6px);
-    box-shadow: 7px 7px 10px -1px var(--about-me-clr);
+    box-shadow: 7px 7px 25px 3px var(--about-me-clr);
   }
 }
 #skills {
@@ -369,8 +369,8 @@ h3 {
     padding: 0 40px 50px;
     -webkit-backdrop-filter: blur(6px);
     backdrop-filter: blur(6px);
-    -webkit-box-shadow: 7px 7px 10px -1px var(--skills-clr);
-    box-shadow: 7px 7px 10px -1px var(--skills-clr);
+    -webkit-box-shadow: 7px 7px 25px 3px var(--skills-clr);
+    box-shadow: 7px 7px 25px 3px var(--skills-clr);
     opacity: 1;
     // position: absolute;
     // left: 20%;
@@ -399,7 +399,7 @@ h3 {
     border-radius: 3px;
     position: relative;
     animation: fillBars 2.5s 1;
-    box-shadow: 0px 0px 8px 3px var(--skills-clr);
+    box-shadow: 0px 0px 10px 3px var(--skills-clr);
   }
 
   .skill-per::before {
@@ -463,7 +463,7 @@ h3 {
   }
   .slide-content {
     margin:  40px;
-    padding: 14px;
+    padding: 0 20px 22px 0;
     overflow: hidden;
     // border-radius: 25px;
     // backdrop-filter: blur(10px);
@@ -479,7 +479,7 @@ h3 {
   // );
   border: var(--work-clr) solid 2px;
   backdrop-filter: blur(4px);
-  box-shadow: 7px 7px 10px -1px var(--work-clr);
+  box-shadow: 7px 7px 15px 0px var(--work-clr);
 }
 .image-content,
 .card-content {
@@ -757,7 +757,7 @@ h3 {
 .nav-clr {
 &.about-me {
 
-  box-shadow: var(--about-me-clr) 0px 5px 10px;
+  box-shadow: var(--about-me-clr) 0px 5px 15px;
   background: linear-gradient(
     270deg,
     rgba(224, 224, 224, 0.18) 10%,
@@ -771,7 +771,7 @@ h3 {
   backdrop-filter: blur(8px);
 }
 &.my-skills {
-  box-shadow: var(--skills-clr) 0px 5px 10px;
+  box-shadow: var(--skills-clr) 0px 5px 15px;
   background: linear-gradient(
     270deg,
     rgba(224, 224, 224, 0.18) 10%,
@@ -785,7 +785,7 @@ h3 {
   backdrop-filter: blur(8px);
 }
 &.my-work {
-  box-shadow: var(--work-clr) 0px 5px 10px;
+  box-shadow: var(--work-clr) 0px 5px 15px;
   background: linear-gradient(
     270deg,
     rgba(224, 224, 224, 0.18) 10%,
@@ -872,13 +872,13 @@ h3 {
           width: 105%;
           height: 105%;
           &.about-me {
-            box-shadow: 8px 7px 8px -2px var(--about-me-clr);
+            box-shadow: -10px 7px 15px -2px var(--about-me-clr);
           }
           &.my-skills {
-            box-shadow: 8px 7px 8px -2px var(--skills-clr);
+            box-shadow: -10px 7px 15px -2px var(--skills-clr);
           }
           &.my-work {
-            box-shadow: 8px 7px 8px -2px var(--work-clr);
+            box-shadow: -10px 7px 15px -2px var(--work-clr);
           }
           
           // filter: drop-shadow( 3px 3px 8px rgba(0, 0, 0, 0.47));

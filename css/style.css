@@ -338,8 +338,8 @@ h3 {
   margin: 50px;
   -webkit-backdrop-filter: blur(6px);
           backdrop-filter: blur(6px);
-  -webkit-box-shadow: 7px 7px 10px -1px var(--about-me-clr);
-          box-shadow: 7px 7px 10px -1px var(--about-me-clr);
+  -webkit-box-shadow: 7px 7px 25px 3px var(--about-me-clr);
+          box-shadow: 7px 7px 25px 3px var(--about-me-clr);
 }
 
 #skills {
@@ -379,8 +379,8 @@ h3 {
   padding: 0 40px 50px;
   -webkit-backdrop-filter: blur(6px);
   backdrop-filter: blur(6px);
-  -webkit-box-shadow: 7px 7px 10px -1px var(--skills-clr);
-  box-shadow: 7px 7px 10px -1px var(--skills-clr);
+  -webkit-box-shadow: 7px 7px 25px 3px var(--skills-clr);
+  box-shadow: 7px 7px 25px 3px var(--skills-clr);
   opacity: 1;
 }
 
@@ -406,8 +406,8 @@ h3 {
   position: relative;
   -webkit-animation: fillBars 2.5s 1;
           animation: fillBars 2.5s 1;
-  -webkit-box-shadow: 0px 0px 8px 3px var(--skills-clr);
-          box-shadow: 0px 0px 8px 3px var(--skills-clr);
+  -webkit-box-shadow: 0px 0px 10px 3px var(--skills-clr);
+          box-shadow: 0px 0px 10px 3px var(--skills-clr);
 }
 
 #skills .skill-per::before {
@@ -489,7 +489,7 @@ h3 {
 
 #work .slide-content {
   margin: 40px;
-  padding: 14px;
+  padding: 0 20px 22px 0;
   overflow: hidden;
 }
 
@@ -497,8 +497,8 @@ h3 {
   border: var(--work-clr) solid 2px;
   -webkit-backdrop-filter: blur(4px);
           backdrop-filter: blur(4px);
-  -webkit-box-shadow: 7px 7px 10px -1px var(--work-clr);
-          box-shadow: 7px 7px 10px -1px var(--work-clr);
+  -webkit-box-shadow: 7px 7px 15px 0px var(--work-clr);
+          box-shadow: 7px 7px 15px 0px var(--work-clr);
 }
 
 .image-content,
@@ -790,8 +790,8 @@ h3 {
 }
 
 .nav-clr.about-me {
-  -webkit-box-shadow: var(--about-me-clr) 0px 5px 10px;
-          box-shadow: var(--about-me-clr) 0px 5px 10px;
+  -webkit-box-shadow: var(--about-me-clr) 0px 5px 15px;
+          box-shadow: var(--about-me-clr) 0px 5px 15px;
   background: -webkit-gradient(linear, right top, left top, color-stop(10%, rgba(224, 224, 224, 0.18)), color-stop(50%, rgba(255, 255, 255, 0.15)));
   background: linear-gradient(270deg, rgba(224, 224, 224, 0.18) 10%, rgba(255, 255, 255, 0.15) 50%);
   border-bottom: var(--about-me-clr) solid 2px;
@@ -805,8 +805,8 @@ h3 {
 }
 
 .nav-clr.my-skills {
-  -webkit-box-shadow: var(--skills-clr) 0px 5px 10px;
-          box-shadow: var(--skills-clr) 0px 5px 10px;
+  -webkit-box-shadow: var(--skills-clr) 0px 5px 15px;
+          box-shadow: var(--skills-clr) 0px 5px 15px;
   background: -webkit-gradient(linear, right top, left top, color-stop(10%, rgba(224, 224, 224, 0.18)), color-stop(50%, rgba(255, 255, 255, 0.15)));
   background: linear-gradient(270deg, rgba(224, 224, 224, 0.18) 10%, rgba(255, 255, 255, 0.15) 50%);
   border-bottom: var(--skills-clr) solid 2px;
@@ -820,8 +820,8 @@ h3 {
 }
 
 .nav-clr.my-work {
-  -webkit-box-shadow: var(--work-clr) 0px 5px 10px;
-          box-shadow: var(--work-clr) 0px 5px 10px;
+  -webkit-box-shadow: var(--work-clr) 0px 5px 15px;
+          box-shadow: var(--work-clr) 0px 5px 15px;
   background: -webkit-gradient(linear, right top, left top, color-stop(10%, rgba(224, 224, 224, 0.18)), color-stop(50%, rgba(255, 255, 255, 0.15)));
   background: linear-gradient(270deg, rgba(224, 224, 224, 0.18) 10%, rgba(255, 255, 255, 0.15) 50%);
   border-bottom: var(--work-clr) solid 2px;
@@ -916,18 +916,18 @@ h3 {
 }
 
 .nav ul li a .active.about-me {
-  -webkit-box-shadow: 8px 7px 8px -2px var(--about-me-clr);
-          box-shadow: 8px 7px 8px -2px var(--about-me-clr);
+  -webkit-box-shadow: -10px 7px 15px -2px var(--about-me-clr);
+          box-shadow: -10px 7px 15px -2px var(--about-me-clr);
 }
 
 .nav ul li a .active.my-skills {
-  -webkit-box-shadow: 8px 7px 8px -2px var(--skills-clr);
-          box-shadow: 8px 7px 8px -2px var(--skills-clr);
+  -webkit-box-shadow: -10px 7px 15px -2px var(--skills-clr);
+          box-shadow: -10px 7px 15px -2px var(--skills-clr);
 }
 
 .nav ul li a .active.my-work {
-  -webkit-box-shadow: 8px 7px 8px -2px var(--work-clr);
-          box-shadow: 8px 7px 8px -2px var(--work-clr);
+  -webkit-box-shadow: -10px 7px 15px -2px var(--work-clr);
+          box-shadow: -10px 7px 15px -2px var(--work-clr);
 }
 
 .nav img {
