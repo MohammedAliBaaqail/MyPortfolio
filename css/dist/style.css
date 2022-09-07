@@ -267,7 +267,7 @@ h3 {
   border: var(--about-me-clr) solid 2px;
   margin: 50px;
   backdrop-filter: blur(6px);
-  box-shadow: 7px 7px 25px 3px var(--about-me-clr);
+  box-shadow: 7px 7px 25px 0px var(--about-me-clr);
 }
 
 #skills {
@@ -292,8 +292,8 @@ h3 {
   padding: 0 40px 50px;
   -webkit-backdrop-filter: blur(6px);
   backdrop-filter: blur(6px);
-  -webkit-box-shadow: 7px 7px 25px 3px var(--skills-clr);
-  box-shadow: 7px 7px 25px 3px var(--skills-clr);
+  -webkit-box-shadow: 7px 7px 25px 0px var(--skills-clr);
+  box-shadow: 7px 7px 25px 0px var(--skills-clr);
   opacity: 1;
 }
 #skills .skill-name {
@@ -315,7 +315,7 @@ h3 {
   border-radius: 3px;
   position: relative;
   animation: fillBars 2.5s 1;
-  box-shadow: 0px 0px 10px 3px var(--skills-clr);
+  box-shadow: 0px 0px 10px 0px var(--skills-clr);
 }
 #skills .skill-per::before {
   content: attr(per);
