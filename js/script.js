@@ -289,19 +289,8 @@ mediumZoom(".zoom", {
 
 
 
-// const tags = document.querySelectorAll(('h2').style.color)
-// colorInput.addEventListener('input', () =>{
-//     let colorInput = document.querySelector('#color');
-//     let color = colorInput.value;
-//     console.log(color);
 
-
-// // tags.forEach((tag) => {  console.log( document.querySelector('h2')[i]);})
-// // console.log( document.querySelector('h2').style.color);
-//     // document.body.style.backgroundColor = color;
-//     document.querySelector('h2').style.color = color;
-// });
-
+// [start] for changing page colors ---------------------------------------------
 let aboutMecolorInput = document.querySelector('#about-me-clr');
 localStorage.getItem("color1") == null  ? aboutMecolorInput.value="#ffbf00" :aboutMecolorInput.value = localStorage.getItem("color1");
 document.documentElement.style.setProperty('--about-me-clr',aboutMecolorInput.value);
@@ -352,7 +341,4 @@ resetButton.addEventListener('click', () =>{
   localStorage.removeItem('color3');
   window.location.reload(false)
 })
-
-
-// let skillColor = skillColorInput.value;
-// let workolor = workolorInput.value;
+// [end] for changing page colors ---------------------------------------------

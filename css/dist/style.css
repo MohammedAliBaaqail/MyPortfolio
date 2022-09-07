@@ -742,7 +742,7 @@ h3 {
   border-right: 8px solid var(--skills-clr);
   -webkit-text-stroke: 1px var(--skills-clr);
   filter: drop-shadow(0px 0px 15px var(--skills-clr));
-  text-shadow: 0 0 20px var(--work-clr);
+  text-shadow: 0 0 20px var(--skills-clr);
 }
 
 .nav ul li.my-work-nav .hovered::before {
