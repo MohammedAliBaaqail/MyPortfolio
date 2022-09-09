@@ -330,7 +330,7 @@ h3 {
     border: var(--about-me-clr) solid 2px;
     margin: 50px;
     backdrop-filter: blur(6px);
-    box-shadow: 7px 7px 25px 0px var(--about-me-clr);
+    box-shadow: 7px 7px 15px -2px var(--about-me-clr);
   }
 }
 #skills {
@@ -369,8 +369,8 @@ h3 {
     padding: 0 40px 50px;
     -webkit-backdrop-filter: blur(6px);
     backdrop-filter: blur(6px);
-    -webkit-box-shadow: 7px 7px 25px 0px var(--skills-clr);
-    box-shadow: 7px 7px 25px 0px var(--skills-clr);
+ 
+    box-shadow: 7px 7px 15px -2px var(--skills-clr);
     opacity: 1;
     // position: absolute;
     // left: 20%;
@@ -1313,7 +1313,7 @@ html{  scroll-snap-type:none;
     column-gap: 12px !important;
     row-gap: 12px !important;
     .skills-box{
-      box-shadow: 7px 7px 13px -5px var(--skills-clr)!important;
+      box-shadow: 7px 7px 13px -2px var(--skills-clr)!important;
       width: 115px !important;
       height: 150px !important;
       img{
@@ -1354,8 +1354,8 @@ html{  scroll-snap-type:none;
     // padding: 5px;
 
     // backdrop-filter: blur(6px);
-    -webkit-box-shadow: 7px 7px 25px 0px var(--skills-clr);
-    box-shadow: 7px 7px 25px 0px var(--skills-clr);
+    
+    box-shadow: 7px 7px 15px -2px var(--skills-clr);
     width:260px;
     
     display: flex;

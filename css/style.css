@@ -338,8 +338,8 @@ h3 {
   margin: 50px;
   -webkit-backdrop-filter: blur(6px);
           backdrop-filter: blur(6px);
-  -webkit-box-shadow: 7px 7px 25px 0px var(--about-me-clr);
-          box-shadow: 7px 7px 25px 0px var(--about-me-clr);
+  -webkit-box-shadow: 7px 7px 15px -2px var(--about-me-clr);
+          box-shadow: 7px 7px 15px -2px var(--about-me-clr);
 }
 
 #skills {
@@ -379,8 +379,8 @@ h3 {
   padding: 0 40px 50px;
   -webkit-backdrop-filter: blur(6px);
   backdrop-filter: blur(6px);
-  -webkit-box-shadow: 7px 7px 25px 0px var(--skills-clr);
-  box-shadow: 7px 7px 25px 0px var(--skills-clr);
+  -webkit-box-shadow: 7px 7px 15px -2px var(--skills-clr);
+          box-shadow: 7px 7px 15px -2px var(--skills-clr);
   opacity: 1;
 }
 
@@ -1231,8 +1231,8 @@ h3 {
     row-gap: 12px !important;
   }
   .skills-container-1 .skills-box {
-    -webkit-box-shadow: 7px 7px 13px -5px var(--skills-clr) !important;
-            box-shadow: 7px 7px 13px -5px var(--skills-clr) !important;
+    -webkit-box-shadow: 7px 7px 13px -2px var(--skills-clr) !important;
+            box-shadow: 7px 7px 13px -2px var(--skills-clr) !important;
     width: 115px !important;
     height: 150px !important;
   }
@@ -1288,8 +1288,8 @@ h3 {
   -webkit-transform: perspective(1000px);
           transform: perspective(1000px);
   border: var(--skills-clr) solid 2px;
-  -webkit-box-shadow: 7px 7px 25px 0px var(--skills-clr);
-  box-shadow: 7px 7px 25px 0px var(--skills-clr);
+  -webkit-box-shadow: 7px 7px 15px -2px var(--skills-clr);
+          box-shadow: 7px 7px 15px -2px var(--skills-clr);
   width: 260px;
   display: -webkit-box;
   display: -ms-flexbox;
