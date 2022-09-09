@@ -103,28 +103,28 @@ items = document.querySelectorAll(".container");
 window.addEventListener(
   "scroll",
   () => {
-    let contentPosition = skillsList[0].getBoundingClientRect().bottom;
-    let contentPositionTop = skillsList[0].getBoundingClientRect().top;
+    // let contentPosition = skillsList[0].getBoundingClientRect().bottom;
+    // let contentPositionTop = skillsList[0].getBoundingClientRect().top;
 
-    for (i = 0; i < skillsList.length; i = i + 1) {
-      let screenPosition = window.innerHeight;
-      // console.log('vh',vh,j,i)
-      // console.log('contentPosition',contentPosition)
-      // console.log('screenPosition',screenPosition)
+    // for (i = 0; i < skillsList.length; i = i + 1) {
+    //   let screenPosition = window.innerHeight;
+    //   // console.log('vh',vh,j,i)
+    //   // console.log('contentPosition',contentPosition)
+    //   // console.log('screenPosition',screenPosition)
 
-      if (
-        contentPositionTop < screenPosition &&
-        contentPositionTop + vh > screenPosition
-      ) {
-        skillsList[i].classList.add("skill-per");
+    //   if (
+    //     contentPositionTop < screenPosition &&
+    //     contentPositionTop + vh > screenPosition
+    //   ) {
+    //     skillsList[i].classList.add("skill-per");
 
-        // skillsList[i].classList.add("scroll-effect");
-      } else {
-        skillsList[i].classList.remove("skill-per");
+    //     // skillsList[i].classList.add("scroll-effect");
+    //   } else {
+    //     skillsList[i].classList.remove("skill-per");
 
-        // skillsList[i].classList.remove("scroll-effect");
-      }
-    }
+    //     // skillsList[i].classList.remove("scroll-effect");
+    //   }
+    // }
 
     for (j = 0; j < list.length; j = j + 1) {
       for (i = 0; i < list[j].length; i = i + 1) {
@@ -286,59 +286,65 @@ mediumZoom(".zoom", {
   background: "#000000",
 });
 
-
-
-
-
 // [start] for changing page colors ---------------------------------------------
-let aboutMecolorInput = document.querySelector('#about-me-clr');
-localStorage.getItem("color1") == null  ? aboutMecolorInput.value="#ffbf00" :aboutMecolorInput.value = localStorage.getItem("color1");
-document.documentElement.style.setProperty('--about-me-clr',aboutMecolorInput.value);
+let aboutMecolorInput = document.querySelector("#about-me-clr");
+localStorage.getItem("color1") == null
+  ? (aboutMecolorInput.value = "#ffbf00")
+  : (aboutMecolorInput.value = localStorage.getItem("color1"));
+document.documentElement.style.setProperty(
+  "--about-me-clr",
+  aboutMecolorInput.value
+);
 
-let skillColorInput = document.querySelector('#skills-clr');
+let skillColorInput = document.querySelector("#skills-clr");
 // console.log(localStorage.getItem("color2"));
-localStorage.getItem("color2") == null   ? skillColorInput.value="#ff0000" :skillColorInput.value = localStorage.getItem("color2");
-document.documentElement.style.setProperty('--skills-clr',skillColorInput.value);
+localStorage.getItem("color2") == null
+  ? (skillColorInput.value = "#ff0000")
+  : (skillColorInput.value = localStorage.getItem("color2"));
+document.documentElement.style.setProperty(
+  "--skills-clr",
+  skillColorInput.value
+);
 
-let workColorInput = document.querySelector('#work-clr');
+let workColorInput = document.querySelector("#work-clr");
 // console.log(localStorage.getItem("color3"));
-localStorage.getItem("color3") == null  ? workColorInput.value="#009dff" :workColorInput.value = localStorage.getItem("color3");
-document.documentElement.style.setProperty('--work-clr',workColorInput.value);
+localStorage.getItem("color3") == null
+  ? (workColorInput.value = "#009dff")
+  : (workColorInput.value = localStorage.getItem("color3"));
+document.documentElement.style.setProperty("--work-clr", workColorInput.value);
 
 // workColorInput.value = '#009dff';
 // console.log(workColorInput.value);
 
-aboutMecolorInput.addEventListener('input', () =>{
+aboutMecolorInput.addEventListener("input", () => {
   let aboutMecolor = aboutMecolorInput.value;
-  localStorage.setItem('color1', aboutMecolor);
-  document.documentElement.style.setProperty('--about-me-clr',aboutMecolor);
+  localStorage.setItem("color1", aboutMecolor);
+  document.documentElement.style.setProperty("--about-me-clr", aboutMecolor);
 });
-skillColorInput.addEventListener('input', () =>{
+skillColorInput.addEventListener("input", () => {
   let skillColor = skillColorInput.value;
-  localStorage.setItem('color2', skillColor);
+  localStorage.setItem("color2", skillColor);
 
-  document.documentElement.style.setProperty('--skills-clr',skillColor);
+  document.documentElement.style.setProperty("--skills-clr", skillColor);
 });
-workColorInput.addEventListener('input', () =>{
+workColorInput.addEventListener("input", () => {
   let workColor = workColorInput.value;
-  localStorage.setItem('color3', workColor);
+  localStorage.setItem("color3", workColor);
 
-  document.documentElement.style.setProperty('--work-clr',workColor);
+  document.documentElement.style.setProperty("--work-clr", workColor);
 });
 
-
-let colorButton = document.querySelector('.color-button');
-let colorPickers = document.querySelector('.color-pickers');
-colorButton.addEventListener('click', () =>{
-  colorPickers.classList.toggle('open');
-  colorButton.classList.toggle('open');
-
-})
-let resetButton = document.querySelector('.reset-button');
-resetButton.addEventListener('click', () =>{
-  localStorage.removeItem('color1');
-  localStorage.removeItem('color2');
-  localStorage.removeItem('color3');
-  window.location.reload(false)
-})
+let colorButton = document.querySelector(".color-button");
+let colorPickers = document.querySelector(".color-pickers");
+colorButton.addEventListener("click", () => {
+  colorPickers.classList.toggle("open");
+  colorButton.classList.toggle("open");
+});
+let resetButton = document.querySelector(".reset-button");
+resetButton.addEventListener("click", () => {
+  localStorage.removeItem("color1");
+  localStorage.removeItem("color2");
+  localStorage.removeItem("color3");
+  window.location.reload(false);
+});
 // [end] for changing page colors ---------------------------------------------

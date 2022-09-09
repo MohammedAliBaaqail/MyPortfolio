@@ -79,29 +79,32 @@ zoomIn];
 var vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
 items = document.querySelectorAll(".container");
 window.addEventListener("scroll", function () {
-  var contentPosition = skillsList[0].getBoundingClientRect().bottom;
-  var contentPositionTop = skillsList[0].getBoundingClientRect().top;
-
-  for (i = 0; i < skillsList.length; i = i + 1) {
-    var screenPosition = window.innerHeight; // console.log('vh',vh,j,i)
-    // console.log('contentPosition',contentPosition)
-    // console.log('screenPosition',screenPosition)
-
-    if (contentPositionTop < screenPosition && contentPositionTop + vh > screenPosition) {
-      skillsList[i].classList.add("skill-per"); // skillsList[i].classList.add("scroll-effect");
-    } else {
-      skillsList[i].classList.remove("skill-per"); // skillsList[i].classList.remove("scroll-effect");
-    }
-  }
-
+  // let contentPosition = skillsList[0].getBoundingClientRect().bottom;
+  // let contentPositionTop = skillsList[0].getBoundingClientRect().top;
+  // for (i = 0; i < skillsList.length; i = i + 1) {
+  //   let screenPosition = window.innerHeight;
+  //   // console.log('vh',vh,j,i)
+  //   // console.log('contentPosition',contentPosition)
+  //   // console.log('screenPosition',screenPosition)
+  //   if (
+  //     contentPositionTop < screenPosition &&
+  //     contentPositionTop + vh > screenPosition
+  //   ) {
+  //     skillsList[i].classList.add("skill-per");
+  //     // skillsList[i].classList.add("scroll-effect");
+  //   } else {
+  //     skillsList[i].classList.remove("skill-per");
+  //     // skillsList[i].classList.remove("scroll-effect");
+  //   }
+  // }
   for (j = 0; j < list.length; j = j + 1) {
     for (i = 0; i < list[j].length; i = i + 1) {
-      var _contentPosition = list[j][i].getBoundingClientRect().bottom;
-      var _screenPosition = window.innerHeight; // console.log('vh',vh,j,i)
+      var contentPosition = list[j][i].getBoundingClientRect().bottom;
+      var screenPosition = window.innerHeight; // console.log('vh',vh,j,i)
       // console.log('contentPosition',contentPosition)
       // console.log('screenPosition',screenPosition)
 
-      if (_contentPosition < _screenPosition && _contentPosition + vh > _screenPosition) {
+      if (contentPosition < screenPosition && contentPosition + vh > screenPosition) {
         list[j][i].classList.add("animate__animated");
         list[j][i].classList.add("animate__".concat(listOfEffects[j]));
         list[j][i].classList.add("scroll-effect");
@@ -243,44 +246,44 @@ mediumZoom(".zoom", {
   background: "#000000"
 }); // [start] for changing page colors ---------------------------------------------
 
-var aboutMecolorInput = document.querySelector('#about-me-clr');
+var aboutMecolorInput = document.querySelector("#about-me-clr");
 localStorage.getItem("color1") == null ? aboutMecolorInput.value = "#ffbf00" : aboutMecolorInput.value = localStorage.getItem("color1");
-document.documentElement.style.setProperty('--about-me-clr', aboutMecolorInput.value);
-var skillColorInput = document.querySelector('#skills-clr'); // console.log(localStorage.getItem("color2"));
+document.documentElement.style.setProperty("--about-me-clr", aboutMecolorInput.value);
+var skillColorInput = document.querySelector("#skills-clr"); // console.log(localStorage.getItem("color2"));
 
 localStorage.getItem("color2") == null ? skillColorInput.value = "#ff0000" : skillColorInput.value = localStorage.getItem("color2");
-document.documentElement.style.setProperty('--skills-clr', skillColorInput.value);
-var workColorInput = document.querySelector('#work-clr'); // console.log(localStorage.getItem("color3"));
+document.documentElement.style.setProperty("--skills-clr", skillColorInput.value);
+var workColorInput = document.querySelector("#work-clr"); // console.log(localStorage.getItem("color3"));
 
 localStorage.getItem("color3") == null ? workColorInput.value = "#009dff" : workColorInput.value = localStorage.getItem("color3");
-document.documentElement.style.setProperty('--work-clr', workColorInput.value); // workColorInput.value = '#009dff';
+document.documentElement.style.setProperty("--work-clr", workColorInput.value); // workColorInput.value = '#009dff';
 // console.log(workColorInput.value);
 
-aboutMecolorInput.addEventListener('input', function () {
+aboutMecolorInput.addEventListener("input", function () {
   var aboutMecolor = aboutMecolorInput.value;
-  localStorage.setItem('color1', aboutMecolor);
-  document.documentElement.style.setProperty('--about-me-clr', aboutMecolor);
+  localStorage.setItem("color1", aboutMecolor);
+  document.documentElement.style.setProperty("--about-me-clr", aboutMecolor);
 });
-skillColorInput.addEventListener('input', function () {
+skillColorInput.addEventListener("input", function () {
   var skillColor = skillColorInput.value;
-  localStorage.setItem('color2', skillColor);
-  document.documentElement.style.setProperty('--skills-clr', skillColor);
+  localStorage.setItem("color2", skillColor);
+  document.documentElement.style.setProperty("--skills-clr", skillColor);
 });
-workColorInput.addEventListener('input', function () {
+workColorInput.addEventListener("input", function () {
   var workColor = workColorInput.value;
-  localStorage.setItem('color3', workColor);
-  document.documentElement.style.setProperty('--work-clr', workColor);
+  localStorage.setItem("color3", workColor);
+  document.documentElement.style.setProperty("--work-clr", workColor);
 });
-var colorButton = document.querySelector('.color-button');
-var colorPickers = document.querySelector('.color-pickers');
-colorButton.addEventListener('click', function () {
-  colorPickers.classList.toggle('open');
-  colorButton.classList.toggle('open');
+var colorButton = document.querySelector(".color-button");
+var colorPickers = document.querySelector(".color-pickers");
+colorButton.addEventListener("click", function () {
+  colorPickers.classList.toggle("open");
+  colorButton.classList.toggle("open");
 });
-var resetButton = document.querySelector('.reset-button');
-resetButton.addEventListener('click', function () {
-  localStorage.removeItem('color1');
-  localStorage.removeItem('color2');
-  localStorage.removeItem('color3');
+var resetButton = document.querySelector(".reset-button");
+resetButton.addEventListener("click", function () {
+  localStorage.removeItem("color1");
+  localStorage.removeItem("color2");
+  localStorage.removeItem("color3");
   window.location.reload(false);
 }); // [end] for changing page colors ---------------------------------------------
