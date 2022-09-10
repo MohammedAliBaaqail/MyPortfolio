@@ -1049,7 +1049,8 @@ h3 {
   row-gap: 30px;
   .skills-box{
     
-    background-color: #161616;
+    border-radius: 3%;
+    background-color: #1616169c;
     position: relative;
     transform-style: preserve-3d;
     transform: perspective(1000px);
@@ -1064,7 +1065,31 @@ h3 {
     display: flex;
     flex-direction: column;
     align-items: center;
-   
+    .skill-content{
+      position: absolute;
+      top:80%;
+      left:10px;
+      right: 10px;
+      // background: #2a2a2a;
+      // backdrop-filter: blur(6px);
+      background-color: #070a1cd4;
+      // border: #f1f1f1 solid 1px;
+      box-shadow: var(--skills-clr) 0px 0px 10px;
+      border-radius: 3%;
+      font-size: 1.2em;
+      font-weight: 900;
+      color:var(--skills-clr);
+      transform: translateZ(+100px) scaleY(0);
+      padding : 10px;
+      transform-origin: top;
+      transition: transform 0.4s ease-in-out;
+      
+
+    }
+    &:hover .skill-content{
+     transform: translateZ(+100px) scaleY(1);
+    
+    }
     &:hover img {
       transform: scale(1.1);
       transition: ease-in-out 0.1s;
@@ -1106,9 +1131,10 @@ h3 {
       position: absolute;
   // backdrop-filter: blur(6px);
   // transform: translateZ(-100px);
-  color: rgb(196, 0, 0);
+  // filter: blur(2px);
+  // color: white;
 // overflow: hidden;
-  z-index: -1000000;
+
 }
 
 
