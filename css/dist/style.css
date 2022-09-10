@@ -1074,6 +1074,10 @@ h3 {
     width: 100px !important;
     height: 150px !important;
   }
+  .skills-container-1 .skills-box .skill-content {
+    font-size: 0.5em !important;
+    display: none;
+  }
   .skills-container-1 .skills-box img {
     width: 90px !important;
     height: 100px !important;

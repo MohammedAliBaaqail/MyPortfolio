@@ -1440,6 +1440,10 @@ html{  scroll-snap-type:none;
       box-shadow: 7px 7px 13px -2px var(--skills-clr)!important;
       width: 100px !important;
       height: 150px !important;
+      .skill-content{
+        font-size: 0.5em!important;
+        display: none;
+      }
       img{
         width: 90px!important;
         height: 100px!important;
