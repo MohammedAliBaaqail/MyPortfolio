@@ -44,8 +44,8 @@
 }
 
 .color-button.open {
-  -webkit-transform: translateX(150px) rotateY(180deg);
-          transform: translateX(150px) rotateY(180deg);
+  -webkit-transform: translateX(200px) rotateY(180deg);
+          transform: translateX(200px) rotateY(180deg);
 }
 
 .color-pickers {
@@ -54,9 +54,9 @@
   border-right: 2px solid #fffffe;
   padding: 20px;
   z-index: 100;
-  width: 150px;
-  height: 70px;
-  left: -150px;
+  width: 200px;
+  height: 69px;
+  left: -200px;
   position: fixed;
   -webkit-transition: ease-in-out 0.5s;
   transition: ease-in-out 0.5s;
@@ -84,8 +84,8 @@
 }
 
 .color-pickers.open {
-  -webkit-transform: translateX(150px);
-          transform: translateX(150px);
+  -webkit-transform: translateX(200px);
+          transform: translateX(200px);
   -webkit-transition: ease-in-out 0.5s;
   transition: ease-in-out 0.5s;
 }
@@ -1062,6 +1062,7 @@ h3 {
 }
 
 #skills .skills-container-1 .skills-box .skill-content {
+  text-shadow: 0 0 20px var(--skills-clr);
   position: absolute;
   top: 80%;
   width: 120%;
@@ -1077,10 +1078,10 @@ h3 {
   padding: 10px;
   -webkit-transform-origin: top;
           transform-origin: top;
-  -webkit-transition: -webkit-transform 0.4s ease-in-out;
-  transition: -webkit-transform 0.4s ease-in-out;
-  transition: transform 0.4s ease-in-out;
-  transition: transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
 #skills .skills-container-1 .skills-box:hover .skill-content {
@@ -1114,6 +1115,7 @@ h3 {
 #skills .skills-container-1 .skills-box h2 {
   -webkit-transform: translateZ(50px);
           transform: translateZ(50px);
+  text-shadow: 0 0 20px var(--skills-clr);
   font-size: 2.0em;
   margin: 10px 0;
   color: var(--skills-clr);

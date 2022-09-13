@@ -40,7 +40,7 @@
   transition: ease-in-out 0.5s;
 }
 .color-button.open {
-  transform: translateX(150px) rotateY(180deg);
+  transform: translateX(200px) rotateY(180deg);
 }
 
 .color-pickers {
@@ -49,9 +49,9 @@
   border-right: 2px solid #fffffe;
   padding: 20px;
   z-index: 100;
-  width: 150px;
-  height: 70px;
-  left: -150px;
+  width: 200px;
+  height: 69px;
+  left: -200px;
   position: fixed;
   transition: ease-in-out 0.5s;
   display: flex;
@@ -70,7 +70,7 @@
   background-color: var(--work-clr);
 }
 .color-pickers.open {
-  transform: translateX(150px);
+  transform: translateX(200px);
   transition: ease-in-out 0.5s;
 }
 
@@ -798,6 +798,7 @@ h3 {
   align-items: center;
 }
 #skills .skills-container-1 .skills-box .skill-content {
+  text-shadow: 0 0 20px var(--skills-clr);
   position: absolute;
   top: 80%;
   width: 120%;
@@ -810,7 +811,7 @@ h3 {
   transform: translateZ(100px) scaleY(0);
   padding: 10px;
   transform-origin: top;
-  transition: transform 0.4s ease-in-out;
+  transition: transform 0.3s ease-in-out;
 }
 #skills .skills-container-1 .skills-box:hover .skill-content {
   transform: translateZ(100px) scaleY(1);
@@ -832,6 +833,7 @@ h3 {
 }
 #skills .skills-container-1 .skills-box h2 {
   transform: translateZ(50px);
+  text-shadow: 0 0 20px var(--skills-clr);
   font-size: 2em;
   margin: 10px 0;
   color: var(--skills-clr);
