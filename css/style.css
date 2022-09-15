@@ -49,10 +49,11 @@
 }
 
 .color-button {
-  background-image: url(../assets/arrow.png);
+  background-image: none;
   background-size: contain;
-  background-color: #00000000;
-  border: 2px solid #fff;
+  background-color: #0000008c;
+  color: #f1f1f1;
+  border: 1px solid #fff;
   border-radius: 10%;
   width: 45px;
   height: 45px;
@@ -64,8 +65,6 @@
   right: 20px;
   -webkit-transition: ease-in-out 0.5s;
   transition: ease-in-out 0.5s;
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
 }
 
 .color-button.open {
@@ -1171,15 +1170,17 @@ h3 {
     background-color: white;
   }
   .color-button {
+    background-image: url(../assets/arrow.png) !important;
+    color: transparent !important;
     background-repeat: no-repeat;
-    width: 22px;
-    height: 22px;
+    width: 17px;
+    height: 17px;
     padding: 0;
     position: fixed;
     cursor: pointer;
     z-index: 910;
     top: 55px;
-    right: 1%;
+    right: 2px;
     -webkit-transition: ease-in-out 0.5s;
     transition: ease-in-out 0.5s;
     -webkit-transform: rotateY(180deg);
