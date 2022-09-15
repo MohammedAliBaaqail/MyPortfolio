@@ -356,7 +356,11 @@ function changeBackground(){
   var background = document.getElementById("mySelect").value;
   if(background){
     
-    document.body.style.backgroundImage = "url('"+background+"')";
+    // document.body.style.backgroundImage = "url('"+background+"')";
+    document.documentElement.style.setProperty(
+      "--background",
+      "url('"+background+"')"
+    );
      localStorage.setItem("background", "url('"+background+"')");
   }
 
@@ -365,4 +369,9 @@ function changeBackground(){
 
 }
 console.log(localStorage.getItem("background"));
-document.body.style.backgroundImage = localStorage.getItem("background");
+// document.body.style.backgroundImage = localStorage.getItem("background");
+
+document.documentElement.style.setProperty(
+  "--background",
+  localStorage.getItem("background")
+);
