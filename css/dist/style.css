@@ -16,6 +16,26 @@
   text-decoration: none;
 }
 
+#mySelect {
+  position: fixed;
+  display: inline-block;
+  z-index: 9999;
+  left: 0px;
+  top: 0px;
+  background-color: #202020;
+  color: white;
+  padding: 16px;
+  height: 69px;
+  font-size: 16px;
+  border: none;
+}
+#mySelect option {
+  background-color: #242424;
+}
+#mySelect option:focus {
+  background-color: #fd0000;
+}
+
 .reset-button {
   width: 29px;
   height: 29px;
@@ -37,11 +57,12 @@
   cursor: pointer;
   z-index: 110;
   top: 12px;
-  left: 20px;
+  right: 20px;
   transition: ease-in-out 0.5s;
+  transform: rotateY(180deg);
 }
 .color-button.open {
-  transform: translateX(200px) rotateY(180deg);
+  transform: translateX(-200px) rotateY(0deg);
 }
 
 .color-pickers {
@@ -52,7 +73,7 @@
   z-index: 100;
   width: 200px;
   height: 69px;
-  left: -200px;
+  right: -200px;
   position: fixed;
   transition: ease-in-out 0.5s;
   display: flex;
@@ -71,7 +92,7 @@
   background-color: var(--work-clr);
 }
 .color-pickers.open {
-  transform: translateX(200px);
+  transform: translateX(-200px);
   transition: ease-in-out 0.5s;
 }
 
@@ -600,31 +621,11 @@ h3 {
   opacity: 0;
 }
 
-#mySelect {
-  position: fixed;
-  display: inline-block;
-  z-index: 9999;
-  right: 0px;
-  top: 0px;
-  background-color: #202020;
-  color: white;
-  padding: 16px;
-  height: 69px;
-  font-size: 16px;
-  border: none;
-}
-#mySelect option {
-  background-color: #242424;
-}
-#mySelect option:focus {
-  background-color: #fd0000;
-}
-
 .color-picker {
   z-index: 111;
   position: sticky;
   top: 15%;
-  margin-left: 20px;
+  margin-right: 20px;
   height: 0px;
 }
 
@@ -873,6 +874,19 @@ h3 {
     overscroll-behavior: none;
   }
 
+  #mySelect {
+    background-repeat: no-repeat;
+    width: 15px;
+    height: 22px;
+    padding: 0;
+    position: fixed;
+    cursor: pointer;
+    z-index: 910;
+    top: 55px;
+    right: 1%;
+    background-color: white;
+  }
+
   .color-button {
     background-repeat: no-repeat;
     width: 22px;
@@ -882,11 +896,12 @@ h3 {
     cursor: pointer;
     z-index: 910;
     top: 55px;
-    left: 1%;
+    right: 1%;
     transition: ease-in-out 0.5s;
+    transform: rotateY(180deg);
   }
   .color-button.open {
-    transform: rotateY(180deg);
+    transform: rotateY(0deg);
     transition: ease-in-out 0.5s;
   }
 
@@ -895,7 +910,7 @@ h3 {
     border-right: none;
     padding: 8px;
     z-index: 888;
-    left: -100%;
+    right: -100%;
     position: fixed;
     transition: ease-in-out 0.5s;
     width: 100%;
@@ -916,7 +931,7 @@ h3 {
     background-color: var(--work-clr);
   }
   .color-pickers.open {
-    transform: translateX(100%);
+    transform: translateX(-100%);
     transition: ease-in-out 0.5s;
   }
 
@@ -959,7 +974,6 @@ h3 {
   }
 
   body {
-    background-image: url(../assets/bg-dark-4.jpg) !important;
     background-size: cover !important;
     background-color: black !important;
     background-attachment: fixed;
