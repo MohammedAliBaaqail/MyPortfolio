@@ -287,3 +287,16 @@ resetButton.addEventListener("click", function () {
   localStorage.removeItem("color3");
   window.location.reload(false);
 }); // [end] for changing page colors ---------------------------------------------
+
+function changeBackground() {
+  var background = document.getElementById("mySelect").value;
+  var background = document.getElementById("mySelect").value;
+
+  if (background) {
+    document.body.style.backgroundImage = "url('" + background + "')";
+    localStorage.setItem("background", "url('" + background + "')");
+  }
+}
+
+console.log(localStorage.getItem("background"));
+document.body.style.backgroundImage = localStorage.getItem("background");

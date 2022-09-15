@@ -5,6 +5,7 @@
   --about-me-clr: #ffbf00;
   --skills-clr: #ff0000;
   --work-clr: #009dff;
+  --background: url(../assets/bg-dark-4.jpg) !important;
 }
 
 * {
@@ -123,7 +124,7 @@ html {
 }
 
 body {
-  background-image: url(../assets/bg-dark-4.jpg) !important;
+  background-image: var(--background);
   background-size: cover !important;
   background-color: black !important;
   background-attachment: fixed;
@@ -778,6 +779,28 @@ h3 {
 
 .photo-box:hover .content .personal {
   opacity: 0;
+}
+
+#mySelect {
+  position: fixed;
+  display: inline-block;
+  z-index: 9999;
+  right: 0px;
+  top: 0px;
+  background-color: #202020;
+  color: white;
+  padding: 16px;
+  height: 69px;
+  font-size: 16px;
+  border: none;
+}
+
+#mySelect option {
+  background-color: #242424;
+}
+
+#mySelect option:focus {
+  background-color: #fd0000;
 }
 
 .color-picker {
