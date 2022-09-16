@@ -836,7 +836,7 @@ h3 {
   transition: transform 0.3s ease-in-out;
 }
 #skills .skills-container-1 .skills-box:hover .skill-content {
-  transform: translateZ(100px) scaleY(1);
+  transform: translateZ(175px) scaleY(1);
 }
 #skills .skills-container-1 .skills-box:hover img {
   transform: scale(1.1);

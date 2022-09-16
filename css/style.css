@@ -1109,8 +1109,8 @@ h3 {
 }
 
 #skills .skills-container-1 .skills-box:hover .skill-content {
-  -webkit-transform: translateZ(100px) scaleY(1);
-          transform: translateZ(100px) scaleY(1);
+  -webkit-transform: translateZ(175px) scaleY(1);
+          transform: translateZ(175px) scaleY(1);
 }
 
 #skills .skills-container-1 .skills-box:hover img {
