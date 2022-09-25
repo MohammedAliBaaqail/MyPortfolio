@@ -16,13 +16,14 @@
   // font-family: 'Open Sans', sans-serif;
   font-family: "Saira Semi Condensed", sans-serif;
   text-decoration: none;
+  // animation: none !important;
 }
 
 #mySelect {
   position: fixed;
   display: inline-block;
  
-  z-index: 9999;
+  z-index: 50;
   left:0px;
   top:0px;
   background-color: #202020;
@@ -349,7 +350,7 @@ h3 {
 
 
   .about-me-card {
-    width: 600px;
+    // width: 720px;
     opacity: 1;
     // background: linear-gradient(
     //   270deg,
@@ -1403,42 +1404,42 @@ html{  scroll-snap-type:none;
       max-width: 85%;
       padding: 0px 20px 20px;
     }
-    .skill-per-mb {
-      animation: none !important;
-      height: 14px;
-      background: var(--skills-clr);
-      border-radius: 3px;
-      position: relative;
-      -webkit-animation: fillBars 2.5s 1;
-      animation: fillBars 2.5s 1;
-      -webkit-box-shadow: 0px 0px 15px 5px var(--skills-clr);
-      box-shadow: 0px 0px 15px 5px var(--skills-clr);
-        &::before {
-          content: attr(per);
-          position: absolute;
-          padding: 4px 6px;
-          background-color: #f1f1f1;
-          border-radius: 4px;
-          font-size: 12px;
-          top: -7px;
-          right: -27px;
-          -webkit-transform: translateX(50%);
-          transform: translateX(50%);
-          z-index: 2;
-      }
-        &::after {
-          content: "";
-          position: absolute;
-          width: 10px;
-          height: 10px;
-          background: #f1f1f1;
-          top: 1px;
-          right: -11px;
-          -webkit-transform: translateX(50%) rotate(45deg);
-          transform: translateX(50%) rotate(45deg);
-          border-radius: 2px;
-      }
-    }
+    // .skill-per-mb {
+    //   animation: none !important;
+    //   height: 14px;
+    //   background: var(--skills-clr);
+    //   border-radius: 3px;
+    //   position: relative;
+    //   -webkit-animation: fillBars 2.5s 1;
+    //   animation: fillBars 2.5s 1;
+    //   -webkit-box-shadow: 0px 0px 15px 5px var(--skills-clr);
+    //   box-shadow: 0px 0px 15px 5px var(--skills-clr);
+    //     &::before {
+    //       content: attr(per);
+    //       position: absolute;
+    //       padding: 4px 6px;
+    //       background-color: #f1f1f1;
+    //       border-radius: 4px;
+    //       font-size: 12px;
+    //       top: -7px;
+    //       right: -27px;
+    //       -webkit-transform: translateX(50%);
+    //       transform: translateX(50%);
+    //       z-index: 2;
+    //   }
+    //     &::after {
+    //       content: "";
+    //       position: absolute;
+    //       width: 10px;
+    //       height: 10px;
+    //       background: #f1f1f1;
+    //       top: 1px;
+    //       right: -11px;
+    //       -webkit-transform: translateX(50%) rotate(45deg);
+    //       transform: translateX(50%) rotate(45deg);
+    //       border-radius: 2px;
+    //   }
+    // }
     // &::before{
     //   content: attr(per);
     // position: absolute;

@@ -20,7 +20,7 @@
 #mySelect {
   position: fixed;
   display: inline-block;
-  z-index: 9999;
+  z-index: 50;
   left: 0px;
   top: 0px;
   background-color: #202020;
@@ -356,7 +356,6 @@ h3 {
 }
 
 #about-me .about-me-card {
-  width: 600px;
   opacity: 1;
   border: var(--about-me-clr) solid 2px;
   margin: 50px;
@@ -1338,43 +1337,6 @@ h3 {
   #skills .skills {
     max-width: 85%;
     padding: 0px 20px 20px;
-  }
-  #skills .skill-per-mb {
-    -webkit-animation: none !important;
-            animation: none !important;
-    height: 14px;
-    background: var(--skills-clr);
-    border-radius: 3px;
-    position: relative;
-    -webkit-animation: fillBars 2.5s 1;
-    animation: fillBars 2.5s 1;
-    -webkit-box-shadow: 0px 0px 15px 5px var(--skills-clr);
-    box-shadow: 0px 0px 15px 5px var(--skills-clr);
-  }
-  #skills .skill-per-mb::before {
-    content: attr(per);
-    position: absolute;
-    padding: 4px 6px;
-    background-color: #f1f1f1;
-    border-radius: 4px;
-    font-size: 12px;
-    top: -7px;
-    right: -27px;
-    -webkit-transform: translateX(50%);
-    transform: translateX(50%);
-    z-index: 2;
-  }
-  #skills .skill-per-mb::after {
-    content: "";
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    background: #f1f1f1;
-    top: 1px;
-    right: -11px;
-    -webkit-transform: translateX(50%) rotate(45deg);
-    transform: translateX(50%) rotate(45deg);
-    border-radius: 2px;
   }
   #work .name {
     font-size: 1em;
