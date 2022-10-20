@@ -2,9 +2,9 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Saira+Semi+Condensed:wght@300&display=swap");
 :root {
-  --about-me-clr: #ffbf00;
-  --skills-clr: #ff0000;
-  --work-clr: #009dff;
+  --about-me-clr: #5BC8AC;
+  --skills-clr: #E6D72A;
+  --work-clr: #f36ba4;
   --background: url(../assets/bg-dark-4.jpg);
 }
 
