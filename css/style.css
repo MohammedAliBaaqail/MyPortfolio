@@ -590,6 +590,7 @@ h3 {
 }
 
 .button {
+  opacity: 0.7;
   position: relative;
   border: none;
   font-size: 16px;
@@ -605,10 +606,9 @@ h3 {
 }
 
 .button:hover {
-  background: none;
-  color: var(--work-clr);
-  -webkit-box-shadow: 3px 3px 10px -1px var(--work-clr);
-          box-shadow: 3px 3px 10px -1px var(--work-clr);
+  opacity: 1;
+  -webkit-box-shadow: 0px 0px 10px -1px var(--work-clr);
+          box-shadow: 0px 0px 10px -1px var(--work-clr);
   border: solid 2px var(--work-clr);
 }
 
@@ -1089,7 +1089,9 @@ h3 {
   position: absolute;
   top: 80%;
   width: 120%;
-  background-color: #070a1cd4;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  background-color: #070a1c76;
   -webkit-box-shadow: var(--skills-clr) 0px 0px 10px;
           box-shadow: var(--skills-clr) 0px 0px 10px;
   border-radius: 3%;
