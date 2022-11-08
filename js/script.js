@@ -309,7 +309,7 @@ document.documentElement.style.setProperty(
 let workColorInput = document.querySelector("#work-clr");
 // console.log(localStorage.getItem("color3"));
 localStorage.getItem("color3") == null
-  ? (workColorInput.value = "#f36ba4")
+  ? (workColorInput.value = "#f72f75")
   : (workColorInput.value = localStorage.getItem("color3"));
 document.documentElement.style.setProperty("--work-clr", workColorInput.value);
 

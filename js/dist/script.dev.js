@@ -255,7 +255,7 @@ localStorage.getItem("color2") == null ? skillColorInput.value = "#E6D72A" : ski
 document.documentElement.style.setProperty("--skills-clr", skillColorInput.value);
 var workColorInput = document.querySelector("#work-clr"); // console.log(localStorage.getItem("color3"));
 
-localStorage.getItem("color3") == null ? workColorInput.value = "#f36ba4" : workColorInput.value = localStorage.getItem("color3");
+localStorage.getItem("color3") == null ? workColorInput.value = "#f72f75" : workColorInput.value = localStorage.getItem("color3");
 document.documentElement.style.setProperty("--work-clr", workColorInput.value); // workColorInput.value = '#009dff';
 // console.log(workColorInput.value);
 
