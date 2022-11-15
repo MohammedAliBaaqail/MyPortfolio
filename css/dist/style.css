@@ -2,8 +2,8 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Saira+Semi+Condensed:wght@300&display=swap");
 :root {
-  --about-me-clr: #5BC8AC;
-  --skills-clr: #E6D72A;
+  --about-me-clr: #27eaba;
+  --skills-clr: #f4bd26;
   --work-clr: #f72f75;
   --background: url(../assets/bg-dark-4.jpg);
 }
@@ -401,38 +401,91 @@ h3 {
 
 .image-content,
 .card-content {
+  height: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding: 10px 14px;
+  align-items: flex-start;
+  padding: 0px 18px;
 }
 .image-content h2,
 .card-content h2 {
   color: var(--work-clr);
   text-shadow: 0 0 25px var(--work-clr);
+  font-size: 1.8em;
+  font-weight: 700;
+}
+.image-content .tech-used,
+.card-content .tech-used {
+  position: relative;
+  margin-right: 5px;
+}
+.image-content .tech-used img,
+.card-content .tech-used img {
+  width: 45px;
+  height: 45px;
+}
+.image-content .tech-used .tech-dec,
+.card-content .tech-used .tech-dec {
+  text-shadow: 0 0 20px var(--work-clr);
+  position: absolute;
+  top: 100%;
+  left: -16px;
+  width: 80px;
+  text-align: center;
+  backdrop-filter: blur(10px);
+  background-color: #070a1c;
+  box-shadow: var(--work-clr) 0px 0px 10px;
+  border-radius: 8%;
+  font-size: 1em;
+  font-weight: 900;
+  color: var(--work-clr);
+  transform: translateZ(100px) scaleY(0);
+  padding: 10px;
+  transform-origin: top;
+  transition: transform 0.1s ease-in-out;
+  z-index: 999;
+}
+.image-content .tech-used:hover .tech-dec,
+.card-content .tech-used:hover .tech-dec {
+  transform: translateZ(175px) scaleY(1);
+}
+.image-content .description,
+.card-content .description {
+  flex-grow: 1;
+  color: var(--work-clr);
+  font-size: 1.2em;
+  text-align: start;
+  font-weight: 600;
 }
 .image-content .card-links,
 .card-content .card-links {
-  padding: 10px;
+  padding: 15px 0;
+}
+.image-content .tech-flex,
+.card-content .tech-flex {
+  display: flex;
+  align-items: center;
 }
 
 .image-content {
   position: relative;
   row-gap: 5px;
-  padding: 25px 0;
+  padding: 5px 0;
 }
 
 .card-image {
   z-index: 999;
+  align-self: center;
   position: relative;
   height: 100%;
   padding: 3px;
 }
 .card-image .zoom {
   width: 100%;
-  height: 25vh;
+  height: 250px;
   z-index: 999;
-  padding: 5px;
+  padding: 0 18px;
 }
 
 .card-image .card-img {
@@ -463,7 +516,7 @@ h3 {
   background-color: var(--work-clr);
   border-radius: 2px;
   border: solid 2px #00000000;
-  margin: 8px;
+  margin-right: 8px;
   cursor: pointer;
   transition: all 0.2s ease;
 }
@@ -509,7 +562,7 @@ h3 {
 .swiper-android .swiper-slide,
 .swiper-wrapper {
   transform: translate3d(0px, 0, 0);
-  height: 670px;
+  height: 540px;
 }
 
 @media screen and (max-width: 768px) {
@@ -801,7 +854,7 @@ h3 {
   justify-content: center;
   flex-wrap: wrap;
   transform-style: preserve-3d;
-  width: 80%;
+  width: 60%;
   column-gap: 30px;
   row-gap: 30px;
 }
@@ -813,7 +866,7 @@ h3 {
   transform: perspective(1000px);
   border: var(--skills-clr) solid 2px;
   box-shadow: 7px 7px 15px -2px var(--skills-clr);
-  width: 260px;
+  width: 150px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -822,12 +875,12 @@ h3 {
   text-shadow: 0 0 20px var(--skills-clr);
   position: absolute;
   top: 80%;
-  width: 120%;
+  width: 180%;
   backdrop-filter: blur(10px);
   background-color: #070a1c76;
   box-shadow: var(--skills-clr) 0px 0px 10px;
   border-radius: 3%;
-  font-size: 1.2em;
+  font-size: 1em;
   font-weight: 900;
   color: var(--skills-clr);
   transform: translateZ(100px) scaleY(0);
@@ -849,14 +902,14 @@ h3 {
 #skills .skills-container-1 .skills-box img {
   padding: 15px;
   z-index: 2;
-  width: 220px;
-  height: 220px;
+  width: 150px;
+  height: 150px;
   flex-grow: 1;
 }
 #skills .skills-container-1 .skills-box h2 {
   transform: translateZ(50px);
   text-shadow: 0 0 20px var(--skills-clr);
-  font-size: 2em;
+  font-size: 1.5em;
   margin: 10px 0;
   color: var(--skills-clr);
   z-index: 5;
@@ -996,11 +1049,6 @@ h3 {
     animation: none !important;
   }
 
-  #work .button {
-    margin: 0px;
-    padding: 0px;
-  }
-
   .nav ul {
     gap: 20px;
     position: fixed;
@@ -1052,12 +1100,6 @@ h3 {
     padding: 0px 20px 20px;
   }
 
-  #work .name {
-    font-size: 1em;
-  }
-  #work .card-content .card-links {
-    padding: 3px;
-  }
   #work .swiper-wrapper {
     height: 600px;
   }

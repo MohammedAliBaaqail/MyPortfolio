@@ -289,7 +289,7 @@ mediumZoom(".zoom", {
 // [start] for changing page colors ---------------------------------------------
 let aboutMecolorInput = document.querySelector("#about-me-clr");
 localStorage.getItem("color1") == null
-  ? (aboutMecolorInput.value = "#5BC8AC")
+  ? (aboutMecolorInput.value = "#27eaba")
   : (aboutMecolorInput.value = localStorage.getItem("color1"));
 document.documentElement.style.setProperty(
   "--about-me-clr",
@@ -299,7 +299,7 @@ document.documentElement.style.setProperty(
 let skillColorInput = document.querySelector("#skills-clr");
 // console.log(localStorage.getItem("color2"));
 localStorage.getItem("color2") == null
-  ? (skillColorInput.value = "#E6D72A")
+  ? (skillColorInput.value = "#f4bd26")
   : (skillColorInput.value = localStorage.getItem("color2"));
 document.documentElement.style.setProperty(
   "--skills-clr",
