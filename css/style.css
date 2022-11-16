@@ -634,7 +634,6 @@ h3 {
       -ms-grid-row-align: center;
       align-self: center;
   position: relative;
-  height: 100%;
   padding: 3px;
 }
 
@@ -1355,6 +1354,10 @@ h3 {
   .animate__fadeIn {
     -webkit-animation: none !important;
             animation: none !important;
+  }
+  #work .card-image .zoom {
+    height: 200px;
+    padding: 0 5px;
   }
   .nav ul {
     gap: 20px;

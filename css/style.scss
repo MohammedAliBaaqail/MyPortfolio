@@ -627,7 +627,7 @@ h3 {
   }
   position: relative;
   // height: 250px;
-  height: 100%;
+  // height: 100%;
   // width: 95%;
 
 
@@ -1399,7 +1399,8 @@ html{  scroll-snap-type:none;
     animation: none !important;
   }
   #work .card-image .zoom {
-    // height: 75%;
+    height: 200px;
+    padding: 0 5px;
   }
   // #work .button {
   //   margin: 0px;
