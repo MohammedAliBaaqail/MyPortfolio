@@ -926,6 +926,14 @@ h3 {
     overscroll-behavior: none;
   }
 
+  .color-button {
+    display: none;
+  }
+
+  #mySelect {
+    display: none;
+  }
+
   #mySelect {
     background-repeat: no-repeat;
     width: 15px;
