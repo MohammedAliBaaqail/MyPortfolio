@@ -853,7 +853,7 @@ h3 {
   justify-content: center;
   flex-wrap: wrap;
   transform-style: preserve-3d;
-  width: 60%;
+  width: 70%;
   column-gap: 30px;
   row-gap: 30px;
 }
@@ -1104,6 +1104,9 @@ h3 {
     padding: 0px 20px 20px;
   }
 
+  #work .swiper-navBtn {
+    display: none;
+  }
   #work .swiper-wrapper {
     height: 600px;
   }
@@ -1120,7 +1123,7 @@ h3 {
   .skills-container-1 .skills-box {
     box-shadow: 7px 7px 13px -2px var(--skills-clr) !important;
     width: 100px !important;
-    height: 150px !important;
+    height: 140px !important;
   }
   .skills-container-1 .skills-box .skill-content {
     font-size: 0.5em !important;
@@ -1129,8 +1132,10 @@ h3 {
   .skills-container-1 .skills-box img {
     width: 90px !important;
     height: 100px !important;
+    padding: 6px !important;
   }
   .skills-container-1 .skills-box h2 {
     font-size: 1em !important;
+    margin: 0 !important;
   }
 }

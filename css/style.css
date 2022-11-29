@@ -175,8 +175,8 @@ h3 {
 }
 
 .animate__animated {
-  -webkit-animation-duration: .7s !important;
-          animation-duration: .7s !important;
+  -webkit-animation-duration: 0.7s !important;
+          animation-duration: 0.7s !important;
   -webkit-transition: ease-in-out;
   transition: ease-in-out;
   -webkit-animation-fill-mode: none !important;
@@ -507,7 +507,7 @@ h3 {
   opacity: 1;
   max-width: 90%;
   width: 100%;
-  padding: 40px 0;
+  padding: 20px 0;
 }
 
 #work .slide-content {
@@ -575,7 +575,7 @@ h3 {
   -webkit-box-shadow: var(--work-clr) 0px 0px 10px;
           box-shadow: var(--work-clr) 0px 0px 10px;
   border-radius: 8%;
-  font-size: 1.0em;
+  font-size: 1em;
   font-weight: 900;
   color: var(--work-clr);
   -webkit-transform: translateZ(100px) scaleY(0);
@@ -935,7 +935,7 @@ h3 {
   z-index: 111;
   position: -webkit-sticky;
   position: sticky;
-  top: 1.0%;
+  top: 1%;
   height: 0px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1128,7 +1128,7 @@ h3 {
       flex-wrap: wrap;
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
-  width: 60%;
+  width: 70%;
   -webkit-column-gap: 30px;
           column-gap: 30px;
   row-gap: 30px;
@@ -1169,7 +1169,7 @@ h3 {
   -webkit-box-shadow: var(--skills-clr) 0px 0px 10px;
           box-shadow: var(--skills-clr) 0px 0px 10px;
   border-radius: 3%;
-  font-size: 1.0em;
+  font-size: 1em;
   font-weight: 900;
   color: var(--skills-clr);
   -webkit-transform: translateZ(100px) scaleY(0);
@@ -1414,6 +1414,9 @@ h3 {
     max-width: 85%;
     padding: 0px 20px 20px;
   }
+  #work .swiper-navBtn {
+    display: none;
+  }
   #work .swiper-wrapper {
     height: 600px;
   }
@@ -1431,7 +1434,7 @@ h3 {
     -webkit-box-shadow: 7px 7px 13px -2px var(--skills-clr) !important;
             box-shadow: 7px 7px 13px -2px var(--skills-clr) !important;
     width: 100px !important;
-    height: 150px !important;
+    height: 140px !important;
   }
   .skills-container-1 .skills-box .skill-content {
     font-size: 0.5em !important;
@@ -1440,9 +1443,11 @@ h3 {
   .skills-container-1 .skills-box img {
     width: 90px !important;
     height: 100px !important;
+    padding: 6px !important;
   }
   .skills-container-1 .skills-box h2 {
     font-size: 1em !important;
+    margin: 0 !important;
   }
 }
 /*# sourceMappingURL=style.css.map */
