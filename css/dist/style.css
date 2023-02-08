@@ -561,7 +561,7 @@ h3 {
 .swiper-android .swiper-slide,
 .swiper-wrapper {
   transform: translate3d(0px, 0, 0);
-  height: 540px;
+  height: 630px;
 }
 
 @media screen and (max-width: 768px) {

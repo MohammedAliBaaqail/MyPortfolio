@@ -726,7 +726,7 @@ h3 {
 .swiper-wrapper {
   -webkit-transform: translate3d(0px, 0, 0);
           transform: translate3d(0px, 0, 0);
-  height: 540px;
+  height: 630px;
 }
 
 @media screen and (max-width: 768px) {
