@@ -1227,6 +1227,16 @@ h3 {
   position: absolute;
 }
 
+.vanta-canvas {
+  display: block;
+  position: fixed !important;
+  z-index: 0;
+  top: -100% !important;
+  left: 0px;
+  width: 1562px;
+  height: 3101px;
+}
+
 @media only screen and (max-width: 1000px) {
   html {
     overflow: scroll !important;

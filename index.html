@@ -28,7 +28,7 @@
 </head>
 <body>
 
-  <select id="mySelect" onchange="changeBackground()">
+  <!-- <select id="mySelect" onchange="changeBackground()">
     <option value=../assets/bg-dark-1.jpg>1</option>
     <option value=../assets/bg-dark-2.jpg>2</option>
     <option value=../assets/bg-dark-3.jpg>3</option>
@@ -41,7 +41,7 @@
     <option value=../assets/bg-dark-10.jpg>10</option>
     <option selected="selected" value=''>Select Background</option>
 
-  </select>
+  </select> -->
   
 <button class="color-button">Select Color </button>
 <div class="color-pickers ">
@@ -83,6 +83,7 @@
 <div class="main">
 
   <!-- ======= about-me Section ======= -->
+  <div id="gg">
   <section class="section" id="about-me">
     <!-- <div class=" title">
           <h1 style="--clr:#00bcd4" class="fadeInUp animate__animated animate__fadeInUp">ABOUT ME</h1>
@@ -594,6 +595,8 @@
         <div class="swiper-pagination"></div>
       </div>
     </section>
+  </div>
+</div>
   </body>
   
   <!-- <script src="node_modules/medium-zoom/dist/medium-zoom.min.js"></script> -->
@@ -609,5 +612,27 @@
   <script src="js/vanilla-tilt.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.waves.min.js"></script>
+  <script>
+  VANTA.WAVES({
+    el: "#gg",
+    
+    mouseControls: true,
+    touchControls: true,
+    gyroControls: false,
+    minHeight: 200.00,
+    minWidth: 200.00,
+    scale: 1.00,
+    scaleMobile: 1.00,
+    color: 0x1d1d1d,
+    shininess: 30.00,
+    waveHeight: 45.00,
+    waveSpeed: 0.35,
+    zoom: 0.25
+  })
+  </script>
 
 </html>
