@@ -119,6 +119,7 @@ html {
   overflow: hidden;
   overflow-x: hidden;
   scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -287,7 +288,7 @@ h3 {
   opacity: 1;
   border: var(--about-me-clr) solid 2px;
   margin: 50px;
-  backdrop-filter: blur(6px);
+  backdrop-filter: blur(7px);
   box-shadow: 7px 7px 15px -2px var(--about-me-clr);
 }
 
@@ -395,7 +396,7 @@ h3 {
 
 .card {
   border: var(--work-clr) solid 2px;
-  backdrop-filter: blur(4px);
+  backdrop-filter: blur(7px);
   box-shadow: 7px 7px 15px 0px var(--work-clr);
 }
 
@@ -1131,6 +1132,9 @@ h3 {
   #work .slide-content {
     padding: 0 14px 14px 0;
     margin: 3px;
+  }
+  #work .image-content .description, #work .card-content .description {
+    font-size: 1.1em;
   }
 
   .skills-container-1 {
