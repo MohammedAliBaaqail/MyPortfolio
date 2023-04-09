@@ -1434,11 +1434,14 @@ h3 {
     max-width: 85%;
     padding: 0px 20px 20px;
   }
+  #work .zoomIns.card.swiper-slide.swiper-slide-duplicate.swiper-slide-active {
+    height: 600px;
+  }
   #work .swiper-navBtn {
     display: none;
   }
   #work .swiper-wrapper {
-    height: 60vh;
+    height: 620PX;
   }
   #work .slide-content {
     padding: 0 14px 14px 0;

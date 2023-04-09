@@ -1470,6 +1470,9 @@ h3 {
     // }
   }
   #work {
+    .zoomIns.card.swiper-slide.swiper-slide-duplicate.swiper-slide-active{
+      height: 600px;
+    }
     .swiper-navBtn{
       display: none;
     }
@@ -1481,7 +1484,7 @@ h3 {
     // }
     .swiper-wrapper {
       // height: 71vh;
-      height: 60vh;
+      height: 620PX;
     }
     .slide-content {
       padding: 0 14px 14px 0;
