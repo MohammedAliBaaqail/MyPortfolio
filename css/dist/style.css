@@ -932,6 +932,10 @@ h3 {
 }
 
 @media only screen and (max-width: 1000px) {
+  .first-container {
+    margin-top: 10px;
+  }
+
   html {
     overflow: scroll !important;
     overscroll-behavior: none;
@@ -1127,7 +1131,7 @@ h3 {
     display: none;
   }
   #work .swiper-wrapper {
-    height: 600px;
+    height: 550px;
   }
   #work .slide-content {
     padding: 0 14px 14px 0;

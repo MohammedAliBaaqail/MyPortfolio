@@ -1199,6 +1199,9 @@ h3 {
 // ******************MOBILE VIEW********************
 
 @media only screen and (max-width: 1000px) {
+  .first-container{
+    margin-top: 10px;
+  }
   html {
     overflow: scroll !important;
     // overflow-x: auto;
@@ -1478,7 +1481,7 @@ h3 {
     // }
     .swiper-wrapper {
       // height: 71vh;
-      height: 600px;
+      height: 550px;
     }
     .slide-content {
       padding: 0 14px 14px 0;
