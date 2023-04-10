@@ -141,7 +141,7 @@ h2 {
 }
 
 h3 {
-  font-size: 1.3em;
+  font-size: 1.1em;
 }
 
 ::-webkit-scrollbar {
@@ -287,7 +287,7 @@ h3 {
 #about-me .about-me-card {
   opacity: 1;
   border: var(--about-me-clr) solid 2px;
-  margin: 50px;
+  margin: 40px 40px 0;
   backdrop-filter: blur(7px);
   box-shadow: 7px 7px 15px -2px var(--about-me-clr);
 }
