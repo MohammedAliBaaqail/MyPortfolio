@@ -6,6 +6,7 @@
   --about-me-clr: #27eaba;
   --skills-clr: #f4bd26;
   --work-clr: #f72f75;
+  --nab-bar-bg-color: #00000054;
   --background: url(../assets/bg-dark-4.jpg);
 }
 * {
@@ -822,11 +823,12 @@ h3 {
 .nav-clr {
   &.about-me {
     box-shadow: var(--about-me-clr) 0px 5px 15px;
-    background: linear-gradient(
-      270deg,
-      rgba(224, 224, 224, 0.18) 10%,
-      rgba(255, 255, 255, 0.15) 50%
-    );
+    // background: linear-gradient(
+    //   270deg,
+    //   rgba(224, 224, 224, 0.18) 10%,
+    //   rgba(255, 255, 255, 0.15) 50%
+    // );
+    background-color: var(--nab-bar-bg-color);
     border-bottom: var(--about-me-clr) solid 2px;
     position: sticky;
     height: 71px;
@@ -836,11 +838,12 @@ h3 {
   }
   &.my-skills {
     box-shadow: var(--skills-clr) 0px 5px 15px;
-    background: linear-gradient(
-      270deg,
-      rgba(224, 224, 224, 0.18) 10%,
-      rgba(255, 255, 255, 0.15) 50%
-    );
+    // background: linear-gradient(
+    //   270deg,
+    //   rgba(224, 224, 224, 0.18) 10%,
+    //   rgba(255, 255, 255, 0.15) 50%
+    // );
+    background-color: var(--nab-bar-bg-color);
     border-bottom: var(--skills-clr) solid 2px;
     position: sticky;
     height: 71px;
@@ -850,11 +853,12 @@ h3 {
   }
   &.my-work {
     box-shadow: var(--work-clr) 0px 5px 15px;
-    background: linear-gradient(
-      270deg,
-      rgba(224, 224, 224, 0.18) 10%,
-      rgba(255, 255, 255, 0.15) 50%
-    );
+    // background: linear-gradient(
+    //   270deg,
+    //   rgba(224, 224, 224, 0.18) 10%,
+    //   rgba(255, 255, 255, 0.15) 50%
+    // );
+    background-color: var(--nab-bar-bg-color);
     border-bottom: var(--work-clr) solid 2px;
     position: sticky;
     height: 71px;
