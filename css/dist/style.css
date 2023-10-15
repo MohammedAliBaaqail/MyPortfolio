@@ -433,7 +433,6 @@ h3 {
   position: absolute;
   top: 100%;
   left: -16px;
-  width: 80px;
   text-align: center;
   backdrop-filter: blur(10px);
   background-color: #070a1c;

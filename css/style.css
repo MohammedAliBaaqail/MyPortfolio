@@ -437,7 +437,7 @@ h3 {
   position: absolute;
   top: 100%;
   left: -16px;
-  width: 80px;
+  
   text-align: center;
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
