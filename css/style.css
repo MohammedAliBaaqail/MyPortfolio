@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Koulen&family=Open+Sans&family=Oswald&family=Roboto+Flex:opsz@8..144&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Saira+Semi+Condensed:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
 :root {
   --about-me-clr: #27eaba;
   --skills-clr: #f4bd26;
@@ -218,6 +219,155 @@ h3 {
   text-shadow: 0 0 20px var(--work-clr);
 }
 
+.sign {
+  font-family: "Shadows Into Light", cursive;
+  letter-spacing: 2;
+  text-align: center;
+  font-size: 4em;
+  color: #ffffff;
+  text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem var(--about-me-clr), -0.2rem 0.1rem 1rem var(--about-me-clr), 0.2rem 0.1rem 1rem var(--about-me-clr), 0 -0.5rem 2rem var(--about-me-clr), 0 0.5rem 3rem var(--about-me-clr);
+  animation: shine 2s forwards, flicker 3s infinite;
+}
+
+@keyframes blink {
+  0%, 22%, 36%, 75% {
+    color: #ffffff;
+    text-shadow: 0 0 0.6rem #ffffff, 0 0 1.5rem var(--about-me-clr), -0.2rem 0.1rem 1rem var(--about-me-clr), 0.2rem 0.1rem 1rem var(--about-me-clr), 0 -0.5rem 2rem var(--about-me-clr), 0 0.5rem 3rem var(--about-me-clr);
+  }
+  28%, 33% {
+    color: var(--about-me-clr);
+    text-shadow: none;
+  }
+  82%, 97% {
+    color: var(--about-me-clr);
+    text-shadow: none;
+  }
+}
+.flicker {
+  animation: shine 2s forwards, blink 8s 2s infinite;
+  font-family: "Shadows Into Light", cursive;
+}
+
+.flicker-1 {
+  animation: shine 1s forwards, blink 6s 4s infinite;
+  font-family: "Shadows Into Light", cursive;
+}
+
+.flicker-2 {
+  animation: shine 0.1s forwards, blink 15.1s 0.5s infinite;
+  font-family: "Shadows Into Light", cursive;
+}
+
+.fast-flicker {
+  animation: shine 1s forwards, blink 10s 1s infinite;
+  font-family: "Shadows Into Light", cursive;
+}
+
+@keyframes shine {
+  0% {
+    color: var(--about-me-clr);
+    text-shadow: none;
+  }
+  100% {
+    color: rgba(255, 255, 255, 0.6274509804);
+    text-shadow: 0 0 0.6rem rgba(255, 255, 255, 0.7960784314), 0 0 1.5rem var(--about-me-clr), -0.2rem 0.1rem 1rem var(--about-me-clr), 0.2rem 0.1rem 1rem var(--about-me-clr), 0 -0.5rem 2rem var(--about-me-clr), 0 0.5rem 3rem var(--about-me-clr);
+  }
+}
+@keyframes flicker {
+  from {
+    opacity: 1;
+  }
+  4% {
+    opacity: 0.9;
+  }
+  6% {
+    opacity: 0.85;
+  }
+  8% {
+    opacity: 0.95;
+  }
+  10% {
+    opacity: 0.9;
+  }
+  11% {
+    opacity: 0.922;
+  }
+  12% {
+    opacity: 0.9;
+  }
+  14% {
+    opacity: 0.95;
+  }
+  16% {
+    opacity: 0.98;
+  }
+  17% {
+    opacity: 0.9;
+  }
+  19% {
+    opacity: 0.93;
+  }
+  20% {
+    opacity: 0.99;
+  }
+  24% {
+    opacity: 1;
+  }
+  26% {
+    opacity: 0.94;
+  }
+  28% {
+    opacity: 0.98;
+  }
+  37% {
+    opacity: 0.93;
+  }
+  38% {
+    opacity: 0.5;
+  }
+  39% {
+    opacity: 0.96;
+  }
+  42% {
+    opacity: 1;
+  }
+  44% {
+    opacity: 0.97;
+  }
+  46% {
+    opacity: 0.94;
+  }
+  56% {
+    opacity: 0.9;
+  }
+  58% {
+    opacity: 0.9;
+  }
+  60% {
+    opacity: 0.99;
+  }
+  68% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 0.9;
+  }
+  72% {
+    opacity: 0.95;
+  }
+  93% {
+    opacity: 0.93;
+  }
+  95% {
+    opacity: 0.95;
+  }
+  97% {
+    opacity: 0.93;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .main .section {
   scroll-snap-align: start;
   height: 100vh;
@@ -425,6 +575,8 @@ h3 {
 .card-content .tech-used {
   position: relative;
   margin-right: 5px;
+  display: flex;
+  justify-content: center;
 }
 .image-content .tech-used img,
 .card-content .tech-used img {
@@ -436,8 +588,6 @@ h3 {
   text-shadow: 0 0 20px var(--work-clr);
   position: absolute;
   top: 100%;
-  left: -16px;
-  
   text-align: center;
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
@@ -489,7 +639,6 @@ h3 {
 }
 .card-image .zoom {
   width: 100%;
-  height: 250px;
   z-index: 999;
   padding: 0 18px;
 }
@@ -569,7 +718,8 @@ h3 {
 .swiper-android .swiper-slide,
 .swiper-wrapper {
   transform: translate3d(0px, 0, 0);
-  height: 630px;
+  height: 60vh;
+  min-height: 550px;
 }
 
 @media screen and (max-width: 768px) {
@@ -955,6 +1105,9 @@ h3 {
   .color-button {
     display: none;
   }
+  .button {
+    padding: 3px 4px;
+  }
   #mySelect {
     display: none;
   }
@@ -1069,7 +1222,6 @@ h3 {
     animation: none !important;
   }
   #work .card-image .zoom {
-    height: 200px;
     padding: 0 5px;
   }
   .nav ul {
@@ -1121,13 +1273,13 @@ h3 {
     padding: 0px 20px 20px;
   }
   #work .zoomIns.card.swiper-slide.swiper-slide-duplicate.swiper-slide-active {
-    height: 600px;
+    height: 60vh;
   }
   #work .swiper-navBtn {
     display: none;
   }
   #work .swiper-wrapper {
-    height: 620PX;
+    height: 60vh;
   }
   #work .slide-content {
     padding: 0 14px 14px 0;
