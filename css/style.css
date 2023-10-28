@@ -1307,7 +1307,7 @@ h3 {
     box-shadow: 7px 7px 13px -2px var(--skills-clr) !important;
     width: 100px !important;
     height: 140px !important;
-    margin: 5px !important;
+    margin: 0px !important;
   }
   .skills-container-1 .skills-box .skill-content {
     font-size: 0.5em !important;
