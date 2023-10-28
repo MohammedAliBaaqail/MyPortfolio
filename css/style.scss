@@ -900,7 +900,12 @@ h3 {
     opacity: 0;
   }
 }
-
+.logo-link{
+  width: 30px !important;
+}
+.sign{
+  font-size: 2.2em;
+}
 .photo-container {
   position: relative;
   width: 200px;
@@ -1315,6 +1320,7 @@ h3 {
     column-gap: 30px;
     row-gap: 30px;
     .skills-box {
+      margin: 5px;
       border-radius: 3%;
       background-color: #1616169c;
       position: relative;
@@ -1508,7 +1514,7 @@ h3 {
     font-size: 1.2em;
   }
   h3 {
-    font-size: 0.7em;
+    font-size: 1em;
   }
   .about-me-card,
   #about-me .me,
@@ -1722,9 +1728,9 @@ h3 {
         display: none;
       }
       img {
-        width: 90px !important;
+        width: 100px !important;
         height: 100px !important;
-        padding: 6px !important;
+        padding: 10px !important;
       }
       h2 {
         font-size: 1em !important;
