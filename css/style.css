@@ -751,7 +751,7 @@ h3 {
 @media screen and (max-width: 768px) {
   .main .section {
     height: 100%;
-    margin: 20px 0;
+    margin: 20px 0 150px 0;
   }
   .slide-content {
     margin: 0;
@@ -1303,7 +1303,7 @@ h3 {
   }
   #about-me .about-me-container .img {
     width: 70px;
-    align-self: center;
+    align-self: flex-start;
   }
   #about-me .about-me-container .info {
     padding: 8px;
