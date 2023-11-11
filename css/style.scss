@@ -18,7 +18,11 @@
   text-decoration: none;
   // animation: none !important;
 }
-
+.medium-zoom-overlay{
+  z-index: 999;
+  backdrop-filter: blur(8px);
+    background: none !important;
+}
 #mySelect {
   position: fixed;
   display: inline-block;
