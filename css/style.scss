@@ -1612,6 +1612,9 @@ h3 {
   }
 
   #about-me {
+    .about-me-card{
+      flex-direction: column;
+      }
     .main-container{
       height: 100%;
       .first-container{
@@ -1640,7 +1643,7 @@ h3 {
       flex-direction: column;
       width: 90%;
       .img{
-        width: 70px;
+        width: 100%;
         align-self: flex-start;
       }
       .info {

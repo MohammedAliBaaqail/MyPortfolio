@@ -1277,6 +1277,9 @@ h3 {
   .nav a {
     font-size: 1em !important;
   }
+  #about-me .about-me-card {
+    flex-direction: column;
+  }
   #about-me .main-container {
     height: 100%;
   }
@@ -1302,7 +1305,7 @@ h3 {
     width: 90%;
   }
   #about-me .about-me-container .img {
-    width: 70px;
+    width: 100%;
     align-self: flex-start;
   }
   #about-me .about-me-container .info {
