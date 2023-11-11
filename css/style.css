@@ -392,6 +392,10 @@ h3 {
   height: 100vh;
   justify-content: center;
 }
+#about-me .main-container .first-container {
+  display: flex;
+  align-items: center;
+}
 #about-me .logo-link {
   width: 40px;
 }
@@ -404,6 +408,8 @@ h3 {
 }
 #about-me .me {
   opacity: 1;
+  margin-left: 20px;
+  width: 50%;
 }
 #about-me .me h3 {
   color: var(--about-me-clr);
@@ -414,18 +420,26 @@ h3 {
   color: var(--about-me-clr);
 }
 #about-me .about-me-container {
+  max-width: 1300px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  flex-wrap: wrap;
 }
-#about-me .about-me-container .edu {
-  padding: 30px;
+#about-me .about-me-container .edu-info {
+  margin: 10px 10px 0 10px;
+}
+#about-me .about-me-container .edu h2, #about-me .about-me-container .edu h3, #about-me .about-me-container .edu h4, #about-me .about-me-container .edu h5, #about-me .about-me-container .edu h6, #about-me .about-me-container .edu p {
+  color: var(--about-me-clr);
 }
 #about-me .about-me-container .edu h2 {
-  color: var(--about-me-clr);
-  padding-bottom: 5px;
+  font-size: 1.5em;
+  text-align: left;
+  line-height: 1;
 }
-#about-me .about-me-container .edu h3 {
-  color: var(--about-me-clr);
+#about-me .about-me-container .edu h4 {
+  text-align: left;
+  font-size: 1em;
+  color: white;
 }
 #about-me .about-me-container .info {
   padding: 25px;
@@ -435,17 +449,26 @@ h3 {
   text-shadow: 0 0 25px var(--about-me-clr);
   padding-bottom: 5px;
 }
-#about-me .about-me-container .info h3 {
+#about-me .about-me-container .info h3, #about-me .about-me-container .info h4, #about-me .about-me-container .info h5 {
   color: var(--about-me-clr);
   text-shadow: 0 0 25px var(--about-me-clr);
 }
+#about-me .about-me-container .img {
+  width: 120px;
+}
 #about-me .about-me-card {
+  width: 550px;
   opacity: 1;
   border: var(--about-me-clr) solid 2px;
-  margin: 40px 40px 0;
+  margin: 20px 20px 0;
   -webkit-backdrop-filter: blur(7px);
           backdrop-filter: blur(7px);
   box-shadow: 7px 7px 15px -2px var(--about-me-clr);
+  display: flex;
+  flex-direction: row;
+}
+#about-me .about-me-card:hover {
+  box-shadow: 0px 0px 22px 6px var(--about-me-clr);
 }
 
 #skills {
@@ -544,7 +567,7 @@ h3 {
 }
 #work .slide-content {
   margin: 40px;
-  padding: 0 20px 22px 0;
+  padding: 20px 20px 20px 10px;
   overflow: hidden;
 }
 
@@ -553,6 +576,9 @@ h3 {
   -webkit-backdrop-filter: blur(7px);
           backdrop-filter: blur(7px);
   box-shadow: 7px 7px 15px 0px var(--work-clr);
+}
+.card:hover {
+  box-shadow: 0px 0px 13px 8px var(--work-clr);
 }
 
 .image-content,
@@ -640,7 +666,7 @@ h3 {
 .card-image .zoom {
   width: 100%;
   z-index: 999;
-  padding: 0 18px;
+  padding: 0 12px;
 }
 
 .card-image .card-img {
@@ -723,6 +749,10 @@ h3 {
 }
 
 @media screen and (max-width: 768px) {
+  .main .section {
+    height: 100%;
+    margin: 20px 0;
+  }
   .slide-content {
     margin: 0;
   }
@@ -741,7 +771,7 @@ h3 {
 }
 
 .sign {
-  font-size: 2.2em;
+  font-size: 3.2em;
 }
 
 .photo-container {
@@ -1086,6 +1116,9 @@ h3 {
   color: var(--skills-clr);
   z-index: 5;
 }
+#skills .skills-container-1 .skills-box:hover {
+  box-shadow: 0px 0px 22px 6px var(--skills-clr);
+}
 
 .skill-box-bg {
   width: 100%;
@@ -1104,8 +1137,11 @@ h3 {
 }
 
 @media only screen and (max-width: 1000px) {
+  .sign {
+    font-size: 2em;
+  }
   .first-container {
-    margin-top: 20px;
+    margin-top: 40px;
   }
   html {
     overflow: scroll !important;
@@ -1241,6 +1277,12 @@ h3 {
   .nav a {
     font-size: 1em !important;
   }
+  #about-me .main-container {
+    height: 100%;
+  }
+  #about-me .main-container .first-container {
+    margin: 0 8px;
+  }
   #about-me .photo-container {
     width: 150px;
     height: 150px;
@@ -1258,6 +1300,10 @@ h3 {
   #about-me .about-me-container {
     flex-direction: column;
     width: 90%;
+  }
+  #about-me .about-me-container .img {
+    width: 70px;
+    align-self: center;
   }
   #about-me .about-me-container .info {
     padding: 8px;
