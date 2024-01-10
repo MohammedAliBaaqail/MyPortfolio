@@ -289,7 +289,7 @@ mediumZoom(".zoom", {
 // [start] for changing page colors ---------------------------------------------
 let aboutMecolorInput = document.querySelector("#about-me-clr");
 localStorage.getItem("color1") == null
-  ? (aboutMecolorInput.value = "#27eaba")
+  ? (aboutMecolorInput.value = "#21e0a3")
   : (aboutMecolorInput.value = localStorage.getItem("color1"));
 document.documentElement.style.setProperty(
   "--about-me-clr",
@@ -299,7 +299,7 @@ document.documentElement.style.setProperty(
 let skillColorInput = document.querySelector("#skills-clr");
 // console.log(localStorage.getItem("color2"));
 localStorage.getItem("color2") == null
-  ? (skillColorInput.value = "#f4bd26")
+  ? (skillColorInput.value = "#f4b924")
   : (skillColorInput.value = localStorage.getItem("color2"));
 document.documentElement.style.setProperty(
   "--skills-clr",
@@ -309,7 +309,7 @@ document.documentElement.style.setProperty(
 let workColorInput = document.querySelector("#work-clr");
 // console.log(localStorage.getItem("color3"));
 localStorage.getItem("color3") == null
-  ? (workColorInput.value = "#f72f75")
+  ? (workColorInput.value = "#f72f5a")
   : (workColorInput.value = localStorage.getItem("color3"));
 document.documentElement.style.setProperty("--work-clr", workColorInput.value);
 
@@ -375,3 +375,21 @@ document.documentElement.style.setProperty(
   "--background",
   localStorage.getItem("background")
 );
+
+const settings = {
+  loop: true,
+
+  speed: 700,
+
+  pagination: {
+    el: ".swiperr-pagination",
+    type: "bullets"
+  },
+
+  navigation: {
+    nextEl: ".swiperr-button-next",
+    prevEl: ".swiperr-button-prev"
+  }
+};
+
+const swiperr = new Swiperr(".mySwiperr", settings);

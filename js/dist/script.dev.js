@@ -247,15 +247,15 @@ mediumZoom(".zoom", {
 }); // [start] for changing page colors ---------------------------------------------
 
 var aboutMecolorInput = document.querySelector("#about-me-clr");
-localStorage.getItem("color1") == null ? aboutMecolorInput.value = "#27eaba" : aboutMecolorInput.value = localStorage.getItem("color1");
+localStorage.getItem("color1") == null ? aboutMecolorInput.value = "#21e0a3" : aboutMecolorInput.value = localStorage.getItem("color1");
 document.documentElement.style.setProperty("--about-me-clr", aboutMecolorInput.value);
 var skillColorInput = document.querySelector("#skills-clr"); // console.log(localStorage.getItem("color2"));
 
-localStorage.getItem("color2") == null ? skillColorInput.value = "#f4bd26" : skillColorInput.value = localStorage.getItem("color2");
+localStorage.getItem("color2") == null ? skillColorInput.value = "#f4b924" : skillColorInput.value = localStorage.getItem("color2");
 document.documentElement.style.setProperty("--skills-clr", skillColorInput.value);
 var workColorInput = document.querySelector("#work-clr"); // console.log(localStorage.getItem("color3"));
 
-localStorage.getItem("color3") == null ? workColorInput.value = "#f72f75" : workColorInput.value = localStorage.getItem("color3");
+localStorage.getItem("color3") == null ? workColorInput.value = "#f72f5a" : workColorInput.value = localStorage.getItem("color3");
 document.documentElement.style.setProperty("--work-clr", workColorInput.value); // workColorInput.value = '#009dff';
 // console.log(workColorInput.value);
 
@@ -302,3 +302,16 @@ function changeBackground() {
 console.log(localStorage.getItem("background")); // document.body.style.backgroundImage = localStorage.getItem("background");
 
 document.documentElement.style.setProperty("--background", localStorage.getItem("background"));
+var settings = {
+  loop: true,
+  speed: 700,
+  pagination: {
+    el: ".swiperr-pagination",
+    type: "bullets"
+  },
+  navigation: {
+    nextEl: ".swiperr-button-next",
+    prevEl: ".swiperr-button-prev"
+  }
+};
+var swiperr = new Swiperr(".mySwiperr", settings);
