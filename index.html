@@ -98,7 +98,7 @@
     </ul>
   </div>
 
-  <div class="main">
+  <div class="main" id="app">
 
     <!-- ======= about-me Section ======= -->
   
@@ -855,26 +855,38 @@
 
 
 
+
+To remove the Vanta Waves effect on mobile devices, you can detect the device width using JavaScript and conditionally initialize the effect based on the screen size. Here's how you can modify your script to achieve this:
+
+html
+Copy code
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.waves.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.waves.min.js"></script>
 <script>
-  VANTA.WAVES({
-    el: ".main",
-    
-    mouseControls: true,
-    touchControls: true,
-    gyroControls: false,
-    minHeight: 200.00,
-    minWidth: 200.00,
-    scale: 1.00,
-    scaleMobile: 1.00,
-    color: 0x121212,
-    shininess: 30.00,
-    waveHeight: 45.00,
-    waveSpeed: 0.35,
-    zoom: 0.25
-  })
-  </script>
+  // Function to check if the device is a mobile device
+  function isMobileDevice() {
+    return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
+  }
+
+  // Initialize Vanta Waves only if the device is not a mobile device
+  if (!isMobileDevice()) {
+    VANTA.WAVES({
+      el: ".main",
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      minHeight: 200.00,
+      minWidth: 200.00,
+      scale: 1.00,
+      scaleMobile: 1.00,
+      color: 0x121212,
+      shininess: 30.00,
+      waveHeight: 45.00,
+      waveSpeed: 0.35,
+      zoom: 0.25
+    });
+  }
+</script>
 
 </html>
 

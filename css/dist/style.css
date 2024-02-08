@@ -6,7 +6,7 @@
   --about-me-clr: #21e0a3;
   --skills-clr: #f4b924;
   --work-clr: #f72f5a;
-  --contact-me-clr: #aaf72f;
+  --contact-me-clr: #9f4eeb;
   --nab-bar-bg-color: #00000054;
   --background: url(../assets/bg-dark-4.jpg);
 }
@@ -820,7 +820,7 @@ h3 {
 @media screen and (max-width: 768px) {
   .main .section {
     height: 100%;
-    margin: 20px 0 150px 0;
+    min-height: 100vh;
   }
 
   .slide-content {
