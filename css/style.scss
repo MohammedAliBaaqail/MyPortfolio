@@ -493,6 +493,7 @@ h3 {
     }
     scroll-snap-align: start;
     height: 100vh;
+    overflow: auto;
     h1 {
       letter-spacing: 1px;
       // color: var(--clr);
@@ -509,6 +510,7 @@ h3 {
     .first-container{
       display: flex;
       align-items: center;
+      margin-top: 65px;
     }
     display: flex;
     flex-direction: column;
@@ -1525,7 +1527,7 @@ h3 {
     justify-content: center;
     flex-wrap: wrap;
     transform-style: preserve-3d;
-    width: 70%;
+    width: clamp(350px ,95% ,1200px);
     column-gap: 30px;
     row-gap: 30px;
     .skills-box {
