@@ -132,7 +132,6 @@ html {
   overflow: hidden;
   overflow-x: hidden;
   scroll-snap-type: y mandatory;
-  scroll-behavior: smooth;
 }
 
 body {
@@ -488,12 +487,17 @@ h3 {
   border: var(--about-me-clr) solid 2px;
   margin: 20px;
   backdrop-filter: blur(7px);
-  box-shadow: 7px 7px 15px -2px var(--about-me-clr);
   display: flex;
   flex-direction: row;
 }
 #about-me .about-me-card:hover {
   box-shadow: 0px 0px 22px 6px var(--about-me-clr);
+}
+#about-me .about-me-card .about-me-card-light {
+  box-shadow: 8px 8px 20px 1px var(--about-me-clr);
+  width: 100%;
+  height: 100%;
+  position: absolute;
 }
 
 #skills {
@@ -518,7 +522,7 @@ h3 {
   padding: 0 40px 50px;
   -webkit-backdrop-filter: blur(6px);
   backdrop-filter: blur(6px);
-  box-shadow: 7px 7px 15px -2px var(--skills-clr);
+  box-shadow: 8px 8px 20px 1px var(--skills-clr);
   opacity: 1;
 }
 #skills .skill-name {
@@ -614,9 +618,14 @@ h3 {
   margin: 20px;
   padding: 20px;
   backdrop-filter: blur(7px);
-  box-shadow: 7px 7px 15px -2px var(--contact-me-clr);
   display: flex;
   flex-direction: row;
+}
+#contact-me .contact-me-card .contact-me-card-light {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  box-shadow: 8px 8px 20px 1px var(--contact-me-clr);
 }
 #contact-me .contact-me-card h2, #contact-me .contact-me-card h3, #contact-me .contact-me-card h4, #contact-me .contact-me-card h5, #contact-me .contact-me-card h6, #contact-me .contact-me-card p, #contact-me .contact-me-card a {
   text-align: center;
@@ -646,10 +655,15 @@ h3 {
 .card {
   border: var(--work-clr) solid 2px;
   backdrop-filter: blur(7px);
-  box-shadow: 7px 7px 15px 0px var(--work-clr);
 }
 .card:hover {
   box-shadow: 0px 0px 13px 8px var(--work-clr);
+}
+.card .swiper-wrapper-light {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  box-shadow: 7px 7px 15px 0px var(--work-clr);
 }
 
 .image-content,
@@ -677,8 +691,8 @@ h3 {
 }
 .image-content .tech-used img,
 .card-content .tech-used img {
-  width: 45px;
-  height: 45px;
+  width: 40px;
+  height: 40px;
 }
 .image-content .tech-used .tech-dec,
 .card-content .tech-used .tech-dec {
@@ -1169,7 +1183,6 @@ h3 {
   transform-style: preserve-3d;
   transform: perspective(1000px);
   border: var(--skills-clr) solid 2px;
-  box-shadow: 7px 7px 15px -2px var(--skills-clr);
   width: 150px;
   display: flex;
   flex-direction: column;
@@ -1226,6 +1239,7 @@ h3 {
   width: 100%;
   height: 100%;
   position: absolute;
+  box-shadow: 8px 8px 20px 1px var(--skills-clr);
 }
 
 .vanta-canvas {
@@ -1370,7 +1384,6 @@ h3 {
 
   html {
     scroll-snap-type: none;
-    scroll-behavior: smooth !important;
   }
 
   body {
@@ -1486,7 +1499,7 @@ h3 {
     row-gap: 12px !important;
   }
   .skills-container-1 .skills-box {
-    box-shadow: 7px 7px 13px -2px var(--skills-clr) !important;
+    box-shadow: 8px 8px 20px 1px var(--skills-clr) !important;
     width: 100px !important;
     height: 140px !important;
     margin: 0px !important;
