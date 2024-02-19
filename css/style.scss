@@ -653,7 +653,7 @@ h3 {
     -webkit-backdrop-filter: blur(6px);
     backdrop-filter: blur(6px);
 
-    box-shadow: 8px 8px 20px 1px var(--skills-clr);
+    // box-shadow: 8px 8px 20px 1px var(--skills-clr);
     opacity: 1;
     // position: absolute;
     // left: 20%;
@@ -1032,7 +1032,7 @@ h3 {
   height: 60vh;
   min-height: 550px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
   .main{
 
     .section{
@@ -1046,6 +1046,15 @@ h3 {
   }
   .swiper-navBtn {
     // display: none;
+  }
+  .about-me-card-light{
+    box-shadow: 7px 7px 15px -2px var(--about-me-clr) !important;
+  }
+  .skill-box-bg {
+    box-shadow: 7px 7px 15px -2px var(--skills-clr) !important;
+  }
+  .contact-me-card-light{
+    box-shadow: 7px 7px 15px -2px var(--contact-me-clr) !important;
   }
 }
 
@@ -1818,9 +1827,7 @@ h3 {
 
       margin: 20px auto;
     }
-    .about-me-container .edu {
-      padding: 8px;
-    }
+
     .about-me-container {
       flex-direction: column;
       width: 90%;
@@ -1835,7 +1842,7 @@ h3 {
         align-self: center;
       }
       .edu {
-        padding: 8px;
+        // padding: 8px;
         margin: 15px;
         width: 95%;
         align-self: center;
@@ -1950,7 +1957,7 @@ h3 {
     row-gap: 12px !important;
     
     .skills-box {
-      box-shadow: 8px 8px 20px 1px var(--skills-clr) !important;
+    
       width: 100px !important;
       height: 140px !important;
       margin: 0px !important;

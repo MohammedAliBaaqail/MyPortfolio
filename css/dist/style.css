@@ -522,7 +522,6 @@ h3 {
   padding: 0 40px 50px;
   -webkit-backdrop-filter: blur(6px);
   backdrop-filter: blur(6px);
-  box-shadow: 8px 8px 20px 1px var(--skills-clr);
   opacity: 1;
 }
 #skills .skill-name {
@@ -831,7 +830,7 @@ h3 {
   min-height: 550px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
   .main .section {
     height: 100%;
     min-height: 100vh;
@@ -839,6 +838,18 @@ h3 {
 
   .slide-content {
     margin: 0;
+  }
+
+  .about-me-card-light {
+    box-shadow: 7px 7px 15px -2px var(--about-me-clr) !important;
+  }
+
+  .skill-box-bg {
+    box-shadow: 7px 7px 15px -2px var(--skills-clr) !important;
+  }
+
+  .contact-me-card-light {
+    box-shadow: 7px 7px 15px -2px var(--contact-me-clr) !important;
   }
 }
 .title {
@@ -1441,9 +1452,6 @@ h3 {
     width: 85%;
     margin: 20px auto;
   }
-  #about-me .about-me-container .edu {
-    padding: 8px;
-  }
   #about-me .about-me-container {
     flex-direction: column;
     width: 90%;
@@ -1459,7 +1467,6 @@ h3 {
     align-self: center;
   }
   #about-me .about-me-container .edu {
-    padding: 8px;
     margin: 15px;
     width: 95%;
     align-self: center;
@@ -1499,7 +1506,6 @@ h3 {
     row-gap: 12px !important;
   }
   .skills-container-1 .skills-box {
-    box-shadow: 8px 8px 20px 1px var(--skills-clr) !important;
     width: 100px !important;
     height: 140px !important;
     margin: 0px !important;
