@@ -615,6 +615,7 @@ h3 {
       width: 100%;
       height: 100%;
       position: absolute;
+      z-index: -5;
     }
   }
 }
@@ -786,6 +787,7 @@ h3 {
       height: 100%;
       position: absolute;
       box-shadow: 8px 8px 20px 1px var(--contact-me-clr);
+      z-index: -5;
     }
     h2,h3,h4,h5,h6,p, a {
       text-align: center;
@@ -843,6 +845,7 @@ h3 {
     height: 100%;
     position: absolute;
     box-shadow: 7px 7px 15px 0px var(--work-clr);
+    z-index: -5;
   }
 }
 .image-content,
