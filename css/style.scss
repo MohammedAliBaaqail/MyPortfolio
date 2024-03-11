@@ -1295,6 +1295,24 @@ h3 {
     justify-content: center;
     // left: 3%;
     // top: 25vh;
+   
+    // &::-webkit-scrollbar {
+    //   position: absolute;
+     
+    //   width: 1px; // Thinner width
+    //   height: 2px;
+    // }
+  
+    // &::-webkit-scrollbar-track {
+    //   background: transparent; // Transparent track
+    // }
+  
+    // &::-webkit-scrollbar-thumb {
+    //   background-color:  orange;
+    //   border-radius: 2px; // Smaller border radius
+    // }
+
+ 
     li {
       // margin: 50px 0 !important;
       position: relative;
