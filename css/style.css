@@ -445,7 +445,8 @@ h3 {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 65px;
+  margin-top: 40px;
+  margin-bottom: 25px;
 }
 #about-me .logo-link {
   width: 40px;
@@ -1603,7 +1604,7 @@ h3 {
     height: 100%;
   }
   #about-me .main-container .first-container {
-    margin: 65px 8px;
+    margin: 65px 8px 20px 8px;
   }
   #about-me .photo-container {
     width: 150px;
