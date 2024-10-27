@@ -2,6 +2,11 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Saira+Semi+Condensed:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
 :root {
   --about-me-clr: #21e0a3;
   --skills-clr: #f4b924;
@@ -499,7 +504,36 @@ h3 {
   flex-direction: row;
 }
 #about-me .about-me-card:hover {
-  box-shadow: 0px 0px 22px 6px var(--about-me-clr);
+  animation: shadow-pulse-about-me 2s infinite ease-in-out;
+}
+@keyframes shadow-pulse-about-me {
+  0% {
+    box-shadow: 0px 0px 22px 4px var(--about-me-clr);
+  }
+  10% {
+    box-shadow: 0px 0px 25px 4px var(--about-me-clr);
+  }
+  25% {
+    box-shadow: 0px 0px 28px 4px var(--about-me-clr);
+  }
+  35% {
+    box-shadow: 0px 0px 31px 4px var(--about-me-clr);
+  }
+  50% {
+    box-shadow: 0px 0px 34px 4px var(--about-me-clr);
+  }
+  65% {
+    box-shadow: 0px 0px 31px 4px var(--about-me-clr);
+  }
+  75% {
+    box-shadow: 0px 0px 28px 4px var(--about-me-clr);
+  }
+  85% {
+    box-shadow: 0px 0px 25px 4px var(--about-me-clr);
+  }
+  100% {
+    box-shadow: 0px 0px 22px 4px var(--about-me-clr);
+  }
 }
 #about-me .about-me-card .about-me-card-light {
   box-shadow: 8px 8px 20px 1px var(--about-me-clr);
@@ -598,13 +632,11 @@ h3 {
 }
 #work .slide-container {
   opacity: 1;
-  max-width: 90%;
   width: 100%;
-  padding: 20px 0;
 }
 #work .slide-content {
   margin: 40px;
-  padding: 20px 20px 20px 10px;
+  padding: 26px 23px 26px 5px;
   overflow: hidden;
 }
 
@@ -666,7 +698,36 @@ h3 {
           backdrop-filter: blur(7px);
 }
 .card:hover {
-  box-shadow: 0px 0px 13px 8px var(--work-clr);
+  animation: shadow-pulse-work 2s infinite ease-in-out;
+}
+@keyframes shadow-pulse-work {
+  0% {
+    box-shadow: 0px 0px 22px 1px var(--work-clr);
+  }
+  10% {
+    box-shadow: 0px 0px 25px 1px var(--work-clr);
+  }
+  25% {
+    box-shadow: 0px 0px 28px 1px var(--work-clr);
+  }
+  35% {
+    box-shadow: 0px 0px 31px 1px var(--work-clr);
+  }
+  50% {
+    box-shadow: 0px 0px 34px 1px var(--work-clr);
+  }
+  65% {
+    box-shadow: 0px 0px 31px 1px var(--work-clr);
+  }
+  75% {
+    box-shadow: 0px 0px 28px 1px var(--work-clr);
+  }
+  85% {
+    box-shadow: 0px 0px 25px 1px var(--work-clr);
+  }
+  100% {
+    box-shadow: 0px 0px 22px 1px var(--work-clr);
+  }
 }
 .card .swiper-wrapper-light {
   width: 100%;
@@ -684,6 +745,45 @@ h3 {
   flex-direction: column;
   align-items: flex-start;
   padding: 0px 18px;
+  overflow: auto;
+  /* Firefox (uncomment to work in Firefox, although other properties will not work!)  */
+  /** {
+    scrollbar-width: thin;
+    scrollbar-color: #397524 #DFE9EB;
+  }*/
+  /* Chrome, Edge and Safari */
+}
+.image-content::-webkit-scrollbar,
+.card-content::-webkit-scrollbar {
+  height: 2px;
+  width: 3px;
+}
+.image-content::-webkit-scrollbar-track,
+.card-content::-webkit-scrollbar-track {
+  border-radius: 0px;
+  background-color: #DFE9EB;
+  width: 2px;
+}
+.image-content::-webkit-scrollbar-track:hover,
+.card-content::-webkit-scrollbar-track:hover {
+  background-color: #B8C0C2;
+}
+.image-content::-webkit-scrollbar-track:active,
+.card-content::-webkit-scrollbar-track:active {
+  background-color: #B8C0C2;
+}
+.image-content::-webkit-scrollbar-thumb,
+.card-content::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: var(--work-clr);
+}
+.image-content::-webkit-scrollbar-thumb:hover,
+.card-content::-webkit-scrollbar-thumb:hover {
+  background-color: var(--work-clr);
+}
+.image-content::-webkit-scrollbar-thumb:active,
+.card-content::-webkit-scrollbar-thumb:active {
+  background-color: var(--work-clr);
 }
 .image-content h2,
 .card-content h2 {
@@ -691,6 +791,7 @@ h3 {
   text-shadow: 0 0 25px var(--work-clr);
   font-size: 1.8em;
   font-weight: 700;
+  line-height: 1.2;
 }
 .image-content .tech-used,
 .card-content .tech-used {
@@ -749,19 +850,20 @@ h3 {
 .image-content {
   position: relative;
   row-gap: 5px;
-  padding: 5px 0;
+  padding: 0;
 }
 
 .card-image {
+  width: 100%;
   z-index: 999;
   align-self: center;
   position: relative;
-  padding: 3px;
 }
 .card-image .zoom {
   width: 100%;
+  height: 250px;
   z-index: 999;
-  padding: 0 12px;
+  padding: 0px;
 }
 
 .card-image .card-img {
@@ -890,27 +992,31 @@ h3 {
   position: relative;
   width: 100%;
   height: 100%;
-  box-shadow: 0px 0px 15px 0px var(--about-me-clr);
   background: rgba(0, 0, 0, 0.5);
-  overflow: hidden;
-  border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 1;
 }
 
-.photo-box:before {
+.photo-box:before, .photo-box::after {
   content: "";
+  width: 100%;
+  height: 100%;
   position: absolute;
-  inset: 0px 80px;
-  transition: 0.5s;
-  background: linear-gradient(315deg, var(--about-me-clr), #ffffff);
-  animation: animate 3s linear infinite;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  z-index: -1;
+  padding: 1px;
+  transition: 1.5s;
+  background-image: conic-gradient(from var(--angle), transparent, var(--about-me-clr), transparent, var(--about-me-clr), transparent);
+  animation: spin 5s linear infinite;
 }
 
-.photo-box:hover:before {
-  inset: -20px 0px;
+.photo-box::before {
+  z-index: -2;
+  filter: blur(20px);
 }
 
 @keyframes animate {
@@ -921,13 +1027,20 @@ h3 {
     transform: rotate(360deg);
   }
 }
+@keyframes spin {
+  from {
+    --angle:0deg;
+  }
+  to {
+    --angle:360deg;
+  }
+}
 .content {
   position: absolute;
   inset: 5px;
   border: 2px solid #070a1c;
   background-size: cover;
   z-index: 3;
-  border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -941,6 +1054,9 @@ h3 {
   transition: 0.5s;
 }
 
+.content {
+  background-color: var(--about-me-clr);
+}
 .content h2 {
   position: relative;
   z-index: 2;
@@ -1204,7 +1320,7 @@ h3 {
 #skills .skills-container-1 .skills-box {
   margin: 5px;
   border-radius: 3%;
-  background-color: rgba(22, 22, 22, 0.6117647059);
+  background-color: #161616;
   position: relative;
   transform-style: preserve-3d;
   transform: perspective(1000px);
@@ -1213,6 +1329,38 @@ h3 {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+#skills .skills-container-1 .skills-box:hover {
+  animation: shadow-pulse-skills 2s infinite ease-in-out;
+}
+@keyframes shadow-pulse-skills {
+  0% {
+    box-shadow: 0px 0px 22px 4px var(--skills-clr);
+  }
+  10% {
+    box-shadow: 0px 0px 25px 4px var(--skills-clr);
+  }
+  25% {
+    box-shadow: 0px 0px 28px 4px var(--skills-clr);
+  }
+  35% {
+    box-shadow: 0px 0px 31px 4px var(--skills-clr);
+  }
+  50% {
+    box-shadow: 0px 0px 34px 4px var(--skills-clr);
+  }
+  65% {
+    box-shadow: 0px 0px 31px 4px var(--skills-clr);
+  }
+  75% {
+    box-shadow: 0px 0px 28px 4px var(--skills-clr);
+  }
+  85% {
+    box-shadow: 0px 0px 25px 4px var(--skills-clr);
+  }
+  100% {
+    box-shadow: 0px 0px 22px 4px var(--skills-clr);
+  }
 }
 #skills .skills-container-1 .skills-box .skill-content {
   text-shadow: 0 0 20px var(--skills-clr);
@@ -1258,8 +1406,8 @@ h3 {
   color: var(--skills-clr);
   z-index: 5;
 }
-#skills .skills-container-1 .skills-box:hover {
-  box-shadow: 0px 0px 22px 6px var(--skills-clr);
+#skills .skills-container-1 .skills-box:hover .skill-box-bg {
+  box-shadow: 0px 0px 0px 0px;
 }
 
 .skill-box-bg {
@@ -1267,6 +1415,7 @@ h3 {
   height: 100%;
   position: absolute;
   box-shadow: 8px 8px 20px 1px var(--skills-clr);
+  background-color: #292929;
 }
 
 .vanta-canvas {
@@ -1417,7 +1566,7 @@ h3 {
     animation: none !important;
   }
   #work .card-image .zoom {
-    padding: 0 5px;
+    padding: 0px;
   }
   .nav ul {
     gap: 20px;
@@ -1485,10 +1634,6 @@ h3 {
   }
   #work .swiper-wrapper {
     height: 60vh;
-  }
-  #work .slide-content {
-    padding: 0 14px 14px 0;
-    margin: 3px;
   }
   #work .image-content .description, #work .card-content .description {
     font-size: 1.1em;

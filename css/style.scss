@@ -3,6 +3,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Saira+Semi+Condensed:wght@300&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
 
+@property --angle{
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
 :root {
   --about-me-clr: #21e0a3;
   --skills-clr: #f4b924;
@@ -13,6 +18,109 @@
 }
 
 
+
+@mixin shadow-pulse-about-me($color) {
+  animation: shadow-pulse-about-me 2s infinite ease-in-out;
+
+  @keyframes shadow-pulse-about-me {
+    0% {
+      box-shadow: 0px 0px 22px 4px $color;
+    }
+    10% {
+      box-shadow: 0px 0px 25px 4px $color;
+    }
+    25% {
+      box-shadow: 0px 0px 28px 4px $color;
+    }
+    35% {
+      box-shadow: 0px 0px 31px 4px $color;
+    }
+    50% {
+      box-shadow: 0px 0px 34px 4px $color;
+    }
+    65% {
+      box-shadow: 0px 0px 31px 4px $color;
+    }
+    75% {
+      box-shadow: 0px 0px 28px 4px $color;
+    }
+    85% {
+      box-shadow: 0px 0px 25px 4px $color;
+    }
+    100% {
+      box-shadow: 0px 0px 22px 4px $color;
+    }
+  
+  }
+}
+@mixin shadow-pulse-skills($color) {
+  animation: shadow-pulse-skills 2s infinite ease-in-out;
+
+  @keyframes shadow-pulse-skills {
+    0% {
+      box-shadow: 0px 0px 22px 4px $color;
+    }
+    10% {
+      box-shadow: 0px 0px 25px 4px $color;
+    }
+    25% {
+      box-shadow: 0px 0px 28px 4px $color;
+    }
+    35% {
+      box-shadow: 0px 0px 31px 4px $color;
+    }
+    50% {
+      box-shadow: 0px 0px 34px 4px $color;
+    }
+    65% {
+      box-shadow: 0px 0px 31px 4px $color;
+    }
+    75% {
+      box-shadow: 0px 0px 28px 4px $color;
+    }
+    85% {
+      box-shadow: 0px 0px 25px 4px $color;
+    }
+    100% {
+      box-shadow: 0px 0px 22px 4px $color;
+    }
+  
+  }
+}
+@mixin shadow-pulse-work($color) {
+  animation: shadow-pulse-work 2s infinite ease-in-out;
+
+  @keyframes shadow-pulse-work {
+    0% {
+      box-shadow: 0px 0px 22px 1px $color;
+    }
+    10% {
+      box-shadow: 0px 0px 25px 1px $color;
+    }
+    25% {
+      box-shadow: 0px 0px 28px 1px $color;
+    }
+    35% {
+      box-shadow: 0px 0px 31px 1px $color;
+    }
+    50% {
+      box-shadow: 0px 0px 34px 1px $color;
+    }
+    65% {
+      box-shadow: 0px 0px 31px 1px $color;
+    }
+    75% {
+      box-shadow: 0px 0px 28px 1px $color;
+    }
+    85% {
+      box-shadow: 0px 0px 25px 1px $color;
+    }
+    100% {
+      box-shadow: 0px 0px 22px 1px $color;
+    }
+  
+  }
+}
 * {
 
 
@@ -608,10 +716,14 @@ h3 {
     display: flex;
     flex-direction: row;
     &:hover {
-      box-shadow: 0px 0px 22px 6px var(--about-me-clr);
+      
+      @include shadow-pulse-about-me(var(--about-me-clr));
     }
+    
+    
     .about-me-card-light{
       box-shadow: 8px 8px 20px 1px var(--about-me-clr);
+      
       width: 100%;
       height: 100%;
       position: absolute;
@@ -741,14 +853,14 @@ h3 {
   }
   .slide-container {
     opacity: 1;
-    max-width: 90%;
+    // max-width: 90%;
     width: 100%;
-    padding: 20px 0;
+    // padding: 20px 0;
     // backdrop-filter: blur(10px);
   }
   .slide-content {
     margin: 40px;
-    padding: 20px 20px 20px 10px;
+    padding: 26px 23px 26px 5px;
     overflow: hidden;
     // border-radius: 25px;
     // backdrop-filter: blur(10px);
@@ -838,7 +950,7 @@ h3 {
   backdrop-filter: blur(7px);
 
   &:hover {
-    box-shadow: 0px 0px 13px 8px var(--work-clr);
+    @include shadow-pulse-work(var(--work-clr));
   }
   .swiper-wrapper-light{
     width: 100%;
@@ -856,11 +968,52 @@ h3 {
   flex-direction: column;
   align-items: flex-start;
   padding: 0px 18px;
+  overflow: auto;
+  
+  /* Firefox (uncomment to work in Firefox, although other properties will not work!)  */
+/** {
+  scrollbar-width: thin;
+  scrollbar-color: #397524 #DFE9EB;
+}*/
+
+/* Chrome, Edge and Safari */
+&::-webkit-scrollbar {
+  height: 2px;
+  width: 3px;
+}
+&::-webkit-scrollbar-track {
+  border-radius: 0px;
+  background-color: #DFE9EB;
+  width: 2px;
+}
+
+&::-webkit-scrollbar-track:hover {
+  background-color: #B8C0C2;
+}
+
+&::-webkit-scrollbar-track:active {
+  background-color: #B8C0C2;
+}
+
+&::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: var(--work-clr);
+}
+
+&::-webkit-scrollbar-thumb:hover {
+  background-color: var(--work-clr);
+}
+
+&::-webkit-scrollbar-thumb:active {
+  background-color: var(--work-clr);
+}
+
   h2 {
     color: var(--work-clr);
     text-shadow: 0 0 25px var(--work-clr);
     font-size: 1.8em;
     font-weight: 700;
+    line-height: 1.2;
   }
   .tech-used {
     position: relative;
@@ -919,7 +1072,7 @@ h3 {
 .image-content {
   position: relative;
   row-gap: 5px;
-  padding: 5px 0;
+  padding:0;
 }
 .overlay {
   // position: absolute;
@@ -945,21 +1098,22 @@ h3 {
 // background-color: #FFF;
 // }
 .card-image {
+  width: 100%;
   z-index: 999;
   align-self: center;
   .zoom {
     width: 100%;
-    // height: 250px;
+    height: 250px;
     
     z-index: 999;
-    padding: 0 12px;
+    padding: 0px;
   }
   position: relative;
   // height: 250px;
   // height: 100%;
   // width: 95%;
 
-  padding: 3px;
+ 
 }
 .card-image .card-img {
   height: 100%;
@@ -1036,6 +1190,7 @@ h3 {
   // height: 630px;
   height: 60vh;
   min-height: 550px;
+  // gap: 15px;
 }
 @media screen and (max-width: 800px) {
   .main{
@@ -1089,25 +1244,37 @@ h3 {
   position: relative;
   width: 100%;
   height: 100%;
-  box-shadow: 0px 0px 15px 0px var(--about-me-clr);
+  // box-shadow: 0px 0px 15px 0px var(--about-me-clr);
   background: rgba(0, 0, 0, 0.5);
-  overflow: hidden;
-  border-radius: 50%;
+  
+  
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 1;
 }
-.photo-box:before {
-  content: "";
-  position: absolute;
-  inset: 0px 80px;
-  transition: 0.5s;
-  background: linear-gradient(315deg, var(--about-me-clr), #ffffff);
-  animation: animate 3s linear infinite;
+.photo-box:before, .photo-box::after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        translate: -50% -50%; 
+        z-index: -1;
+        padding: 1px;
+  transition: 1.5s;
+  // background: linear-gradient(315deg, var(--about-me-clr), #ffffff);
+  background-image: conic-gradient(from var(--angle),transparent ,var(--about-me-clr),transparent ,var(--about-me-clr),transparent ) ;
+  animation: spin 5s linear infinite;
 }
+.photo-box::before {
+  z-index: -2;
+  filter: blur(20px);
+    
+  }
 .photo-box:hover:before {
-  inset: -20px 0px;
+  // inset: -20px 0px;
 }
 @keyframes animate {
   0% {
@@ -1117,15 +1284,15 @@ h3 {
     transform: rotate(360deg);
   }
 }
-// .photo-box:after
-// {
-// 	content: '';
-// 	position: absolute;
-// 	inset : 6px;
-// 	background: #07316d;
-// 	border-radius: 50%;
-// 	z-index: 1;
-// }
+      @keyframes spin {
+        from{
+          --angle:0deg;
+        }
+        to{
+          --angle:360deg;
+        }
+      }
+ 
 .content {
   position: absolute;
   // inset: 30px;
@@ -1134,7 +1301,7 @@ h3 {
   border: 2px solid #070a1c;
   background-size: cover;
   z-index: 3;
-  border-radius: 50%;
+  
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1162,6 +1329,7 @@ h3 {
   // }
 }
 .content {
+  background-color: var(--about-me-clr);
   h2 {
     position: relative;
     z-index: 2;
@@ -1554,7 +1722,7 @@ h3 {
     .skills-box {
       margin: 5px;
       border-radius: 3%;
-      background-color: #1616169c;
+      background-color: #161616;
       position: relative;
       transform-style: preserve-3d;
       transform: perspective(1000px);
@@ -1569,6 +1737,39 @@ h3 {
       display: flex;
       flex-direction: column;
       align-items: center;
+      &:hover{
+        @include shadow-pulse-skills(var(--skills-clr));
+      }
+      // &::after ,&::before {
+
+      //   content: "";
+      //   width: 100%;
+      //   height: 100%;
+      //   position: absolute;
+      //   top: 50%;
+      //   left: 50%;
+      //   translate: -50% -50%; 
+      //   z-index: -50;
+      //   padding: 10px;
+      // }
+      //  &:hover::before {
+       
+      //   background-image: conic-gradient(from var(--angle),transparent ,var(--skills-clr),transparent ,var(--skills-clr)) ;
+      //   animation: 8s spin linear infinite;
+        
+      // }
+      // &:hover::before {
+      // filter: blur(8px);
+        
+      // }
+      // @keyframes spin {
+      //   from{
+      //     --angle:0deg;
+      //   }
+      //   to{
+      //     --angle:360deg;
+      //   }
+      // }
       .skill-content {
         text-shadow: 0 0 20px var(--skills-clr);
         position: absolute;
@@ -1619,8 +1820,8 @@ h3 {
         color: var(--skills-clr);
         z-index: 5;
       }
-      &:hover {
-        box-shadow: 0px 0px 22px 6px var(--skills-clr);
+      &:hover .skill-box-bg{
+        box-shadow: 0px 0px 0px 0px ;
       }
     }
   }
@@ -1632,12 +1833,13 @@ h3 {
   height: 100%;
   position: absolute;
   box-shadow: 8px 8px 20px 1px var(--skills-clr);
-
+  background-color: #292929;
   // backdrop-filter: blur(6px);
   // transform: translateZ(-100px);
   // filter: blur(2px);
   // color: white;
   // overflow: hidden;
+  
 }
 .vanta-canvas{
   display: block;
@@ -1806,7 +2008,7 @@ h3 {
   }
   #work .card-image .zoom {
     // height: 200px;
-    padding: 0 5px;
+    padding: 0px;
   }
   // #work .button {
   //   margin: 0px;
@@ -1967,8 +2169,8 @@ h3 {
       height: 60vh;
     }
     .slide-content {
-      padding: 0 14px 14px 0;
-      margin: 3px;
+      // padding: 0 14px 14px 0;
+      // margin: 3px;
     }
     .image-content .description, .card-content .description{
       font-size: 1.1em;
