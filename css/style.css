@@ -1611,12 +1611,15 @@ h3 {
     height: 150px;
   }
   #about-me .me {
-    width: 85%;
-    margin: 20px auto;
+    width: 100%;
+    margin: 0;
+    padding: 20px 15px;
   }
   #about-me .about-me-container {
     flex-direction: column;
-    width: 90%;
+    width: 100%;
+    margin: 0;
+    padding: 20px 15px;
   }
   #about-me .about-me-container .img {
     width: 100%;
@@ -1629,8 +1632,8 @@ h3 {
     align-self: center;
   }
   #about-me .about-me-container .edu {
-    margin: 15px;
-    width: 95%;
+    margin: 10px auto;
+    width: 100%;
     align-self: center;
   }
   #skills .skills-container .skill-name {
@@ -1653,7 +1656,8 @@ h3 {
     height: 60vh;
   }
   #work .slide-content {
-    margin: 1px;
+    margin: 0;
+    padding: 20px 15px;
   }
   #work .image-content .description, #work .card-content .description {
     font-size: 1.1em;

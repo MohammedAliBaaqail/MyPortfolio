@@ -2076,14 +2076,17 @@ h3 {
     // }
 
     .me {
-      width: 85%;
+      width: 100%;
+      margin: 0;
+      padding: 20px 15px;
 
-      margin: 20px auto;
     }
 
     .about-me-container {
       flex-direction: column;
-      width: 90%;
+      width: 100%;
+      margin: 0;
+      padding: 20px 15px;
       .img{
         width: 100%;
         align-self: flex-start;
@@ -2096,8 +2099,8 @@ h3 {
       }
       .edu {
         // padding: 8px;
-        margin: 15px;
-        width: 95%;
+        margin:10px auto;
+        width: 100%;
         align-self: center;
       }
     }
@@ -2198,7 +2201,8 @@ h3 {
     }
     .slide-content {
       // padding: 0 14px 14px 0;
-      margin: 1px;
+      margin: 0;
+      padding: 20px 15px;
     }
     .image-content .description, .card-content .description{
       font-size: 1.1em;
