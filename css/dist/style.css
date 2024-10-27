@@ -251,7 +251,6 @@ h3 {
 .sign {
   font-family: "Shadows Into Light", cursive;
   letter-spacing: 2;
-  text-align: center;
   font-size: 4em;
   color: #ffffff;
   text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem var(--about-me-clr), -0.2rem 0.1rem 1rem var(--about-me-clr), 0.2rem 0.1rem 1rem var(--about-me-clr), 0 -0.5rem 2rem var(--about-me-clr), 0 0.5rem 3rem var(--about-me-clr);
@@ -284,6 +283,21 @@ h3 {
 
 .flicker-2 {
   animation: shine 0.1s forwards, blink 15.1s 0.5s infinite;
+  font-family: "Shadows Into Light", cursive;
+}
+
+.flicker-3 {
+  animation: shine 1.3s forwards, blink 12.1s 1.5s infinite;
+  font-family: "Shadows Into Light", cursive;
+}
+
+.flicker-4 {
+  animation: shine 1.6s forwards, blink 3.1s 0.5s infinite;
+  font-family: "Shadows Into Light", cursive;
+}
+
+.flicker-5 {
+  animation: shine 3.1s forwards, blink 4.1s 1.5s infinite;
   font-family: "Shadows Into Light", cursive;
 }
 
@@ -425,6 +439,7 @@ h3 {
 #about-me .main-container .first-container {
   display: flex;
   align-items: center;
+  justify-content: center;
   margin-top: 65px;
 }
 #about-me .logo-link {
@@ -440,12 +455,11 @@ h3 {
 #about-me .me {
   opacity: 1;
   margin-left: 20px;
-  width: 50%;
+  width: 67%;
 }
 #about-me .me h3 {
   color: var(--about-me-clr);
   text-shadow: 0 0 25px var(--about-me-clr);
-  text-align: center;
 }
 #about-me h2 {
   color: var(--about-me-clr);
@@ -979,7 +993,6 @@ h3 {
   position: relative;
   width: 200px;
   height: 200px;
-  margin: auto;
   opacity: 1;
 }
 
@@ -1428,6 +1441,7 @@ h3 {
   .first-container {
     margin-top: 40px;
     flex-direction: column;
+    justify-content: center;
   }
 
   html {
