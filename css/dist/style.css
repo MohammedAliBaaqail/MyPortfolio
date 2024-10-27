@@ -1436,7 +1436,7 @@ h3 {
 
 @media only screen and (max-width: 1000px) {
   .sign {
-    font-size: 2em;
+    font-size: 1.8em;
   }
 
   .first-container {
@@ -1612,7 +1612,7 @@ h3 {
     height: 100%;
   }
   #about-me .main-container .first-container {
-    margin: 65px 8px 20px 8px;
+    margin: 25px 0 20px 0;
   }
   #about-me .photo-container {
     width: 150px;
@@ -1661,6 +1661,9 @@ h3 {
   }
   #work .swiper-wrapper {
     height: 60vh;
+  }
+  #work .slide-content {
+    margin: 1px;
   }
   #work .image-content .description, #work .card-content .description {
     font-size: 1.1em;

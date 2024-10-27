@@ -1881,7 +1881,7 @@ h3 {
 
 @media only screen and (max-width: 1000px) {
   .sign{
-    font-size: 2em;
+    font-size: 1.8em;
   }
   .first-container{
     margin-top: 40px;
@@ -2062,7 +2062,7 @@ h3 {
     .main-container{
       height: 100%;
       .first-container{
-        margin: 65px 8px 20px 8px;
+        margin: 25px 0 20px 0;
       }
     }
     .photo-container {
@@ -2198,7 +2198,7 @@ h3 {
     }
     .slide-content {
       // padding: 0 14px 14px 0;
-      // margin: 3px;
+      margin: 1px;
     }
     .image-content .description, .card-content .description{
       font-size: 1.1em;
