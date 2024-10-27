@@ -260,9 +260,9 @@ html {
 }
 
 body {
-  background-image: var(--background);
+  // background-image: var(--background);
   background-size: cover !important;
-  background-color: black !important;
+  background-color: rgb(21, 20, 22) !important;
   background-attachment: fixed;
   background-repeat: no-repeat;
   overscroll-behavior: none;
@@ -2020,7 +2020,7 @@ h3 {
     animation: none !important;
   }
   #work .card-image .zoom {
-    // height: 200px;
+    height: 200px;
     padding: 0px;
   }
   // #work .button {
@@ -2047,18 +2047,18 @@ h3 {
     .main-container{
       height: 100%;
       .first-container{
-        margin: 0 8px;
+        margin: 65px 8px;
       }
     }
     .photo-container {
       width: 150px;
       height: 150px;
     }
-    .photo-box {
-      &:before {
-        inset: 0px 45px !important;
-      }
-    }
+    // .photo-box {
+    //   &:before {
+    //     inset: 0px 45px !important;
+    //   }
+    // }
 
     .me {
       width: 85%;

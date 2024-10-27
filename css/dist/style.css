@@ -140,9 +140,8 @@ html {
 }
 
 body {
-  background-image: var(--background);
   background-size: cover !important;
-  background-color: black !important;
+  background-color: #151416 !important;
   background-attachment: fixed;
   background-repeat: no-repeat;
   overscroll-behavior: none;
@@ -1578,6 +1577,7 @@ h3 {
   }
 
   #work .card-image .zoom {
+    height: 200px;
     padding: 0px;
   }
 
@@ -1598,14 +1598,11 @@ h3 {
     height: 100%;
   }
   #about-me .main-container .first-container {
-    margin: 0 8px;
+    margin: 65px 8px;
   }
   #about-me .photo-container {
     width: 150px;
     height: 150px;
-  }
-  #about-me .photo-box:before {
-    inset: 0px 45px !important;
   }
   #about-me .me {
     width: 85%;
