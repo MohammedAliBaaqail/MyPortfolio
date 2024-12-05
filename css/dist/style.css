@@ -470,9 +470,22 @@ h3 {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  height: 465px;
+  overflow-y: auto;
+}
+#about-me .about-me-container::-webkit-scrollbar {
+  width: 5px;
+}
+#about-me .about-me-container::-webkit-scrollbar-track {
+  background: #f1f1f100;
+}
+#about-me .about-me-container::-webkit-scrollbar-thumb {
+  background: var(--about-me-clr);
+  border-radius: 5px;
 }
 #about-me .about-me-container .edu-info {
-  margin: 10px 10px 0 10px;
+  padding: 10px 10px 0 10px;
+  height: 100%;
 }
 #about-me .about-me-container .edu h2, #about-me .about-me-container .edu h3, #about-me .about-me-container .edu h4, #about-me .about-me-container .edu h5, #about-me .about-me-container .edu h6, #about-me .about-me-container .edu p {
   color: var(--about-me-clr);
@@ -503,10 +516,10 @@ h3 {
   width: 120px;
 }
 #about-me .about-me-card {
-  width: 550px;
+  width: 567px;
   opacity: 1;
   border: var(--about-me-clr) solid 2px;
-  margin: 20px;
+  margin: 0 20px 40px 20px;
   backdrop-filter: blur(7px);
   display: flex;
   flex-direction: row;
@@ -642,7 +655,7 @@ h3 {
 }
 #work .slide-container {
   opacity: 1;
-  width: 100%;
+  width: 95%;
 }
 #work .slide-content {
   margin: 40px;
@@ -1625,9 +1638,10 @@ h3 {
   }
   #about-me .about-me-container {
     flex-direction: column;
-    width: 100%;
+    width: 95%;
     margin: 0;
     padding: 20px 15px;
+    height: auto;
   }
   #about-me .about-me-container .img {
     width: 100%;
