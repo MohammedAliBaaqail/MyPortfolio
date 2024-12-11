@@ -491,6 +491,8 @@ h3 {
 #about-me .about-me-container .edu-info {
   padding: 10px 10px 0 10px;
   height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 #about-me .about-me-container .edu h2, #about-me .about-me-container .edu h3, #about-me .about-me-container .edu h4, #about-me .about-me-container .edu h5, #about-me .about-me-container .edu h6, #about-me .about-me-container .edu p {
   color: var(--about-me-clr);
@@ -504,6 +506,9 @@ h3 {
   text-align: left;
   font-size: 1em;
   color: white;
+}
+#about-me .about-me-container .edu p {
+  margin: auto 0;
 }
 #about-me .about-me-container .info {
   padding: 25px;
@@ -1636,8 +1641,8 @@ h3 {
     height: auto;
   }
   #about-me .about-me-container .img {
-    width: 100%;
     align-self: flex-start;
+    margin: auto;
   }
   #about-me .about-me-container .info {
     padding: 8px;
@@ -1683,8 +1688,8 @@ h3 {
     row-gap: 12px !important;
   }
   .skills-container-1 .skills-box {
-    width: 100px !important;
-    height: 140px !important;
+    width: 115px !important;
+    height: 150px !important;
     margin: 0px !important;
   }
   .skills-container-1 .skills-box .skill-content {
@@ -1699,5 +1704,8 @@ h3 {
   .skills-container-1 .skills-box h2 {
     font-size: 1em !important;
     margin: 0 !important;
+  }
+  .swiper-pagination-bullets-dynamic {
+    bottom: 0px !important;
   }
 }/*# sourceMappingURL=style.css.map */

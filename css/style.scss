@@ -693,6 +693,8 @@ h3 {
    .edu-info{
     padding: 10px 10px 0 10px;
     height: 100%;
+    display: flex;
+    flex-direction: column;
    }
     .edu {
       // width: 35%;
@@ -713,6 +715,9 @@ h3 {
         text-align: left;
         font-size: 1em;
         color: white;
+      }
+      p{
+        margin: auto 0;
       }
     }
 
@@ -2109,8 +2114,9 @@ h3 {
       padding: 20px 15px;
       height: auto;
       .img{
-        width: 100%;
+        // width: 100%;
         align-self: flex-start;
+        margin: auto;
       }
       .info {
         padding: 8px;
@@ -2236,8 +2242,8 @@ h3 {
     
     .skills-box {
     
-      width: 100px !important;
-      height: 140px !important;
+      width: 115px !important;
+      height: 150px !important;
       margin: 0px !important;
       .skill-content {
         font-size: 0.5em !important;
@@ -2254,5 +2260,8 @@ h3 {
         margin: 0 !important;
       }
     }
+  }
+  .swiper-pagination-bullets-dynamic{
+    bottom: 0px !important;
   }
 }
