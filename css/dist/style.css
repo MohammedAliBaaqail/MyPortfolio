@@ -1345,6 +1345,7 @@ h3 {
 }
 #skills .skills-container-1 .skills-box {
   margin: 5px;
+  overflow: hidden;
   background-color: #161616;
   position: relative;
   transform-style: preserve-3d;
@@ -1643,7 +1644,6 @@ h3 {
   }
   #about-me .about-me-container {
     flex-direction: column;
-    width: 95%;
     margin: 0;
     padding: 20px 15px;
     height: auto;
@@ -1664,6 +1664,10 @@ h3 {
     align-self: center;
   }
 
+  #skills {
+    margin: auto;
+    width: 95%;
+  }
   #skills .skills-container .skill-name {
     margin: 5px 0;
   }
@@ -1698,8 +1702,8 @@ h3 {
     row-gap: 12px !important;
   }
   .skills-container-1 .skills-box {
-    width: 115px !important;
-    height: 150px !important;
+    width: 30% !important;
+    height: 140px !important;
     margin: 0px !important;
   }
   .skills-container-1 .skills-box .skill-content {

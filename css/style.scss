@@ -1773,7 +1773,7 @@ h3 {
     row-gap: 30px;
     .skills-box {
       margin: 5px;
-      
+      overflow: hidden;
       background-color: #161616;
       position: relative;
       transform-style: preserve-3d;
@@ -2109,7 +2109,7 @@ h3 {
 
     .about-me-container {
       flex-direction: column;
-      width: 95%;
+      // width: 95%;
       margin: 0;
       padding: 20px 15px;
       height: auto;
@@ -2134,6 +2134,8 @@ h3 {
   }
 
   #skills {
+    margin: auto;
+    width: 95%;
     .skills-container {
       .skill-name {
         margin: 5px 0;
@@ -2242,8 +2244,8 @@ h3 {
     
     .skills-box {
     
-      width: 115px !important;
-      height: 150px !important;
+      width: 30% !important;
+      height: 140px !important;
       margin: 0px !important;
       .skill-content {
         font-size: 0.5em !important;
