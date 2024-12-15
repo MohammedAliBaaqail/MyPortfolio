@@ -470,8 +470,10 @@ h3 {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  height: 465px;
+  height: 431px;
   overflow-y: auto;
+  padding: 25px 0;
+  gap: 35px;
 }
 #about-me .about-me-container::-webkit-scrollbar {
   width: 5px;
@@ -524,7 +526,6 @@ h3 {
   width: 567px;
   opacity: 1;
   border: var(--about-me-clr) solid 2px;
-  margin: 0 20px 40px 20px;
   backdrop-filter: blur(7px);
   display: flex;
   flex-direction: row;

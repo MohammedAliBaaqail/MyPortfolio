@@ -667,12 +667,15 @@ h3 {
     // padding: 50px ;
   }
   .about-me-container {
-    max-width: 1300px;
+max-width: 1300px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    height: 465px;
+    height: 431px;
     overflow-y: auto;
+    padding: 25px 0;
+    gap: 35px;
+
 
     &::-webkit-scrollbar {
       width: 5px; // width of the scrollbar
@@ -749,7 +752,7 @@ h3 {
     //   rgba(255, 255, 255, 0.042) 50%
     // );
     border: var(--about-me-clr) solid 2px;
-    margin: 0  20px 40px 20px;
+    //  
     backdrop-filter: blur(7px);
     
     display: flex;
