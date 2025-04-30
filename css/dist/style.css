@@ -875,7 +875,6 @@ h3 {
 
 .image-content {
   position: relative;
-  row-gap: 5px;
   padding: 0;
 }
 
@@ -887,7 +886,11 @@ h3 {
 }
 .card-image .zoom {
   width: 100%;
-  height: 280px;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  /* Ensures the image covers the area without distortion */
+  height: auto;
+  /* Allows aspect-ratio to determine the height */
   z-index: 999;
   padding: 0px;
 }
@@ -1610,7 +1613,6 @@ h3 {
   }
 
   #work .card-image .zoom {
-    height: 200px;
     padding: 0px;
   }
 
