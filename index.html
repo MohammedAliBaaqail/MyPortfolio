@@ -5,65 +5,44 @@
 <html lang="en">
 
 <head>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-H39NTKZSB6"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-H39NTKZSB6');
-
-</script>
-<script src="https://unpkg.com/scrollreveal"></script>
-  <link rel="shortcut icon" type="image/jpg" href="./assets/logo.svg" />
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
-  <!-- Swiper CSS -->
-  <link rel="stylesheet" href="css/swiper-bundle.min.css">
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="css/style.css">
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mohammed ALi Baaqail</title>
-  <style src="./styles.scss"></style>
-  <link rel="stylesheet" href="./styles.css">
-  <link rel="stylesheet" href="./swiper-bundle.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  
+  <!-- Preload critical assets -->
+  <link rel="preload" href="./assets/logo.svg" as="image">
+  <link rel="preload" href="css/style.css" as="style">
+  
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/jpg" href="./assets/logo.svg" />
+  
+  <!-- CSS files - consolidated -->
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-H39NTKZSB6"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-H39NTKZSB6');
+  </script>
+  
+  <!-- Critical scripts -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+  
+  <!-- Non-critical scripts with defer -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer></script>
 </head>
 
 <body>
 
-  <!-- <select id="mySelect" onchange="changeBackground()">
-    <option value=../assets/bg-dark-1.jpg>1</option>
-    <option value=../assets/bg-dark-2.jpg>2</option>
-    <option value=../assets/bg-dark-3.jpg>3</option>
-    <option value=../assets/bg-dark-4.jpg>4</option>
-    <option value=../assets/bg-dark-5.jpg>5</option>
-    <option value=../assets/bg-dark-6.jpg>6</option>
-    <option value=../assets/bg-dark-7.jpg>7</option>
-    <option value=../assets/bg-dark-8.jpg>8</option>
-    <option value=../assets/bg-dark-9.jpg>9</option>
-    <option value=../assets/bg-dark-10.jpg>10</option>
-    <option selected="selected" value=''>Select Background</option>
+  
 
-  </select> -->
-
-  <!-- <button class="color-button">Select Color </button>
-  <div class="color-pickers ">
-    <input type="color" id="about-me-clr">
-    <input type="color" id="skills-clr">
-    <input type="color" id="work-clr">
-    <input type="color" id="contact-me-clr">
-    <button class="reset-button">Reset</button>
-
-  </div> -->
+  
   <div class="nav-bg about-me"></div>
   <div class="nav-bg my-skills"></div>
   <div class="nav-bg my-work"></div>
@@ -115,13 +94,13 @@
             <div class=" photo-container ">
               <div class="photo-box">
                 <div class="content">
-                  <img class="personal" src="./assets/photo1.jpg">
+                  <img class="personal" src="./assets/photo1.jpg" loading="lazy" alt="Mohammed Ali Baaqail">
                   <div class="content-overlay">
                     <h2>Software <br>Engineer<br><span></span></h2>
                     <div class="links-container">
-                      <a target="_blank" href="https://wa.me/966530754733"> <img class="logo-link"
+                      <a target="_blank" href="https://wa.me/966530754733"> <img class="logo-link" loading="lazy"
                           src="./assets/wa.png"></a>
-                      <a target="_blank" href="https://github.com/MohammedAliBaaqail"> <img class="logo-link"
+                      <a target="_blank" href="https://github.com/MohammedAliBaaqail"> <img class="logo-link" loading="lazy"
                           src="./assets/gh.png"></a>
                       <a target="_blank" href="https://www.linkedin.com/in/mohammed-ali-baaqail-030159242/"> <img
                           class="logo-link" src="./assets/li.png"></a>
@@ -152,7 +131,7 @@
 
             <div class=" edu about-me-card ">
               <div class="about-me-card-light"> </div>
-              <img class="img zoom medium-zoom-image" src="./assets/edu/SE.jpg">
+              <img class="img zoom" data-zoomable src="./assets/edu/SE.jpg">
               <a href="http://www.imbas.my/c.php?1[1,6,f]$7oZXrSCGI/1/dlBTXCgQvQudun9a6JkOZoI60z17mfw=#"
                 target="_blank">
                 <div class="edu-info">
@@ -168,7 +147,7 @@
             </div>
             <div class=" edu about-me-card ">
               <div class="about-me-card-light"> </div>
-              <img class="img zoom medium-zoom-image" src="./assets/edu/BB.jpg">
+              <img class="img zoom" data-zoomable src="./assets/edu/BB.jpg">
               <a href="https://www.bikebear.com.my/" target="_blank">
 
 
@@ -185,7 +164,7 @@
 
             <div class=" edu about-me-card ">
               <div class="about-me-card-light"> </div>
-              <img class="img zoom medium-zoom-image" src="./assets/edu/CRD.jpg">
+              <img class="img zoom" data-zoomable src="./assets/edu/CRD.jpg">
               <a href="https://www.udemy.com/certificate/UC-e3db7773-c3a2-4b3f-a055-eaed4fb63a93/" target="_blank">
 
 
@@ -202,7 +181,7 @@
             </div>
             <div class=" edu about-me-card ">
               <div class="about-me-card-light"> </div>
-              <img class="img zoom medium-zoom-image" src="./assets/edu/OCFA.jpg">
+              <img class="img zoom" data-zoomable src="./assets/edu/OCFA.jpg">
               <a href="https://catalog-education.oracle.com/ords/certview/sharebadge?id=5AA0AA3A826990197DBB56410B33E8983F9986522FFD9CE206C72C69B56E2200" target="_blank">
 
 
@@ -217,7 +196,7 @@
             </div>
             <div class=" edu about-me-card ">
               <div class="about-me-card-light"> </div>
-              <img class="img zoom medium-zoom-image" src="./assets/edu/DEDI.jpg">
+              <img class="img zoom" data-zoomable src="./assets/edu/DEDI.jpg">
               <a href="https://courses.cognitiveclass.ai/certificates/c6dff49f19194ebcad249ae20ad22ba3" target="_blank">
 
 
@@ -233,7 +212,7 @@
             </div>
             <div class=" edu about-me-card ">
               <div class="about-me-card-light"> </div>
-              <img class="img zoom medium-zoom-image" src="./assets/edu/JSA.jpg">
+              <img class="img zoom" data-zoomable src="./assets/edu/JSA.jpg">
               <a href="https://www.udemy.com/certificate/UC-18bcecc8-7a4d-480c-82bf-41aaa04c574d/" target="_blank">
 
 
@@ -400,11 +379,11 @@
                 
 
                 <div class="card-image">
-                  <img class="zoom" src="./assets/projects-imgs/project0-1.jpg" alt="" class="card-img">
+                  <img class="zoom" data-zoomable src="./assets/projects-imgs/project0-1.jpg" alt="" class="card-img">
 
                 </div>
                 <!-- <div class="card-image">
-                <img class="zoom" src="./assets/projects-imgs/project4-2.jpg" alt="" class="card-img">
+                <img class="zoom" data-zoomable src="./assets/projects-imgs/project4-2.jpg" alt="" class="card-img">
               </div> -->
 
                 <div class="card-content">
@@ -457,11 +436,11 @@
                 
 
                 <div class="card-image">
-                  <img class="zoom" src="./assets/projects-imgs/LosslessVideoCutter.jpg" alt="" class="card-img">
+                  <img class="zoom" data-zoomable src="./assets/projects-imgs/LosslessVideoCutter.jpg" alt="" class="card-img">
 
                 </div>
                 <!-- <div class="card-image">
-                <img class="zoom" src="./assets/projects-imgs/project4-2.jpg" alt="" class="card-img">
+                <img class="zoom" data-zoomable src="./assets/projects-imgs/project4-2.jpg" alt="" class="card-img">
               </div> -->
 
                 <div class="card-content">
@@ -494,11 +473,11 @@
                 <!--  -->
 
                 <div class="card-image">
-                  <img class="zoom" src="./assets/projects-imgs/TeamType.jpg" alt="" class="card-img">
+                  <img class="zoom" data-zoomable src="./assets/projects-imgs/TeamType.jpg" alt="" class="card-img">
 
                 </div>
                 <!-- <div class="card-image">
-                <img class="zoom" src="./assets/projects-imgs/project4-2.jpg" alt="" class="card-img">
+                <img class="zoom" data-zoomable src="./assets/projects-imgs/project4-2.jpg" alt="" class="card-img">
               </div> -->
 
                 <div class="card-content">
@@ -540,11 +519,11 @@
                 <!--  -->
 
                 <div class="card-image">
-                  <img class="zoom" src="./assets/projects-imgs/project13-1.jpg" alt="" class="card-img">
+                  <img class="zoom" data-zoomable src="./assets/projects-imgs/project13-1.jpg" alt="" class="card-img">
 
                 </div>
                 <!-- <div class="card-image">
-                <img class="zoom" src="./assets/projects-imgs/project4-2.jpg" alt="" class="card-img">
+                <img class="zoom" data-zoomable src="./assets/projects-imgs/project4-2.jpg" alt="" class="card-img">
               </div> -->
 
                 <div class="card-content">
@@ -588,11 +567,11 @@
                 <!--  -->
 
                 <div class="card-image">
-                  <img class="zoom" src="./assets/projects-imgs/VoxFlow.jpg" alt="" class="card-img">
+                  <img class="zoom" data-zoomable src="./assets/projects-imgs/VoxFlow.jpg" alt="" class="card-img">
 
                 </div>
                 <!-- <div class="card-image">
-                <img class="zoom" src="./assets/projects-imgs/project4-2.jpg" alt="" class="card-img">
+                <img class="zoom" data-zoomable src="./assets/projects-imgs/project4-2.jpg" alt="" class="card-img">
               </div> -->
 
                 <div class="card-content">
@@ -642,11 +621,11 @@
                 
 
                 <div class="card-image">
-                  <img class="zoom" src="./assets/projects-imgs/project11-1.jpg" alt="" class="card-img">
+                  <img class="zoom" data-zoomable src="./assets/projects-imgs/project11-1.jpg" alt="" class="card-img">
 
                 </div>
                 <!-- <div class="card-image">
-                <img class="zoom" src="./assets/projects-imgs/project4-2.jpg" alt="" class="card-img">
+                <img class="zoom" data-zoomable src="./assets/projects-imgs/project4-2.jpg" alt="" class="card-img">
               </div> -->
                 <div class="card-content">
                   <h2 class="name">Mern Todo List</h2>
@@ -693,11 +672,11 @@
                 
 
                 <div class="card-image">
-                  <img class="zoom" src="./assets/projects-imgs/project4-1.jpg" alt="" class="card-img">
+                  <img class="zoom" data-zoomable src="./assets/projects-imgs/project4-1.jpg" alt="" class="card-img">
 
                 </div>
                 <!-- <div class="card-image">
-                <img class="zoom" src="./assets/projects-imgs/project4-2.jpg" alt="" class="card-img">
+                <img class="zoom" data-zoomable src="./assets/projects-imgs/project4-2.jpg" alt="" class="card-img">
               </div> -->
                 <div class="card-content">
                   <h2 class="name">React Shop</h2>
@@ -732,11 +711,11 @@
                 
 
                 <div class="card-image">
-                  <img class="zoom" src="./assets/projects-imgs/project9-1.jpg" alt="" class="card-img">
+                  <img class="zoom" data-zoomable src="./assets/projects-imgs/project9-1.jpg" alt="" class="card-img">
 
                 </div>
                 <!-- <div class="card-image">
-                <img class="zoom" src="./assets/projects-imgs/project4-2.jpg" alt="" class="card-img">
+                <img class="zoom" data-zoomable src="./assets/projects-imgs/project4-2.jpg" alt="" class="card-img">
               </div> -->
                 <div class="card-content">
                   <h2 class="name">Real Fake Wordle</h2>
@@ -766,11 +745,11 @@
                 
 
                 <div class="card-image">
-                  <img class="zoom" src="./assets/projects-imgs/project12-1.jpg" alt="" class="card-img">
+                  <img class="zoom" data-zoomable src="./assets/projects-imgs/project12-1.jpg" alt="" class="card-img">
 
                 </div>
                 <!-- <div class="card-image">
-                <img class="zoom" src="./assets/projects-imgs/project4-2.jpg" alt="" class="card-img">
+                <img class="zoom" data-zoomable src="./assets/projects-imgs/project4-2.jpg" alt="" class="card-img">
               </div> -->
                 <div class="card-content">
                   <h2 class="name">ChatGPT Bot</h2>
@@ -811,7 +790,7 @@
                 
 
                 <div class="card-image">
-                  <img class="zoom" src="./assets/projects-imgs/project1-1.jpg" alt="" class="card-img">
+                  <img class="zoom" data-zoomable src="./assets/projects-imgs/project1-1.jpg" alt="" class="card-img">
 
                 </div>
 
@@ -855,7 +834,7 @@
                 
 
                 <div class="card-image">
-                  <img class="zoom" src="./assets/projects-imgs/project2-1.jpg" alt="" class="card-img">
+                  <img class="zoom" data-zoomable src="./assets/projects-imgs/project2-1.jpg" alt="" class="card-img">
 
                 </div>
 
@@ -898,7 +877,7 @@
                 
 
                 <div class="card-image">
-                  <img class="zoom" src="./assets/projects-imgs/project15-1.png" alt="" class="card-img">
+                  <img class="zoom" data-zoomable src="./assets/projects-imgs/project15-1.png" alt="" class="card-img">
 
                 </div>
 
@@ -930,7 +909,7 @@
                 
 
                 <div class="card-image">
-                  <img class="zoom" src="./assets/projects-imgs/project3-1.jpg" alt="" class="card-img">
+                  <img class="zoom" data-zoomable src="./assets/projects-imgs/project3-1.jpg" alt="" class="card-img">
 
                 </div>
 
@@ -985,9 +964,9 @@
       <div class="contact-me-card">
       <div class="contact-me-card-light"></div>
         <div class="links-container">
-          <a target="_blank" href="https://wa.me/966530754733"> <img class="logo-link"
+          <a target="_blank" href="https://wa.me/966530754733"> <img class="logo-link" loading="lazy"
               src="./assets/wa.png"></a>
-          <a target="_blank" href="https://github.com/MohammedAliBaaqail"> <img class="logo-link"
+          <a target="_blank" href="https://github.com/MohammedAliBaaqail"> <img class="logo-link" loading="lazy"
               src="./assets/gh1.png"></a>
           <a target="_blank" href="https://www.linkedin.com/in/mohammed-baaqail-030159242/"> <img
               class="logo-link" src="./assets/li.png"></a>
@@ -1009,23 +988,22 @@
   </div>
 </body>
 
-<!-- <script src="node_modules/medium-zoom/dist/medium-zoom.min.js"></script> -->
 <!-- Swiper JS -->
 <!--Uncomment this line-->
-<script src="js/swiper-bundle.min.js"></script>
 <script src="js/medium-zoom.js"></script>
-
-<!-- JavaScript -->
-<!-- JavaScript -->
-<!--Uncomment this line-->
-<script src="js/script.js"></script>
-<script src="js/vanilla-tilt.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-
-
-
-
-To remove the Vanta Waves effect on mobile devices, you can detect the device width using JavaScript and conditionally initialize the effect based on the screen size. Here's how you can modify your script to achieve this:
+<script>
+  // Initialize medium-zoom
+  document.addEventListener('DOMContentLoaded', function() {
+    mediumZoom('[data-zoomable]', {
+      margin: 50,
+      background: 'rgba(0,0,0,0.9)'
+    });
+  });
+</script>
+<script src="js/swiper-bundle.min.js" defer></script>
+<script src="js/vanilla-tilt.js" defer></script>
+<script src="js/script.min.js" defer></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" defer></script>
 
 html
 Copy code

@@ -438,8 +438,10 @@ h3 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
   justify-content: center;
+  padding: 40px 20px;
+  box-sizing: border-box;
 }
 #about-me .main-container .first-container {
   display: flex;
@@ -475,10 +477,10 @@ h3 {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  height: 431px;
-  overflow-y: auto;
-  padding: 25px 0;
-  gap: 35px;
+  overflow: visible;
+  padding: 15px 0;
+  gap: 20px;
+  margin: 0 auto;
 }
 #about-me .about-me-container::-webkit-scrollbar {
   width: 5px;
@@ -491,10 +493,11 @@ h3 {
   border-radius: 5px;
 }
 #about-me .about-me-container .edu-info {
-  padding: 10px 10px 0 10px;
+  padding: 10px 15px;
   height: 100%;
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 #about-me .about-me-container .edu h2, #about-me .about-me-container .edu h3, #about-me .about-me-container .edu h4, #about-me .about-me-container .edu h5, #about-me .about-me-container .edu h6, #about-me .about-me-container .edu p {
   color: var(--about-me-clr);
@@ -525,16 +528,21 @@ h3 {
   text-shadow: 0 0 25px var(--about-me-clr);
 }
 #about-me .about-me-container .img {
-  width: 120px;
+  width: 40%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 #about-me .about-me-card {
-  width: 567px;
+  width: calc(33.33% - 15px);
   opacity: 1;
   border: var(--about-me-clr) solid 2px;
   -webkit-backdrop-filter: blur(7px);
           backdrop-filter: blur(7px);
   display: flex;
   flex-direction: row;
+  flex: 0 1 auto;
+  margin-bottom: 15px;
+  transition: all 0.3s ease;
 }
 #about-me .about-me-card:hover {
   animation: shadow-pulse-about-me 2s infinite ease-in-out;
@@ -574,6 +582,113 @@ h3 {
   height: 100%;
   position: absolute;
   z-index: -5;
+}
+@media screen and (max-width: 1200px) {
+  #about-me .about-me-card {
+    width: calc(50% - 20px);
+    margin-bottom: 15px;
+  }
+  #about-me .about-me-container .edu h2 {
+    font-size: 1.2em;
+  }
+  #about-me .about-me-container .edu h4 {
+    font-size: 0.9em;
+  }
+  #about-me .about-me-container .edu p {
+    font-size: 0.85em;
+  }
+  #about-me .about-me-container .img {
+    width: 90px;
+  }
+}
+@media screen and (max-width: 991px) {
+  #about-me .about-me-card {
+    width: calc(50% - 15px);
+    margin-bottom: 15px;
+  }
+  #about-me .about-me-container .img {
+    width: 80px;
+  }
+  #about-me .about-me-container .edu-info {
+    padding: 5px 10px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #about-me .main-container {
+    padding: 10px;
+  }
+  #about-me .about-me-title {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+  }
+  #about-me .about-me-container {
+    gap: 10px;
+    padding: 5px 0;
+  }
+  #about-me .about-me-card {
+    width: calc(33.33% - 10px);
+    margin-bottom: 10px;
+  }
+  #about-me .about-me-card {
+    flex-direction: column;
+    align-items: center;
+  }
+  #about-me .about-me-container .img {
+    width: 100%;
+    max-width: 70px;
+    height: auto;
+    margin: 5px 0;
+  }
+  #about-me .about-me-container .edu-info {
+    text-align: center;
+    padding: 5px;
+  }
+  #about-me .about-me-container .edu h2 {
+    font-size: 0.9em;
+    text-align: center;
+    line-height: 1.2;
+  }
+  #about-me .about-me-container .edu h4 {
+    font-size: 0.8em;
+    text-align: center;
+  }
+  #about-me .about-me-container .edu p {
+    font-size: 0.75em;
+    margin: 5px 0;
+    line-height: 1.2;
+  }
+}
+@media screen and (max-width: 576px) {
+  #about-me .about-me-card {
+    width: calc(50% - 8px);
+    margin-bottom: 8px;
+    border-width: 1px;
+  }
+  #about-me .about-me-container {
+    gap: 8px;
+  }
+}
+@media screen and (max-width: 480px) {
+  #about-me .main-container {
+    padding: 8px 5px;
+  }
+  #about-me .about-me-card {
+    width: calc(50% - 6px);
+    margin-bottom: 6px;
+  }
+  #about-me .about-me-container {
+    gap: 6px;
+  }
+  #about-me .about-me-container .edu h2 {
+    font-size: 0.8em;
+  }
+  #about-me .about-me-container .edu h4 {
+    font-size: 0.7em;
+  }
+  #about-me .about-me-container .edu p {
+    font-size: 0.7em;
+    line-height: 1.1;
+  }
 }
 
 #skills {
