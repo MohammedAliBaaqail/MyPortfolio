@@ -10,6 +10,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mohammed ALi Baaqail</title>
   
+  <!-- Preconnect to external domains for faster loading -->
+  <link rel="preconnect" href="https://unpkg.com">
+  <link rel="preconnect" href="https://ajax.googleapis.com">
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <link rel="preconnect" href="https://www.googletagmanager.com">
+  
   <!-- Preload critical assets -->
   <link rel="preload" href="./assets/logo.svg" as="image">
   <link rel="preload" href="css/style.css" as="style">
@@ -31,10 +38,8 @@
     gtag('config', 'G-H39NTKZSB6');
   </script>
   
-  <!-- Critical scripts -->
-  <script src="https://unpkg.com/scrollreveal"></script>
-  
-  <!-- Non-critical scripts with defer -->
+  <!-- All scripts deferred for better performance -->
+  <script src="https://unpkg.com/scrollreveal" defer></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer></script>
 </head>
 
@@ -1070,11 +1075,13 @@ It's perfect for combining video clips while keeping the original quality, with 
   </div>
 </body>
 
-<!-- Swiper JS -->
-<!--Uncomment this line-->
-<script src="js/medium-zoom.js"></script>
-<script>
-  // Initialize medium-zoom
+<!-- All JS deferred for optimal loading -->
+<script src="js/swiper-bundle.min.js" defer></script>
+<script src="js/vanilla-tilt.js" defer></script>
+<script src="js/script.min.js" defer></script>
+<script src="js/swiper-fix.js" defer></script>
+<script src="js/medium-zoom.js" defer></script>
+<script defer>
   document.addEventListener('DOMContentLoaded', function() {
     mediumZoom('[data-zoomable]', {
       margin: 50,
@@ -1082,136 +1089,126 @@ It's perfect for combining video clips while keeping the original quality, with 
     });
   });
 </script>
-<script src="js/swiper-bundle.min.js" defer></script>
-<script src="js/vanilla-tilt.js" defer></script>
-<script src="js/script.min.js" defer></script>
-<script src="js/swiper-fix.js" defer></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" defer></script>
-
-html
-Copy code
-<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.waves.min.js"></script>
-<script>
-  // Function to check if the device is a mobile device
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.waves.min.js" defer></script>
+<script defer>
   function isMobileDevice() {
     return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
   }
 
-  // Initialize Vanta Waves only if the device is not a mobile device
-  if (!isMobileDevice()) {
-    VANTA.WAVES({
-      el: ".main",
-      mouseControls: true,
-      touchControls: true,
-      gyroControls: false,
-      minHeight: 200.00,
-      minWidth: 200.00,
-      scale: 1.00,
-      scaleMobile: 1.00,
-      color: 0x121212,
-      shininess: 30.00,
-      waveHeight: 45.00,
-      waveSpeed: 0.35,
-      zoom: 0.25
-    });
-  }
+  window.addEventListener('load', function() {
+    if (!isMobileDevice() && typeof VANTA !== 'undefined') {
+      VANTA.WAVES({
+        el: ".main",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 200.00,
+        minWidth: 200.00,
+        scale: 1.00,
+        scaleMobile: 1.00,
+        color: 0x121212,
+        shininess: 30.00,
+        waveHeight: 45.00,
+        waveSpeed: 0.35,
+        zoom: 0.25
+      });
+    }
+  });
 </script>
-<script>
-  ScrollReveal().reveal('.about-me-card' , { 
-    delay: 0, 
-    interval: 100, 
-    duration: 1500,
-    reset: true,
-    mobile: false
-  });
-  ScrollReveal().reveal('.about-me-card-light' , { 
-    distance: '0px',
-    opacity: 0.0,
-    duration: 2000,
-    interval: 200, 
-    delay: 200, 
-      reset: true,
-      mobile: false
-  });
-
-  ScrollReveal().reveal('.skills-box' , { 
-      delay: 0, 
-      interval: 50, 
-      reset: true,
-      mobile: false
-  });
-  ScrollReveal().reveal('.skill-box-bg' , { 
-    distance: '0px',
-    opacity: 0.0,
-    duration: 2000,
-    interval: 50, 
-    delay: 50, 
-      reset: true,
-      mobile: false
-  });
-
-  ScrollReveal().reveal('.photo-container', {
+<script defer>
+  window.addEventListener('DOMContentLoaded', function() {
+    if (typeof ScrollReveal !== 'undefined') {
+      ScrollReveal().reveal('.about-me-card', { 
+        delay: 0, 
+        interval: 100, 
+        duration: 1500,
+        reset: true,
+        mobile: false
+      });
+      ScrollReveal().reveal('.about-me-card-light', { 
+        distance: '0px',
+        opacity: 0.0,
+        duration: 2000,
+        interval: 200, 
+        delay: 200, 
+        reset: true,
+        mobile: false
+      });
+      ScrollReveal().reveal('.skills-box', { 
+        delay: 0, 
+        interval: 50, 
+        reset: true,
+        mobile: false
+      });
+      ScrollReveal().reveal('.skill-box-bg', { 
+        distance: '0px',
+        opacity: 0.0,
+        duration: 2000,
+        interval: 50, 
+        delay: 50, 
+        reset: true,
+        mobile: false
+      });
+      ScrollReveal().reveal('.photo-container', {
         origin: 'left', 
         distance: '20px', 
         duration: 1000,   
         delay: 0,        
         opacity: 0,      
         easing: 'ease-in-out', 
-        interval: 200 ,
+        interval: 200,
         reset: true, 
         mobile: false   
-    });
-    ScrollReveal().reveal('.me', {
+      });
+      ScrollReveal().reveal('.me', {
         origin: 'right', 
         distance: '20px', 
         duration: 1000,   
         delay: 0,        
         opacity: 0,      
         easing: 'ease-in-out', 
-        interval: 200 ,
+        interval: 200,
         reset: true,   
         mobile: false 
-    });
-  ScrollReveal().reveal('.about-me-title', {
+      });
+      ScrollReveal().reveal('.about-me-title', {
         origin: 'bottom', 
         distance: '20px', 
         duration: 1000, 
         delay: 0,   
         opacity: 0,  
         easing: 'ease-in-out', 
-        interval: 200 ,
+        interval: 200,
         reset: true,  
         mobile: false  
-    });
-
-
-  ScrollReveal().reveal('.swiper-wrapper', {
+      });
+      ScrollReveal().reveal('.swiper-wrapper', {
         origin: 'bottom', 
         distance: '20px',
         duration: 300,   
         delay: 0,         
         opacity: 0,      
         easing: 'ease-in-out', 
-       
         reset: true, 
         mobile: false   
-    });
-    ScrollReveal().reveal('.contact-me-card' , { 
-    delay: 0, 
-    
-    duration: 1000,
-    reset: true,
-    mobile: false
-  });
-    ScrollReveal().reveal('.contact-me-card-light' , { 
-    distance: '0px',
-    opacity: 0.0,
-    duration: 2000,
-    interval: 200, 
-    delay: 200, 
-      reset: true,
-      mobile: false
+      });
+      ScrollReveal().reveal('.contact-me-card', { 
+        delay: 0, 
+        duration: 1000,
+        reset: true,
+        mobile: false
+      });
+      ScrollReveal().reveal('.contact-me-card-light', { 
+        distance: '0px',
+        opacity: 0.0,
+        duration: 2000,
+        interval: 200, 
+        delay: 200, 
+        reset: true,
+        mobile: false
+      });
+    }
   });
 </script>
 </html>
