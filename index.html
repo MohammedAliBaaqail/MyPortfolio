@@ -45,7 +45,13 @@
 
 <body>
 
-  
+  <!-- Loading Screen -->
+  <div id="loading-screen">
+    <div class="loader-container">
+      <div class="loader"></div>
+      <p class="loading-text">Loading</p>
+    </div>
+  </div>
 
   
   <div class="nav-bg about-me"></div>
@@ -1074,6 +1080,19 @@ It's perfect for combining video clips while keeping the original quality, with 
   </div>
   </div>
 </body>
+
+<!-- Loading screen handler -->
+<script>
+  window.addEventListener('load', function() {
+    const loadingScreen = document.getElementById('loading-screen');
+    if (loadingScreen) {
+      loadingScreen.classList.add('loaded');
+      setTimeout(function() {
+        loadingScreen.style.display = 'none';
+      }, 600);
+    }
+  });
+</script>
 
 <!-- All JS deferred for optimal loading -->
 <script src="js/swiper-bundle.min.js" defer></script>
